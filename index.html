@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roman Cart</title>
+
+    <!-- Favicon Links -->
+    <!-- <link rel="icon" href="https://zetdigi.com/wp-content/uploads/2024/07/cropped-logo-32x32.png" sizes="32x32">
+    <link rel="icon" href="https://zetdigi.com/wp-content/uploads/2024/07/cropped-logo-192x192.png" sizes="192x192">
+    <link rel="apple-touch-icon" href="https://zetdigi.com/wp-content/uploads/2024/07/cropped-logo-180x180.png"> -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <!-- Top Bar -->
+        <div class="top-bar">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-8 col-md-6 col-12">
+                        <p class="top-bar-text text-center text-md-start">Free Shopping Cart For Your Website</p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="social-icons justify-content-center justify-content-md-end">
+                            <a href="#" class="social-icon" aria-label="Twitter">
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="Email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="Support">
+                                <i class="fas fa-headset"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Navigation -->
+        <nav class="navbar navbar-expand-lg main-navbar">
+            <div class="container">
+                <!-- Brand Logo -->
+                <a class="navbar-brand d-flex align-items-center" href="/">
+                    <img src="./assets/images/logo.png" alt="RomanCart" class="logo-img">
+                </a>
+
+                <!-- Toggle for offcanvas sidebar (mobile only) -->
+                <button class="navbar-toggler d-block d-lg-none" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#navSidebar" aria-controls="navSidebar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Regular desktop menu -->
+                <div class="collapse navbar-collapse d-none d-lg-block" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">How it works?</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Product Demo</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Pricing Plans</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Resources</a></li>
+                    </ul>
+                    <div class="d-flex align-items-center user-support-section">
+                        <div class="user-icon d-none d-xl-flex" role="button" aria-label="User Profile">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <a href="#" class="support-btn">Customer Support</a>
+                    </div>
+                </div>
+
+                <!-- Offcanvas sidebar menu (from the RIGHT) -->
+                <div class="offcanvas offcanvas-end d-block d-lg-none" tabindex="-1" id="navSidebar"
+                    aria-labelledby="navSidebarLabel" data-bs-backdrop="true">
+                    <div class="offcanvas-header px-5 py-4 justify-content-end">
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">How it works?</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Product Demo</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Pricing Plans</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Resources</a></li>
+                        </ul>
+
+                        <div class="d-flex align-items-center justify-content-center">
+                            <a href="#" class="support-btn">Customer Support</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Banner Section -->
+        <section class="hero-banner">
+            <div class="banner-1">
+                <img src="./assets/images/banner-1.jpg" />
+            </div>
+            <div class="banner-2">
+                <img src="./assets/images/banner-2.png" />
+            </div>
+            <div class="container position-relative z-1">
+                <div class="row h-100 align-items-center gap-5 gap-lg-0">
+                    <!-- Left Content -->
+                    <div class="col-lg-6 col-md-12">
+                        <div class="hero-content">
+                            <h1 class="hero-title">
+                                Add a <span class="highlight">Shopping Cart</span><br>
+                                to Any Website
+                            </h1>
+                            <p class="hero-description">
+                                Turn any website or social page into a fully functional shop in minutes with
+                                RomanCart. Add '<strong>Buy Now</strong>' or '<strong>Add to Basket</strong>'
+                                buttons anywhere on your website,
+                                Twitter, Facebook, Instagram, and more.
+                            </p>
+                            <a href="#" class="demo-btn">
+                                View Demo
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Right Content - Signup Form -->
+                    <div class="col-lg-6 col-md-12">
+                        <div class="signup-form">
+                            <h2 class="signup-title">
+                                <span class="highlight">Sign Up</span> For Free
+                            </h2>
+                            <form>
+                                <div class="form-group">
+                                    <div class="mb-3">
+                                        <input type="text" class="form-control" placeholder="Name" required>
+                                    </div>
+                                    <div class="mb-4">
+                                        <input type="email" class="form-control" placeholder="Email" required>
+                                    </div>
+                                </div>
+                                <button type="submit" class="start-selling-btn">
+                                    Start Selling
+                                    <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features-section-1">
+            <div class="container">
+                <!-- Section Header -->
+                <h2 class="section-title">
+                    The <span class="highlight">Best Cart</span> for PayPal, Stripe & More
+                </h2>
+                <p class="section-subtitle">
+                    Easily integrate RomanCart's powerful shopping features into any platform whether it's HTML,
+                    WordPress, Wix, Weebly, Muse, Serif, or your favorite website builder.
+                </p>
+
+                <!-- Features Grid -->
+                <div class="row">
+                    <!-- Shopping Cart Feature -->
+                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                        <div class="feature-card">
+                            <div class="feature-content">
+                                <h3 class="feature-title">Shopping Cart</h3>
+                                <p class="feature-description">
+                                    Paste Shopping Cart 'Buy Now' buttons on to your own web pages, blog content and
+                                    social
+                                    media posts
+                                </p>
+                            </div>
+                            <div class="feature-demo">
+                                <div class="cart-buttons">
+                                    <button class="buy-now-btn buy-now-gray">Buy Now</button>
+                                    <a href="#" class="buy-now-btn buy-now-blue">Buy Now</a>
+                                </div>
+                            </div>
+                            <a href="#" class="more-info-link">
+                                <i class="fas fa-info-circle"></i>
+                                <span>
+                                    More Information
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Button Widget Feature -->
+                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                        <div class="feature-card">
+                            <div class="feature-content">
+                                <h3 class="feature-title">Button Widget</h3>
+                                <p class="feature-description">
+                                    Create Shopping Cart Buttons With Multiple Options, Variations, Modifiers and Social
+                                    Media Links
+                                </p>
+                            </div>
+                            <div class="feature-demo">
+                                <div class="widget-demo">
+                                    <div class="dropdown-row">
+                                        <select class="demo-select">
+                                            <option>Red</option>
+                                            <option>Blue</option>
+                                            <option>Green</option>
+                                        </select>
+                                        <select class="demo-select">
+                                            <option>Small</option>
+                                            <option>Medium</option>
+                                            <option>Large</option>
+                                        </select>
+                                        <select class="demo-select">
+                                            <option>Top</option>
+                                            <option>Bottom</option>
+                                            <option>Left</option>
+                                            <option>Right</option>
+                                        </select>
+                                    </div>
+                                    <button class="buy-now-btn buy-now-gray">Buy Now</button>
+                                </div>
+                            </div>
+                            <a href="#" class="more-info-link">
+                                <i class="fas fa-info-circle"></i>
+                                <span>
+                                    More Information
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Storefront Feature -->
+                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                        <div class="feature-card">
+                            <div class="feature-content">
+                                <h3 class="feature-title">Storefront</h3>
+                                <p class="feature-description">
+                                    Easily add an entire shop on to Wordpress, Facebook or your own website and manage
+                                    your
+                                    products and sales on RomanCart
+                                </p>
+                            </div>
+                            <div class="feature-demo">
+                                <div class="storefront-demo">
+                                    <img src="./assets/images/feature-laptop.png" class="laptop-img" />
+                                    <img src="./assets/images/feature-laptop.png" class="laptop-img" />
+                                </div>
+                            </div>
+                            <a href="#" class="more-info-link">
+                                <i class="fas fa-info-circle"></i>
+                                <span>
+                                    More Information
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features-section-2">
+            <div class="container">
+                <!-- Section Header -->
+                <div class="section-header">
+                    <h2 class="section-title">
+                        Best <span class="highlight">Shopping Cart</span> for Your Website
+                    </h2>
+                    <p class="section-subtitle">
+                        RomanCart is the ultimate shopping cart solution designed to help you sell more whether it's
+                        products, tickets, digital downloads, or accommodation bookings. Boost your sales, increase
+                        order value, and keep customers coming back for more.
+                    </p>
+                </div>
+
+                <!-- Features Grid -->
+                <div class="row row-equal-height">
+                    <!-- PayPal Shopping Cart -->
+                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                        <div class="feature-card">
+                            <div class="feature-content">
+                                <h3 class="feature-title">The Best PayPal Shopping Cart</h3>
+                                <p class="card-description">feature-description
+                                    Easy to set up, accept payments in minutes.
+                                </p>
+                            </div>
+                            <a href="#" class="feature-btn">
+                                Paypal Shopping Cart
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Shopping Cart Templates -->
+                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                        <div class="feature-card">
+                            <div class="feature-content">
+                                <h3 class="feature-title">Shopping Cart Templates</h3>
+                                <p class="card-description">feature-description
+                                    Choose exactly how your cart looks to your customers.
+                                </p>
+                            </div>
+                            <a href="#" class="feature-btn">
+                                Shopping Cart Templates
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Best Website Shopping Cart -->
+                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                        <div class="feature-card">
+                            <div class="feature-content">
+                                <h3 class="feature-title">Best Website Shopping Cart</h3>
+                                <p class="card-description">feature-description
+                                    Simply paste RomanCart 'Add to Basket' buttons or links on to your pages. It works
+                                    with
+                                    any website and it's the easiest way to create an online store.
+                                </p>
+                            </div>
+                            <a href="#" class="feature-btn">
+                                Add To Basket
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Best Responsive Shopping Cart -->
+                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                        <div class="feature-card">
+                            <div class="feature-content">
+                                <h3 class="feature-title">Best Responsive Shopping Cart</h3>
+                                <p class="card-description">feature-description
+                                    The RomanCart Shopping cart has responsive templates which look great on mobiles,
+                                    tablets, desktops and any other device.
+                                </p>
+                            </div>
+                            <a href="#" class="feature-btn">
+                                Responsive Shopping Cart
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Accept Multiple Payment Methods -->
+                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                        <div class="feature-card">
+                            <div class="feature-content">
+                                <h3 class="feature-title">Accept PayPal, Stripe, SagePay and More</h3>
+                                <p class="card-description">feature-description
+                                    Integration with all major payment methods. The RomanCart Shopping Cart gives you
+                                    easy
+                                    payment gateway integration with your website.
+                                </p>
+                            </div>
+                            <a href="#" class="feature-btn">
+                                Payment Gateways
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Keep Customers On Website -->
+                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                        <div class="feature-card">
+                            <div class="feature-content">
+                                <h3 class="feature-title">Keep Customers On Your Website</h3>
+                                <p class="card-description">feature-description
+                                    Your customers stay on your site as they add items to their carts via a drop-down
+                                    floating cart fixed in the top-right corner of their screens.
+                                </p>
+                            </div>
+                            <a href="#" class="feature-btn">
+                                See Example
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits Section -->
+        <section class="benefits-section">
+            <div class="container">
+                <!-- Section Header -->
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <span class="highlight">Benefits</span> Roman Cart for Your Website
+                    </h2>
+                    <p class="section-subtitle">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dignissim, ante elementum
+                        molestie rutrum, neque lacus rutrum lacus, ut efficitur turpis libero at erat. Proin nec
+                        sollicitudin felis, ac volutpat ipsum.
+                    </p>
+                </div>
+
+                <!-- Benefits Grid - Top 6 items -->
+                <div class="benefits-grid">
+                    <!-- Benefit 01 -->
+                    <div class="benefit-item">
+                        <div class="benefit-number">01</div>
+                        <h3 class="benefit-title">Increase Number Of Sales</h3>
+                        <p class="benefit-description">
+                            Lorem ipsum dolor sit amet, adipiscing elit. Etiam dignissim, ante elementum molestie
+                            rutrum, neque lacus rutrum lacus.
+                        </p>
+                    </div>
+
+                    <!-- Benefit 02 -->
+                    <div class="benefit-item">
+                        <div class="benefit-number">02</div>
+                        <h3 class="benefit-title">Increase Cart Size</h3>
+                        <p class="benefit-description">
+                            Lorem ipsum dolor sit amet, adipiscing elit. Etiam dignissim, ante elementum molestie
+                            rutrum, neque lacus rutrum lacus.
+                        </p>
+                    </div>
+
+                    <!-- Benefit 03 -->
+                    <div class="benefit-item">
+                        <div class="benefit-number">03</div>
+                        <h3 class="benefit-title">Increase Customer Retention</h3>
+                        <p class="benefit-description">
+                            Lorem ipsum dolor sit amet, adipiscing elit. Etiam dignissim, ante elementum molestie
+                            rutrum, neque lacus rutrum lacus.
+                        </p>
+                    </div>
+
+                    <!-- Benefit 04 -->
+                    <div class="benefit-item">
+                        <div class="benefit-number">04</div>
+                        <h3 class="benefit-title">Sell More Products</h3>
+                        <p class="benefit-description">
+                            Lorem ipsum dolor sit amet, adipiscing elit. Etiam dignissim, ante elementum molestie
+                            rutrum, neque lacus rutrum lacus.
+                        </p>
+                    </div>
+
+                    <!-- Benefit 05 -->
+                    <div class="benefit-item">
+                        <div class="benefit-number">05</div>
+                        <h3 class="benefit-title">Sell More Tickets</h3>
+                        <p class="benefit-description">
+                            Lorem ipsum dolor sit amet, adipiscing elit. Etiam dignissim, ante elementum molestie
+                            rutrum, neque lacus rutrum lacus.
+                        </p>
+                    </div>
+
+                    <!-- Benefit 06 -->
+                    <div class="benefit-item">
+                        <div class="benefit-number">06</div>
+                        <h3 class="benefit-title">Sell More Digital Downloads</h3>
+                        <p class="benefit-description">
+                            Lorem ipsum dolor sit amet, adipiscing elit. Etiam dignissim, ante elementum molestie
+                            rutrum, neque lacus rutrum lacus.
+                        </p>
+                    </div>
+                    <!-- Benefit 07 -->
+                    <div class="benefit-item">
+                        <div class="benefit-number">07</div>
+                        <h3 class="benefit-title">Sell More Accommodation Bookings</h3>
+                        <p class="benefit-description">
+                            Lorem ipsum dolor sit amet, adipiscing elit. Etiam dignissim, ante elementum molestie
+                            rutrum, neque lacus rutrum lacus.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Platform Integration Section -->
+        <section class="platform-section">
+            <div class="container">
+                <!-- Section Header -->
+                <div class="section-header">
+                    <h2 class="section-title">
+                        Easy <span class="highlight">Shopping Cart</span> For WordPress
+                    </h2>
+                    <p class="section-subtitle">
+                        Easily add a shopping cart to a Wordpress website or a website built with any other website
+                        builder,
+                        bespoke sites, hand built sites, or any other site that needs a shopping cart.
+                    </p>
+                </div>
+
+                <!-- Platform Cards -->
+                <div class="row align-items-stretch">
+                    <!-- WordPress Card -->
+                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                        <div class="platform-card">
+                            <div class="platform-header wordpress">
+                                <svg class="wordpress-icon" viewBox="0 0 122.52 122.523"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="m8.708 61.26c0 20.802 12.089 38.779 29.619 47.298l-25.069-68.686c-2.916 6.536-4.55 13.769-4.55 21.388z" />
+                                    <path
+                                        d="m96.74 58.608c0-6.495-2.333-10.993-4.334-14.494-2.664-4.329-5.161-7.995-5.161-12.324 0-4.831 3.664-9.328 8.825-9.328.233 0 .454.029.681.042-9.35-8.566-21.807-13.796-35.489-13.796-18.36 0-34.513 9.42-43.91 23.688 1.233.037 2.395.063 3.382.063 5.497 0 14.006-.667 14.006-.667 2.833-.167 3.167 3.994.337 4.329 0 0-2.847.335-6.015.501l19.138 56.925 11.501-34.493-8.188-22.434c-2.83-.166-5.511-.501-5.511-.501-2.832-.166-2.5-4.496.332-4.329 0 0 8.679.667 13.843.667 5.496 0 14.006-.667 14.006-.667 2.835-.167 3.168 3.994.337 4.329 0 0-2.853.335-6.015.501l18.992 56.494 5.242-17.517c2.272-7.269 4.001-12.49 4.001-16.989z" />
+                                    <path
+                                        d="m62.184 65.857-15.768 45.819c4.708 1.384 9.687 2.141 14.846 2.141 6.12 0 11.989-1.058 17.452-2.979-.141-.225-.269-.464-.374-.724z" />
+                                    <path
+                                        d="m107.376 36.046c.226 1.674.354 3.471.354 5.404 0 5.333-.996 11.328-3.996 18.824l-16.053 46.413c15.624-9.111 26.133-26.038 26.133-45.426.001-9.137-2.333-17.729-6.438-25.215z" />
+                                    <path
+                                        d="m61.262 0c-33.779 0-61.262 27.481-61.262 61.26 0 33.783 27.483 61.263 61.262 61.263 33.778 0 61.265-27.48 61.265-61.263-.001-33.779-27.487-61.26-61.265-61.26zm0 119.715c-32.23 0-58.453-26.212-58.453-58.455 0-32.23 26.222-58.451 58.453-58.451 32.229 0 58.45 26.221 58.45 58.451 0 32.242-26.221 58.455-58.45 58.455z" />
+                                </svg>
+                            </div>
+                            <div class="platform-content">
+                                <div class="platform-info">
+                                    <h3 class="platform-title">Wordpress Web Shop</h3>
+                                    <p class="platform-description">
+                                        Add RomanCart Storefront links to your Wordpress site and turn your WordPress
+                                        website into an online store
+                                    </p>
+                                </div>
+                                <a href="#" class="know-more-btn">
+                                    Know More
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Facebook Card -->
+                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                        <div class="platform-card">
+                            <div class="platform-header facebook">
+                                <div class="facebook-logo">facebook</div>
+                            </div>
+                            <div class="platform-content">
+                                <div class="platform-info">
+                                    <h3 class="platform-title">Facebook Shop</h3>
+                                    <p class="platform-description">
+                                        Add a hosted RomanCart store to your Facebook account and sell your products on
+                                        Facebook to your friends and visitors
+                                    </p>
+                                </div>
+                                <a href="#" class="know-more-btn">
+                                    Know More
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Twitter Card -->
+                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                        <div class="platform-card">
+                            <div class="platform-header twitter">
+                                <i class="fab fa-twitter twitter-logo"></i>
+                            </div>
+                            <div class="platform-content">
+                                <div class="platform-info">
+                                    <h3 class="platform-title">Twitter Shop</h3>
+                                    <p class="platform-description">
+                                        Sell your products to your followers by adding RomanCart Add to Cart links to
+                                        your
+                                        tweets
+                                    </p>
+                                </div>
+                                <a href="#" class="know-more-btn">
+                                    Know More
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Business Use Cases Section -->
+        <section class="business-section">
+            <div class="container">
+                <!-- Section Header -->
+                <div class="section-header">
+                    <h2 class="section-title">
+                        How Businesses Use <span class="highlight">RomanCart</span>
+                    </h2>
+                    <p class="section-subtitle">
+                        Discover how RomanCart empowers different types of businesses to sell more
+                        efficiently online and beyond.
+                    </p>
+                </div>
+
+                <!-- Use Cases Grid -->
+                <div class="row row-equal-height">
+                    <!-- Row 1 -->
+                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                        <div class="use-case-item">
+                            <div class="use-case-header">
+                                <img src="assets/images/ebay-logo.png" alt="ebay-logo">
+                            </div>
+                            <h3 class="use-case-title">List on eBay</h3>
+                            <p class="use-case-description">
+                                List items on ebay remotely from your RomanCart Control Panel. Manage all of your ebay
+                                and website sales from one place.
+                            </p>
+                            <a href="#" class="use-case-link">
+                                <span>
+                                    Ebay Listing Software
+                                </span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                        <div class="use-case-item">
+                            <h3 class="use-case-title">Use The RomanCart</h3>
+                            <p class="use-case-description">
+                                RomanCart makes selling simple. Add 'Buy' buttons to your site or e-mails and start
+                                accepting payments instantly no hassle, just seamless shopping.
+                            </p>
+                            <a href="#" class="use-case-link">
+                                <span>
+                                    Ebay Listing Software
+                                </span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                        <div class="use-case-item">
+                            <h3 class="use-case-title">Stock Management</h3>
+                            <p class="use-case-description">
+                                Show real-time stock and pricing on your website with ease. RomanCart lets you update
+                                product availability, stock, and prices instantly without touching.
+                            </p>
+                            <a href="#" class="use-case-link">
+                                <span>
+                                    Stock Software
+                                </span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Row 2 -->
+                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                        <div class="use-case-item">
+                            <h3 class="use-case-title">24/7 Support</h3>
+                            <p class="use-case-description">
+                                If you have any questions about your cart, or need advice about how to use the marketing
+                                or other features you can call or email us 24/7.
+                            </p>
+                            <a href="#" class="use-case-link">
+                                <span>
+                                    More Information
+                                </span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                        <div class="use-case-item">
+                            <h3 class="use-case-title">Holiday Booking Software</h3>
+                            <p class="use-case-description">
+                                Sell holidays with the RomanCart Accommodation Booking Software. Set seasons, prices and
+                                holiday types.
+                            </p>
+                            <a href="#" class="use-case-link">
+                                <span>
+                                    Holiday Booking Software
+                                </span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                        <div class="use-case-item">
+                            <h3 class="use-case-title">Internet Marketing Tools</h3>
+                            <p class="use-case-description">
+                                Built in email marketing and affiliate marketing software.
+                            </p>
+                            <a href="#" class="use-case-link">
+                                <span>
+                                    Marketing Tools
+                                </span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Row 3 -->
+                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                        <div class="use-case-item">
+                            <h3 class="use-case-title">Sell Downloads</h3>
+                            <p class="use-case-description">
+                                Sell downloadable items, sell ebooks, sell music, sell digital products with the
+                                RomanCart Shopping Cart Digital Vault. Downloads are delivered automatically.
+                            </p>
+                            <a href="#" class="use-case-link">
+                                <span>
+                                    Sell Digital Downloads
+                                </span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                        <div class="use-case-item">
+                            <h3 class="use-case-title">Boost Sales Fast</h3>
+                            <p class="use-case-description">
+                                You can sign up prospects and regularly email them using our 'Prospect Sequence'
+                                autoresponder. This is proven to increase your customer base.
+                            </p>
+                            <a href="#" class="use-case-link">
+                                <span>
+                                    Email Autoresponders
+                                </span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                        <div class="use-case-item">
+                            <h3 class="use-case-title">Increase Your Sales</h3>
+                            <p class="use-case-description">
+                                If you are not marketing your website properly right now... get excited! Our marketing
+                                tools and advice will double your turnover! Watch a screencast...
+                            </p>
+                            <a href="#" class="use-case-link">
+                                <span>
+                                    Get More Customers
+                                </span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Row 4 -->
+                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                        <div class="use-case-item">
+                            <h3 class="use-case-title">Sell Tickets</h3>
+                            <p class="use-case-description">
+                                Sell Tickets With The RomanCart Shopping Cart. Tickets can be barcoded which you can
+                                scan at the door. Print off attendee lists and create events.
+                            </p>
+                            <a href="#" class="use-case-link">
+                                <span>
+                                    See Ticket on a Website
+                                </span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                        <div class="use-case-item">
+                            <h3 class="use-case-title">Need a New Website?</h3>
+                            <p class="use-case-description">
+                                If you need a new responsive website, take a look at our other system - Sell.
+                            </p>
+                            <a href="#" class="use-case-link">
+                                <span>
+                                    Ecommerce Web Design
+                                </span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                        <div class="use-case-item">
+                            <h3 class="use-case-title">Order Fulfillment</h3>
+                            <p class="use-case-description">
+                                Send your stock to us, we'll pick, pack and deliver it with our order fulfillment
+                                service.
+                            </p>
+                            <a href="#" class="use-case-link">
+                                <span>
+                                    Order Fulfillment
+                                </span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="signup-section" role="banner" aria-label="Sign up for free account">
+            <div class="container">
+                <div class="bg-image">
+                    <img src="./assets/images/footer-sign-up-bg.png" alt="">
+                </div>
+                <div class="signup-content">
+                    <h1 class="signup-title">
+                        <span class="highlight">Sign Up</span> For Free
+                    </h1>
+                    <form class="signup-form" role="form" aria-label="Account registration form">
+                        <input type="text" class="form-input" placeholder="Name" required
+                            aria-label="Enter your full name" autocomplete="name">
+                        <input type="email" class="form-input" placeholder="Email" required
+                            aria-label="Enter your email address" autocomplete="email">
+                        <button type="submit" class="signup-btn" aria-label="Start selling with RomanCart">
+                            Start Selling
+                            <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Component -->
+    <footer class="footer-component" role="contentinfo">
+        <div class="container">
+            <!-- Footer Header -->
+            <div class="footer-header">
+                <div class="row align-items-center gap-4 gap-md-0">
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="footer-brand">
+                            <a href="#" class="brand-logo" aria-label="RomanCart Home">
+                                <img src="assets/images/logo.png" class="brand-logo" alt="RomanCart Logo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-6 col-12">
+                        <p class="footer-description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dignissim,
+                            ante elementum molestie rutrum, neque lacus rutrum lacus, ut efficitur
+                            turpis libero at erat. Proin nec sollicitudin felis, ac volutpat ipsum.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Links -->
+            <div class="footer-links">
+                <div class="row">
+                    <!-- Internet Marketing Tools -->
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="footer-section">
+                            <h5>Internet Marketing Tools</h5>
+                            <ul>
+                                <li><a href="#" aria-label="Email Marketing services">Email Marketing</a></li>
+                                <li><a href="#" aria-label="Cross-Sell and Up-Sell tools">Cross-Sell and Up-Sell</a>
+                                </li>
+                                <li><a href="#" aria-label="Coupons and Promotions management">Coupons and
+                                        Promotions</a></li>
+                                <li><a href="#" aria-label="Auto Responders system">Auto Responders</a></li>
+                                <li><a href="#" aria-label="Follow-Up Emails automation">Follow-Up Emails</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Services -->
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="footer-section">
+                            <h5>Services</h5>
+                            <ul>
+                                <li><a href="#" aria-label="Website Builder tool">Website Builder</a></li>
+                                <li><a href="#" aria-label="Ecommerce Software platform">Ecommerce Software</a></li>
+                                <li><a href="#" aria-label="Internet Shopping Cart solution">Internet Shopping
+                                        Cart</a></li>
+                                <li><a href="#" aria-label="Internet Marketing services">Internet Marketing</a></li>
+                                <li><a href="#" aria-label="PayPal Commerce Platform integration">PayPal Commerce
+                                        Platform</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Partnering with RomanCart -->
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="footer-section">
+                            <h5>Partnering with RomanCart</h5>
+                            <ul>
+                                <li><a href="#" aria-label="Partnership overview">Overview</a></li>
+                                <li><a href="#" aria-label="Affiliate Program details">Affiliate Program</a></li>
+                                <li><a href="#" aria-label="Web Design Partners program">Web Design Partners</a>
+                                </li>
+                                <li><a href="#" aria-label="Internet Marketing partnerships">Internet Marketing</a>
+                                </li>
+                                <li><a href="#" aria-label="Payment Gateway Partners">Payment Gateway Partners</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Other Information -->
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="footer-section">
+                            <h5>Other Information</h5>
+                            <ul>
+                                <li><a href="#" aria-label="RomanCart Blog">RomanCart Blog</a></li>
+                                <li><a href="#" aria-label="User Forums community">User Forums</a></li>
+                                <li><a href="#" aria-label="Contact Us page">Contact Us</a></li>
+                                <li><a href="#" aria-label="Case Studies examples">Case Studies</a></li>
+                                <li><a href="#" aria-label="Site Map navigation">Site Map</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p class="copyright">© All rights reserved, Romancart. 2025</p>
+                <div class="built-in-canada">
+                    <i class="fa-brands fa-canadian-maple-leaf"></i>
+                    <span>Built in canada</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+    </script>
+</body>
+
+</html>
