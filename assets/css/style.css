@@ -797,11 +797,6 @@ p {
     .features-section-2 .section-title {
         font-size: 2.2rem;
     }
-
-    /* .features-section-1 .feature-card,
-    .features-section-2 .feature-card {
-        padding: 35px 25px;
-    } */
 }
 
 @media (max-width: 767.98px) {
@@ -814,12 +809,6 @@ p {
     .features-section-1 .section-subtitle,
     .features-section-2 .section-subtitle {
         font-size: 1rem;
-    }
-
-    .features-section-1 .feature-card,
-    .features-section-2 .feature-card {
-        padding: 30px 20px;
-        margin-bottom: 25px;
     }
 }
 
@@ -1120,7 +1109,6 @@ p {
 
     .benefits-section .benefits-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 30px;
     }
 
     .benefit-item.centered {
@@ -1159,7 +1147,6 @@ p {
 @media (max-width: 575.98px) {
     .benefits-section .benefits-grid {
         grid-template-columns: repeat(1, 1fr);
-        gap: 30px;
     }
 
     .benefits-section {
