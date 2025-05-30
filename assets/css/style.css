@@ -1471,7 +1471,6 @@ p {
     padding: 32px 16px 32px 32px;
     border-radius: 14px;
     background: white;
-    height: 100%;
     box-shadow: 0px 0px 20px 0px #10101014;
     transition: all 0.3s ease;
     display: flex;
