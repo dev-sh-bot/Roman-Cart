@@ -1,6 +1,7 @@
 :root {
     --primary-color: #0C3382;
-    --secondary-color: #EE950A;
+    --secondary-color: #131313;
+    --accent: #EE950A;
 }
 
 @font-face {
@@ -99,15 +100,12 @@ p {
 
 /* Custom CSS for exact design match */
 .top-bar {
-    background-color: #1e3a8a;
-    color: white;
-    padding: 8px 0;
+    background-color: var(--primary-color);
     font-size: 14px;
 }
 
 .top-bar-text {
     margin: 0;
-    font-weight: 400;
     font-size: 14px;
     line-height: 120%;
 }
@@ -138,7 +136,6 @@ p {
 
 /* === Your Original Styles === */
 .main-navbar {
-    background-color: white;
     padding: 12px 0;
 }
 
@@ -147,29 +144,20 @@ p {
     height: 21px;
 }
 
-.navbar-brand {
-    font-size: 24px;
-    font-weight: bold;
-    color: var(--secondary-color) !important;
-    text-decoration: none;
-}
-
 .navbar-nav .nav-link {
     font-size: 14px;
     color: #13131380 !important;
-    font-weight: 400;
     margin: 0 15px;
-    padding: 8px 0 !important;
     transition: color 0.3s ease;
 }
 
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link.active {
-    color: var(--secondary-color) !important;
+    color: var(--accent) !important;
 }
 
 .navbar-nav .nav-link.active {
-    font-weight: 500;
+    font-weight: 500 !important;
 }
 
 .user-icon {
@@ -177,10 +165,7 @@ p {
     height: 49px;
     background-color: #EE950A14;
     border-radius: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--secondary-color);
+    color: var(--accent);
     margin-right: 15px;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -188,10 +173,7 @@ p {
 
 .support-btn {
     background-color: var(--primary-color);
-    color: white;
-    border: none;
     font-size: 16px;
-    font-weight: 600;
     padding: 13px 24px;
     border-radius: 12px;
     text-decoration: none;
@@ -216,12 +198,6 @@ p {
 
 /* Responsive tweaks */
 @media (max-width: 991.98px) {
-
-    /* Center things on tablet */
-    .top-bar {
-        text-align: center;
-    }
-
     .social-icons {
         justify-content: center;
         margin-top: 10px;
@@ -254,13 +230,7 @@ p {
     }
 
     .social-icon {
-        width: 28px;
-        height: 28px;
         font-size: 12px;
-    }
-
-    .navbar-brand {
-        font-size: 20px;
     }
 
     .cart-icon {
@@ -275,15 +245,12 @@ p {
 
 /* Custom CSS for exact design match */
 .hero-banner {
-    position: relative;
     overflow: hidden;
     padding: 60px 0px;
     background-color: #F6F6F6;
 }
 
 .hero-banner .banner-1 {
-    position: absolute;
-    top: 0;
     left: 65%;
     /* object-fit: cover; */
     width: 35%;
@@ -291,94 +258,58 @@ p {
     z-index: 1;
 }
 
-.hero-banner .banner-1 img {
-    width: 100%;
-    height: 100%;
-}
-
 .hero-banner .banner-2 {
-    position: absolute;
-    top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
     z-index: 1;
-}
-
-.hero-banner .banner-2 img {
-    width: 100%;
-    height: 100%;
 }
 
 .hero-banner .hero-content {
     padding: 60px 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
     gap: 24px;
 }
 
 .hero-banner .hero-title {
-    font-weight: 400;
     font-size: 52px;
     line-height: 100%;
 }
 
 .hero-banner .hero-title .highlight {
-    color: var(--secondary-color);
-    font-weight: 700;
+    color: var(--accent);
 }
 
 .hero-banner .hero-description {
-    font-weight: 400;
     font-size: 16px;
     line-height: 140%;
 }
 
 .hero-banner .demo-btn {
     font-family: "Switzer Variable";
-    font-weight: 600;
     font-size: 16px;
     line-height: 120%;
-    letter-spacing: 0%;
     background-color: var(--primary-color);
-    color: white;
-    border: none;
     padding: 15px 30px;
     border-radius: 12px;
     text-decoration: none;
-    display: flex;
-    align-items: center;
     gap: 8px;
     transition: all 0.3s ease;
 }
 
 .hero-banner .demo-btn:hover {
     background-color: var(--primary-color);
-    color: white;
     transform: translateY(-2px);
     box-shadow: 0 8px 25px rgba(30, 58, 138, 0.3);
 }
 
 .hero-banner .demo-btn i {
-    background-color: var(--secondary-color);
+    background-color: var(--accent);
     width: 24px;
     height: 24px;
     border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     font-size: 12px;
 }
 
 .hero-banner .signup-form {
-    background: white;
     max-width: 463px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
     gap: 10px;
     padding: 32px 20px;
     border-radius: 12px;
@@ -389,34 +320,18 @@ p {
 .hero-banner .signup-title {
     font-size: 28px;
     line-height: 100%;
-    text-align: center;
-    color: #131313;
-    font-weight: 400;
-}
-
-.hero-banner .signup-title .highlight {
-    font-weight: 700;
     color: var(--secondary-color);
 }
 
-.hero-banner .form-group>div {
-    display: flex;
-    align-items: stretch;
-    gap: 12px;
-    flex-direction: column;
-    width: 100%;
+.hero-banner .signup-title .highlight {
+    color: var(--accent);
 }
 
 .hero-banner .form-control {
-    gap: 10px;
     border-radius: 12px;
-    padding: 16px;
     background-color: #D9D9D947;
-    width: 100%;
     font-size: 1rem;
-    font-weight: 400;
     font-size: 14px;
-    border: 0px;
     line-height: 120%;
     color: #13131380;
 }
@@ -433,21 +348,14 @@ p {
 }
 
 .hero-banner .start-selling-btn {
-    border: 0px;
     background-color: var(--primary-color);
-    color: white;
     gap: 8px;
     padding: 16px 24px;
     width: 423px;
     border-radius: 12px;
-    font-family: Switzer Variable;
-    font-weight: 400;
+    font-family: "Switzer Variable", sans-serif;
     font-size: 16px;
     line-height: 120%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     transition: all 0.3s ease;
 }
 
@@ -458,7 +366,7 @@ p {
 }
 
 .hero-banner .start-selling-btn i {
-    background-color: var(--secondary-color);
+    background-color: var(--accent);
     width: 24px;
     height: 24px;
     border-radius: 50%;
@@ -472,7 +380,7 @@ p {
 @media (max-width: 1199.98px) {
     .hero-banner .banner-1 {
         left: 50%;
-        width: 50%;    
+        width: 50% !important;
     }
 
     .hero-banner .hero-title {
@@ -486,8 +394,8 @@ p {
 }
 
 @media (max-width: 991.98px) {
-    .hero-banner .banner-1{
-        width: 100%;
+    .hero-banner .banner-1 {
+        width: 100% !important;
         left: 0;
         opacity: 0.3;
     }
@@ -508,12 +416,7 @@ p {
     }
 
     .hero-banner .demo-btn {
-        text-align: center;
         margin: auto;
-    }
-
-    .hero-banner .start-selling-btn {
-        width: 100% !important;
     }
 }
 
@@ -554,59 +457,39 @@ p {
 
 /* Features Section 1 */
 .features-section-1 {
-    background-color: #fff;
     padding: 120px 0;
-    position: relative;
-    overflow: hidden;
 }
 
 .features-section-1 .section-header {
-    text-align: center;
-    margin-bottom: 60px;
-    position: relative;
+    margin-bottom: 40px;
     z-index: 2;
 }
 
 .features-section-1 .section-title {
     font-size: 40px;
     line-height: 108%;
-    text-align: center;
-    font-weight: 400;
-    color: #131313;
+    color: var(--secondary-color);
     max-width: 754px;
-    margin: 0 auto 20px;
+    margin-bottom: 20px;
 }
 
 .features-section-1 .section-title .highlight {
-    font-weight: 700;
-    color: var(--secondary-color);
+    color: var(--accent);
 }
 
 .features-section-1 .section-subtitle {
     max-width: 754px;
-    margin: 0 auto 40px;
-    font-weight: 400;
     font-size: 16px;
     line-height: 140%;
-    text-align: center;
     color: #13131380;
 }
 
 .features-section-1 .feature-card {
     padding: 32px 20px;
     border-radius: 14px;
-    background: white;
-    height: 100%;
     box-shadow: 0px 0px 20px 0px #10101014;
     transition: all 0.3s ease;
-    text-align: center;
-    border: none;
     margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-
 }
 
 .features-section-1 .feature-card:hover {
@@ -615,64 +498,26 @@ p {
 }
 
 .features-section-1 .feature-title {
-    font-weight: 400;
     font-size: 24px;
     line-height: 100%;
-    color: #131313;
+    color: var(--secondary-color);
     margin-bottom: 15px;
 }
 
 .features-section-1 .feature-description {
-    font-weight: 400;
     font-size: 16px;
     line-height: 140%;
     text-align: center;
     color: #13131380;
 }
 
-.features-section-1 .feature-btn {
-    background-color: var(--primary-color);
-    color: white;
-    border: none;
-    padding: 15px 30px;
-    border-radius: 8px;
-    font-weight: 600;
-    font-size: 1rem;
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    transition: all 0.3s ease;
-    width: auto;
-}
-
-.features-section-1 .feature-btn:hover {
-    background-color: var(--primary-color);
-    color: white;
-    transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(30, 58, 138, 0.3);
-}
-
-.features-section-1 .feature-btn i {
-    background-color: var(--secondary-color);
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 12px;
-}
-
 /* Features Section 2 */
 .features-section-2 {
     background-color: #F6F6F6;
     padding: 80px 0;
-    position: relative;
 }
 
 .features-section-2 .section-header {
-    text-align: center;
     margin-bottom: 60px;
 }
 
@@ -680,40 +525,26 @@ p {
     max-width: 754px;
     font-size: 40px;
     line-height: 108%;
-    text-align: center;
-    font-weight: 400;
-    color: #131313;
-    margin: 0 auto 20px;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
 }
 
 .features-section-2 .section-title .highlight {
-    font-weight: 700;
-    color: var(--secondary-color);
+    color: var(--accent);
 }
 
 .features-section-2 .section-subtitle {
     max-width: 754px;
-    font-weight: 400;
     font-size: 16px;
     line-height: 140%;
-    text-align: center;
     color: #13131380;
-    margin: 0 auto 40px;
 }
 
 .features-section-2 .feature-card {
     padding: 32px 20px;
     border-radius: 14px;
-    background: white;
-    height: 100%;
     box-shadow: 0px 0px 20px 0px #10101014;
     transition: all 0.3s ease;
-    text-align: center;
-    border: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
     gap: 20px;
 
 }
@@ -727,34 +558,26 @@ p {
     font-weight: 500;
     font-size: 24px;
     line-height: 100%;
-    color: #131313;
+    color: var(--secondary-color);
     margin-bottom: 15px;
 }
 
 .features-section-2 .feature-description {
-    font-weight: 400;
     font-size: 16px;
     line-height: 140%;
-    text-align: center;
     color: #13131380;
     margin-bottom: 25px;
 }
 
 .features-section-2 .feature-btn {
     background-color: var(--primary-color);
-    color: white;
-    border: none;
     width: 270px;
     padding: 16px 24px;
     border-radius: 12px;
-    font-family: Switzer Variable;
-    font-weight: 400;
+    font-family: "Switzer Variable", sans-serif;
     font-size: 16px;
     line-height: 120%;
     text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     gap: 10px;
     transition: all 0.3s ease;
 }
@@ -767,13 +590,10 @@ p {
 }
 
 .features-section-2 .feature-btn i {
-    background-color: var(--secondary-color);
+    background-color: var(--accent);
     width: 24px;
     height: 24px;
     border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     font-size: 12px;
 }
 
@@ -824,7 +644,6 @@ p {
         font-size: 1.7rem;
     }
 
-    .features-section-1 .feature-btn,
     .features-section-2 .feature-btn {
         padding: 12px 25px;
         font-size: 0.95rem;
@@ -841,27 +660,19 @@ p {
 .features-section-1 .feature-demo {
     margin-bottom: 30px;
     min-height: 120px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
     gap: 15px;
 }
 
 /* Shopping Cart Demo Styles */
 .features-section-1 .cart-buttons {
-    display: flex;
     gap: 15px;
-    align-items: center;
 }
 
 .features-section-1 .buy-now-btn {
     padding: 10px 20px;
     border-radius: 6px;
-    border: none;
     font-weight: 500;
     text-decoration: none;
-    display: inline-block;
     transition: all 0.3s ease;
 }
 
@@ -873,7 +684,7 @@ p {
     font-weight: 400;
     font-size: 16px;
     line-height: 120%;
-    color: #131313;
+    color: var(--secondary-color);
 }
 
 .features-section-1 .buy-now-gray:hover {
@@ -893,16 +704,7 @@ p {
 
 /* Button Widget Demo Styles */
 .features-section-1 .widget-demo {
-    display: flex;
     gap: 35px;
-    align-items: center;
-}
-
-.features-section-1 .dropdown-row {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    align-items: stretch;
 }
 
 .features-section-1 .demo-select {
@@ -913,20 +715,12 @@ p {
     font-weight: 400;
     font-size: 14px;
     line-height: 120%;
-    color: #131313;
+    color: var(--secondary-color);
 }
 
 .features-section-1 .demo-select:focus {
-    border-color: var(--secondary-color);
+    border-color: var(--accent);
     outline: none;
-}
-
-/* Storefront Demo Styles */
-.features-section-1 .storefront-demo {
-    display: flex;
-    gap: 15px;
-    justify-content: center;
-    align-items: center;
 }
 
 .features-section-1 .laptop-img {
@@ -960,13 +754,7 @@ p {
 /* Responsive adjustments for feature demos */
 @media (max-width: 991.98px) {
     .features-section-1 .cart-buttons {
-        flex-direction: column;
         gap: 10px;
-    }
-
-    .features-section-1 .dropdown-row {
-        flex-wrap: wrap;
-        justify-content: center;
     }
 }
 
@@ -974,23 +762,9 @@ p {
     .features-section-1 .feature-demo {
         min-height: 100px;
     }
-
-    .features-section-1 .storefront-demo {
-        gap: 10px;
-    }
-
-    .features-section-1 .laptop-img {
-        width: 50px;
-        height: 50px;
-    }
 }
 
 @media (max-width: 575.98px) {
-    .features-section-1 .dropdown-row {
-        flex-direction: column;
-        gap: 8px;
-    }
-
     .features-section-1 .demo-select {
         min-width: 120px;
     }
@@ -998,37 +772,31 @@ p {
 
 /* Custom CSS for exact design match */
 .benefits-section {
-    background-color: #ffffff;
     padding: 80px 0;
 }
 
 .benefits-section .section-header {
-    text-align: center;
     margin-bottom: 60px;
 }
 
 .benefits-section .section-title {
     max-width: 754px;
-    margin: 0 auto 25px;
-    font-weight: 700;
+    margin-bottom: 25px;
     font-size: 40px;
     line-height: 108%;
-    text-align: center;
-    color: #131313;
+    color: var(--secondary-color);
 }
 
 .benefits-section .section-title .highlight {
-    color: var(--secondary-color);
+    color: var(--accent);
 }
 
 .benefits-section .section-subtitle {
     max-width: 754px;
-    font-weight: 400;
     font-size: 16px;
     line-height: 140%;
-    text-align: center;
     color: #13131380;
-    margin: 0 auto 40px;
+    margin-bottom: 25px;
 }
 
 .benefits-section .benefit-item {
@@ -1044,17 +812,11 @@ p {
 .benefits-section .benefit-number {
     width: 72px;
     height: 72px;
-    background-color: var(--secondary-color);
-    color: white;
+    background-color: var(--accent);
     border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     margin-bottom: 20px;
-    font-weight: 700;
     font-size: 24px;
     line-height: 120%;
-    text-align: center;
 }
 
 .benefits-section .benefit-title {
@@ -1175,43 +937,34 @@ p {
 }
 
 .platform-section .section-header {
-    text-align: center;
     margin-bottom: 60px;
 }
 
 .platform-section .section-title {
     font-size: 40px;
     line-height: 108%;
-    text-align: center;
-    font-weight: 400;
-    color: #131313;
+    color: var(--secondary-color);
     max-width: 754px;
-    margin: 0 auto 20px;
+    margin-bottom: 20px;
 }
 
 .platform-section .section-title .highlight {
-    color: var(--secondary-color);
+    color: var(--accent);
 }
 
 .platform-section .section-subtitle {
     max-width: 754px;
-    font-weight: 400;
     font-size: 16px;
     line-height: 140%;
-    text-align: center;
     color: #13131380;
-    margin: 0 auto 40px;
+    margin-bottom: 20px;
 }
 
 .platform-section .platform-card {
-    background: white;
     border-radius: 16px;
     overflow: hidden;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
 }
 
 .platform-section .platform-card:hover {
@@ -1266,17 +1019,10 @@ p {
 
 .platform-section .platform-content {
     padding: 30px 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
     gap: 20px;
-    flex-grow: 1;
 }
 
 .platform-section .platform-info {
-    display: flex;
-    flex-direction: column;
     gap: 15px;
 }
 
@@ -1289,23 +1035,17 @@ p {
 
 .platform-section .platform-description {
     color: #13131380;
-    font-weight: 400;
     font-size: 16px;
     line-height: 140%;
 }
 
 .platform-section .know-more-btn {
     background-color: var(--primary-color);
-    color: white;
-    border: none;
     padding: 16px 24px;
     border-radius: 12px;
     text-decoration: none;
-    display: flex;
-    align-items: center;
     gap: 8px;
-    font-family: Switzer Variable;
-    font-weight: 400;
+    font-family: "Switzer Variable", sans-serif;
     font-size: 16px;
     line-height: 120%;
     transition: all 0.3s ease;
@@ -1319,13 +1059,10 @@ p {
 }
 
 .platform-section .know-more-btn i {
-    background-color: var(--secondary-color);
+    background-color: var(--accent);
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     font-size: 10px;
 }
 
@@ -1433,48 +1170,39 @@ p {
 
 /* Custom CSS for exact design match */
 .business-section {
-    background-color: #fff;
     padding: 80px 0;
 }
 
 .business-section .section-header {
-    text-align: center;
     margin-bottom: 60px;
 }
 
 .business-section .section-title {
     font-size: 40px;
     line-height: 108%;
-    text-align: center;
-    font-weight: 400;
-    color: #131313;
+    color: var(--secondary-color);
     max-width: 754px;
-    margin: 0 auto 20px;
+    margin-bottom: 20px;
 }
 
 .business-section .section-title .highlight {
-    color: var(--secondary-color);
+    color: var(--accent);
 }
 
 .business-section .section-subtitle {
     max-width: 754px;
-    font-weight: 400;
     font-size: 16px;
     line-height: 140%;
-    text-align: center;
     color: #13131380;
-    margin: 0 auto 40px;
+    margin-bottom: 40px;
 }
 
 .business-section .use-case-item {
     gap: 20px;
     padding: 32px 16px 32px 32px;
     border-radius: 14px;
-    background: white;
     box-shadow: 0px 0px 20px 0px #10101014;
     transition: all 0.3s ease;
-    display: flex;
-    flex-direction: column;
 }
 
 .business-section .use-case-item:hover {
@@ -1482,33 +1210,21 @@ p {
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
 }
 
-.business-section .use-case-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .business-section .ebay-logo {
     width: 60px;
     height: 24px;
-    display: block;
-    margin: auto;
 }
 
 .business-section .use-case-title {
     font-weight: 500;
     font-size: 24px;
     line-height: 108%;
-    text-align: center;
-    color: #131313;
+    color: var(--secondary-color);
 }
 
 .business-section .use-case-description {
-    font-weight: 400;
     font-size: 16px;
     line-height: 140%;
-    text-align: center;
-    flex-grow: 1;
     color: #13131380;
 }
 
@@ -1518,11 +1234,6 @@ p {
     font-weight: 500;
     font-size: 14px;
     line-height: 108%;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
     transition: all 0.3s ease;
 }
 
@@ -1679,22 +1390,18 @@ p {
     display: flex;
 }
 
-/* Custom CSS for exact design match */
-.signup-section {
+/* Demo Section  */
+.demo-section {
+    background-color: #f8f9fa;
+    padding: 80px 0;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
     position: relative;
-    overflow: hidden;
-    margin-bottom: -150px;
-}
-
-.signup-section .container {
-    position: relative;
-    border-radius: 12px;
-    background: #0C3382;
-    padding: 60px 0;
     overflow: hidden;
 }
 
-.signup-section .container .bg-image {
+.demo-section .banner-2 {
     position: absolute;
     top: 0;
     left: 0;
@@ -1704,51 +1411,168 @@ p {
     z-index: 1;
 }
 
+.demo-section .banner-2 img {
+    width: 120%;
+    height: 120%;
+}
+
+.demo-section .demo-title {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #2c2c2c;
+    margin-bottom: 24px;
+    line-height: 1.1;
+}
+
+.demo-section .demo-description {
+    font-family: 'Switzer', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-size: 1.125rem;
+    color: #6c757d;
+    margin-bottom: 40px;
+    line-height: 1.6;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.demo-section .demo-button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 16px 32px;
+    font-size: 1.125rem;
+    font-weight: 600;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(12, 51, 130, 0.2);
+}
+
+.demo-section .demo-button:hover {
+    background-color: #0a2d6e;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(12, 51, 130, 0.3);
+    color: white;
+}
+
+.demo-section .demo-button:focus {
+    outline: 3px solid rgba(12, 51, 130, 0.3);
+    outline-offset: 2px;
+}
+
+.demo-section .demo-icon {
+    width: 20px;
+    height: 20px;
+    background-color: var(--accent);
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991.98px) {
+    .demo-section {
+        padding: 60px 0;
+    }
+
+    .demo-section .demo-title {
+        font-size: 3rem;
+    }
+
+    .demo-section .demo-description {
+        font-size: 1rem;
+        margin-bottom: 32px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .demo-section {
+        padding: 40px 0;
+    }
+
+    .demo-section .demo-title {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+
+    .demo-section .demo-description {
+        font-size: 0.95rem;
+        margin-bottom: 28px;
+        padding: 0 20px;
+    }
+
+    .demo-section .demo-button {
+        padding: 14px 28px;
+        font-size: 1rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Custom CSS for exact design match */
+.signup-section {
+    margin-bottom: -150px;
+}
+
+.signup-section .container {
+    border-radius: 12px;
+    background: #0C3382;
+    padding: 60px 0;
+}
+
+.signup-section .container .bg-image {
+    object-fit: cover;
+    z-index: 1;
+}
+
 .signup-section .container .bg-image img {
-    width: 100%;
-    height: 100%;
     object-fit: cover;
 }
 
 .signup-section .signup-content {
     padding: 0 20px;
-    text-align: center;
-    position: relative;
     z-index: 2;
 }
 
 .signup-section .signup-title {
-    color: #fff;
-    font-weight: 700;
     font-size: 40px;
     line-height: 108%;
-    text-align: center;
     margin-bottom: 24px;
 }
 
 .signup-section .signup-title .highlight {
-    color: var(--secondary-color);
+    color: var(--accent);
 }
 
 .signup-section .signup-form {
     max-width: 1000px;
-    display: flex;
     gap: 15px;
     align-items: center;
-    justify-content: center;
     flex-wrap: wrap;
     margin: 0 auto;
 }
 
 .signup-section .form-input {
-    flex: 1;
-    padding: 16px;
-    border: none;
     border-radius: 12px;
-    font-weight: 400;
     font-size: 14px;
     line-height: 120%;
-    background-color: white;
     color: #13131380;
     transition: all 0.3s ease;
 }
@@ -1765,18 +1589,12 @@ p {
 }
 
 .signup-section .signup-btn {
-    background-color: var(--secondary-color);
-    color: white;
-    border: none;
-    gap: 8px;
+    background-color: var(--accent);
     padding: 16px 24px;
     border-radius: 12px;
-    font-family: Switzer Variable;
-    font-weight: 400;
+    font-family: "Switzer Variable", sans-serif;
     font-size: 16px;
     line-height: 120%;
-    display: flex;
-    align-items: center;
     transition: all 0.3s ease;
     white-space: nowrap;
     cursor: pointer;
@@ -1795,10 +1613,6 @@ p {
 .signup-section .signup-btn i {
     width: 20px;
     height: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
     border-radius: 50px;
     background-color: var(--primary-color);
     font-size: 10px;
@@ -1807,11 +1621,6 @@ p {
 
 .signup-section .signup-btn:hover i {
     transform: translateX(3px);
-}
-
-.signup-section .signup-content {
-    position: relative;
-    z-index: 2;
 }
 
 /* Responsive adjustments */
@@ -1939,7 +1748,7 @@ p {
     }
 
     .signup-section .signup-btn {
-        border: 2px solid var(--secondary-color);
+        border: 2px solid var(--accent);
     }
 }
 
@@ -1962,8 +1771,7 @@ p {
 
 /* Custom CSS for exact design match */
 .footer-component {
-    background-color: #131313;
-    color: white;
+    background-color: var(--secondary-color);
     padding: 220px 0 0;
 }
 
@@ -1974,30 +1782,13 @@ p {
     border-bottom: 1px solid #fff;
 }
 
-.footer-component .footer-brand {
-    display: flex;
-    align-items: center;
-}
-
 .footer-component .brand-logo {
     width: 290px;
     height: 40px;
     filter: brightness(0) saturate(100%) invert(100%);
 }
 
-.footer-component .brand-logo:hover {
-    color: var(--secondary-color);
-    text-decoration: none;
-}
-
-.footer-component .cart-icon {
-    color: var(--secondary-color);
-    font-size: 1.5rem;
-}
-
 .footer-component .footer-description {
-    color: #fff;
-    font-weight: 400;
     font-size: 16px;
     line-height: 140%;
     max-width: 600px;
@@ -2017,17 +1808,11 @@ p {
 }
 
 .footer-component .footer-section ul {
-    list-style: none;
     padding: 0;
     margin: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
 }
 
 .footer-component .footer-section ul li a {
-    color: #fff;
-    font-weight: 400;
     font-size: 16px;
     line-height: 140%;
     text-decoration: none;
@@ -2035,7 +1820,7 @@ p {
 }
 
 .footer-component .footer-section ul li a:hover {
-    color: var(--secondary-color);
+    color: var(--accent);
     text-decoration: none;
 }
 
@@ -2043,29 +1828,17 @@ p {
 .footer-component .footer-bottom {
     border-top: 1px solid #fff;
     padding: 25px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 15px;
 }
 
 .footer-component .copyright {
-    color: #fff;
-    font-weight: 400;
     font-size: 16px;
     line-height: 120%;
     margin: 0;
 }
 
 .footer-component .built-in-canada {
-    color: #fff;
-    font-weight: 400;
     font-size: 16px;
     line-height: 120%;
-    display: flex;
-    align-items: center;
-    gap: 10px;
 }
 
 .footer-component .built-in-canada i {
@@ -2193,7 +1966,7 @@ p {
 /* Focus states for accessibility */
 .footer-component .brand-logo:focus,
 .footer-component .footer-section ul li a:focus {
-    outline: 2px solid var(--secondary-color);
+    outline: 2px solid var(--accent);
     outline-offset: 2px;
     border-radius: 4px;
 }
@@ -2215,7 +1988,7 @@ p {
     }
 
     .footer-section ul li a:hover {
-        background-color: var(--secondary-color);
+        background-color: var(--accent);
         color: #000000;
     }
 }
@@ -2268,12 +2041,15 @@ p {
     .footer-component .footer-description {
         font-size: 14px !important;
     }
+
     .footer-component .footer-section h5 {
         font-size: 20px !important;
     }
+
     .footer-component .footer-section ul li a {
         font-size: 14px !important;
     }
+
     .footer-component .copyright,
     .footer-component .built-in-canada {
         font-size: 14px !important;
