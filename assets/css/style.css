@@ -700,6 +700,15 @@ p {
 }
 
 .features-section-1 .demo-select {
+    /* Remove default Safari/iOS appearance */
+    -webkit-appearance: none;
+    /* For Safari/iOS */
+    -moz-appearance: none;
+    /* For Firefox */
+    appearance: none;
+    /* Standard property */
+
+    /* Apply your custom styles */
     padding: 8px 15px;
     border: 2px solid #e9ecef;
     border-radius: 8px;
@@ -708,16 +717,38 @@ p {
     font-size: 14px;
     line-height: 120%;
     color: var(--secondary-color);
+    /* Ensure this CSS variable is defined */
+
+    /* Add a custom arrow (optional, but good for consistent look) */
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23888"><path d="M7 10l5 5 5-5z"/></svg>');
+    /* Grey arrow */
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    /* Adjust position as needed */
+    background-size: 20px;
+    /* Adjust size as needed */
+
+    /* Ensure consistent height and vertical alignment if needed */
+    height: 38px;
+    /* Example: Adjust based on your padding and font-size */
+    display: inline-block;
+    /* Helps with vertical alignment if it's an issue */
+    vertical-align: middle;
+    /* Helps with vertical alignment */
+
+    /* Add a small right padding to prevent text from overlapping the arrow */
+    padding-right: 30px;
+    /* Adjust based on arrow size and position */
 }
 
 .features-section-1 .demo-select:focus {
     border-color: var(--accent);
+    /* Ensure this CSS variable is defined */
     outline: none;
 }
 
 .features-section-1 .laptop-img {
-    width: 77px;
-    height: 77px;
+    width: 180px;
     border-radius: 4px;
 }
 
@@ -759,6 +790,10 @@ p {
 @media (max-width: 575.98px) {
     .features-section-1 .demo-select {
         min-width: 120px;
+    }
+
+    .features-section-1 .widget-demo {
+        gap: 20px;
     }
 }
 
