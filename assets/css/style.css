@@ -383,10 +383,6 @@ p {
         width: 50% !important;
     }
 
-    .hero-banner .hero-title {
-        font-size: 3rem;
-    }
-
     .hero-banner .signup-form {
         padding: 30px;
         margin: auto;
@@ -405,7 +401,7 @@ p {
     }
 
     .hero-banner .hero-title {
-        font-size: 2.5rem;
+        font-size: 3rem;
         text-align: center;
         width: 100%;
     }
@@ -423,10 +419,6 @@ p {
 @media (max-width: 767.98px) {
     .hero-banner .hero-title {
         font-size: 2rem;
-    }
-
-    .hero-banner .hero-description {
-        font-size: 1rem;
     }
 
     .hero-banner .signup-form {
@@ -809,7 +801,7 @@ p {
     height: 100%;
 }
 
-.benefits-section .benefit-number {
+.benefits-section .benefit-icon {
     width: 72px;
     height: 72px;
     background-color: var(--accent);
@@ -833,11 +825,41 @@ p {
     font-size: 16px;
     line-height: 140%;
     color: #13131380;
+    margin-bottom: 20px;
 }
+
+.benefits-section .benefit-btn {
+    background-color: var(--primary-color);
+    width: fit-content;
+    padding: 16px 24px;
+    border-radius: 12px;
+    font-family: "Switzer Variable", sans-serif;
+    font-size: 16px;
+    line-height: 120%;
+    text-decoration: none;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+
+.benefits-section .benefit-btn:hover {
+    background-color: var(--primary-color);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(30, 58, 138, 0.3);
+}
+
+.benefits-section .benefit-btn i {
+    background-color: var(--accent);
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    font-size: 12px;
+}
+
 
 /* Responsive adjustments */
 @media (max-width: 1199.98px) {
-    .section-title {
+    .benefits-section .section-title {
         font-size: 2.5rem;
     }
 }
@@ -847,17 +869,17 @@ p {
         padding: 60px 0;
     }
 
-    .section-title {
+    .benefits-section .section-title {
         font-size: 2.2rem;
     }
 }
 
 @media (max-width: 767.98px) {
-    .section-title {
+    .benefits-section .section-title {
         font-size: 1.9rem;
     }
 
-    .section-subtitle {
+    .benefits-section .section-subtitle {
         font-size: 1rem;
     }
 }
@@ -867,21 +889,26 @@ p {
         padding: 50px 0;
     }
 
-    .section-title {
+    .benefits-section .section-title {
         font-size: 1.7rem;
     }
 
-    .benefit-number {
+    .benefits-section .benefit-icon {
         width: 50px;
         height: 50px;
         font-size: 1.1rem;
     }
 
-    .benefit-title {
+    .benefits-section .benefit-title {
         font-size: 1.2rem;
     }
 
-    .benefit-description {
+    .benefits-section .benefit-description {
+        font-size: 0.95rem;
+    }
+
+    .benefits-section .benefit-btn {
+        padding: 12px 25px;
         font-size: 0.95rem;
     }
 }
@@ -921,11 +948,11 @@ p {
     animation-delay: 0.7s;
 }
 
-.benefits-section .benefit-number {
+.benefits-section .benefit-icon {
     transition: all 0.3s ease;
 }
 
-.benefits-section .benefit-item:hover .benefit-number {
+.benefits-section .benefit-item:hover .benefit-icon {
     transform: scale(1.1);
     box-shadow: 0 8px 25px rgba(245, 158, 11, 0.3);
 }
@@ -1075,19 +1102,19 @@ p {
 
 /* Responsive adjustments */
 @media (max-width: 1199.98px) {
-    .section-title {
+    .platform-section .section-title {
         font-size: 2.5rem;
     }
 
-    .platform-header {
+    .platform-section .platform-header {
         height: 180px;
     }
 
-    .platform-logo {
+    .platform-section .platform-logo {
         font-size: 3.5rem;
     }
 
-    .wordpress-logo {
+    .platform-section .wordpress-logo {
         width: 100px;
     }
 }
@@ -1097,41 +1124,41 @@ p {
         padding: 60px 0;
     }
 
-    .section-title {
+    .platform-section .section-title {
         font-size: 2.2rem;
     }
 
-    .platform-header {
+    .platform-section .platform-header {
         height: 160px;
     }
 
-    .platform-logo {
+    .platform-section .platform-logo {
         font-size: 3rem;
     }
 
-    .facebook-logo {
+    .platform-section .facebook-logo {
         font-size: 2.5rem;
     }
 
-    .twitter-logo {
+    .platform-section .twitter-logo {
         font-size: 3.5rem;
     }
 }
 
 @media (max-width: 767.98px) {
-    .section-title {
+    .platform-section .section-title {
         font-size: 1.9rem;
     }
 
-    .section-subtitle {
+    .platform-section .section-subtitle {
         font-size: 1rem;
     }
 
-    .platform-content {
+    .platform-section .platform-content {
         padding: 25px;
     }
 
-    .platform-description {
+    .platform-section .platform-description {
         min-height: auto;
         margin-bottom: 20px;
     }
@@ -1142,27 +1169,27 @@ p {
         padding: 50px 0;
     }
 
-    .section-title {
+    .platform-section .section-title {
         font-size: 1.7rem;
     }
 
-    .platform-header {
+    .platform-section .platform-header {
         height: 140px;
     }
 
-    .platform-logo {
+    .platform-section .platform-logo {
         font-size: 2.5rem;
     }
 
-    .wordpress-logo {
+    .platform-section .wordpress-logo {
         width: 80px;
     }
 
-    .facebook-logo {
+    .platform-section .facebook-logo {
         font-size: 2rem;
     }
 
-    .twitter-logo {
+    .platform-section .twitter-logo {
         font-size: 3rem;
     }
 }
@@ -1258,11 +1285,11 @@ p {
 
 /* Responsive adjustments */
 @media (max-width: 1199.98px) {
-    .section-title {
+    .business-section .section-title {
         font-size: 2.5rem;
     }
 
-    .use-case-item {
+    .business-section .use-case-item {
         padding: 25px 20px;
     }
 }
@@ -1272,34 +1299,34 @@ p {
         padding: 60px 0;
     }
 
-    .section-title {
+    .business-section .section-title {
         font-size: 2.2rem;
     }
 
-    .use-case-item {
+    .business-section .use-case-item {
         margin-bottom: 25px;
     }
 }
 
 @media (max-width: 767.98px) {
-    .section-title {
+    .business-section .section-title {
         font-size: 1.9rem;
     }
 
-    .section-subtitle {
+    .business-section .section-subtitle {
         font-size: 1rem;
     }
 
-    .use-case-item {
+    .business-section .use-case-item {
         padding: 20px 18px;
         margin-bottom: 20px;
     }
 
-    .use-case-title {
+    .business-section .use-case-title {
         font-size: 1.2rem;
     }
 
-    .use-case-description {
+    .business-section .use-case-description {
         font-size: 0.9rem;
     }
 }
@@ -1309,11 +1336,11 @@ p {
         padding: 50px 0;
     }
 
-    .section-title {
+    .business-section .section-title {
         font-size: 1.7rem;
     }
 
-    .use-case-item {
+    .business-section .use-case-item {
         padding: 18px 15px;
     }
 }
@@ -1391,7 +1418,7 @@ p {
 }
 
 /* Demo Section  */
-.demo-section {
+.banner-2-section {
     background-color: #f8f9fa;
     padding: 80px 0;
     min-height: 400px;
@@ -1401,32 +1428,29 @@ p {
     overflow: hidden;
 }
 
-.demo-section .banner-2 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+.banner-2-section .banner-2 {
     object-fit: cover;
     z-index: 1;
 }
 
-.demo-section .banner-2 img {
+.banner-2-section .banner-2 img {
     width: 120%;
     height: 120%;
 }
 
-.demo-section .demo-title {
-    font-size: 4rem;
-    font-weight: 700;
+.banner-2-section .demo-title {
+    font-size: 52px;
     color: #2c2c2c;
     margin-bottom: 24px;
     line-height: 1.1;
 }
 
-.demo-section .demo-description {
-    font-family: 'Switzer', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    font-size: 1.125rem;
+.banner-2-section .demo-title .highlight {
+    color: var(--accent);
+}
+
+.banner-2-section .demo-description {
+    font-size: 16px;
     color: #6c757d;
     margin-bottom: 40px;
     line-height: 1.6;
@@ -1435,96 +1459,90 @@ p {
     margin-right: auto;
 }
 
-.demo-section .demo-button {
+.banner-2-section .demo-btn {
+    font-family: "Switzer Variable";
+    font-size: 16px;
+    line-height: 120%;
     background-color: var(--primary-color);
-    color: white;
-    border: none;
-    padding: 16px 32px;
-    font-size: 1.125rem;
-    font-weight: 600;
-    border-radius: 8px;
+    padding: 15px 30px;
+    border-radius: 12px;
     text-decoration: none;
-    display: inline-flex;
-    align-items: center;
+    width: fit-content;
     gap: 8px;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 12px rgba(12, 51, 130, 0.2);
 }
 
-.demo-section .demo-button:hover {
-    background-color: #0a2d6e;
+.banner-2-section .demo-btn:hover {
+    background-color: var(--primary-color);
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(12, 51, 130, 0.3);
-    color: white;
+    box-shadow: 0 8px 25px rgba(30, 58, 138, 0.3);
 }
 
-.demo-section .demo-button:focus {
-    outline: 3px solid rgba(12, 51, 130, 0.3);
-    outline-offset: 2px;
-}
-
-.demo-section .demo-icon {
-    width: 20px;
-    height: 20px;
+.banner-2-section .demo-btn i {
     background-color: var(--accent);
+    width: 24px;
+    height: 24px;
     border-radius: 50%;
-    display: inline-block;
-    position: relative;
+    font-size: 12px;
 }
+
 
 /* Responsive adjustments */
 @media (max-width: 991.98px) {
-    .demo-section {
+    .banner-2-section {
         padding: 60px 0;
     }
 
-    .demo-section .demo-title {
+    .banner-2-section .demo-title {
         font-size: 3rem;
     }
 
-    .demo-section .demo-description {
-        font-size: 1rem;
+    .banner-2-section .demo-description {
         margin-bottom: 32px;
     }
 }
 
-@media (max-width: 575.98px) {
-    .demo-section {
-        padding: 40px 0;
+@media (max-width: 767.98px) {
+    .banner-2-section {
+        padding: 50px 0;
     }
 
-    .demo-section .demo-title {
-        font-size: 2.5rem;
+    .banner-2-section .demo-title {
+        font-size: 2rem;
         margin-bottom: 20px;
     }
 
-    .demo-section .demo-description {
-        font-size: 0.95rem;
-        margin-bottom: 28px;
+    .banner-2-section .demo-description {
+        margin-bottom: 30px;
         padding: 0 20px;
     }
 
-    .demo-section .demo-button {
+    .banner-2-section .demo-btn {
         padding: 14px 28px;
         font-size: 1rem;
     }
 }
 
+@media (max-width: 575.98px) {
+    .banner-2-section {
+        padding: 40px 0;
+    }
 
+    .banner-2-section .demo-title {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
 
+    .banner-2-section .demo-description {
+        margin-bottom: 28px;
+        padding: 0 20px;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
+    .banner-2-section .demo-button {
+        padding: 14px 28px;
+        font-size: 1rem;
+    }
+}
 
 /* Custom CSS for exact design match */
 .signup-section {
@@ -1854,7 +1872,7 @@ p {
         padding: 190px 0 0;
     }
 
-    .footer-header {
+    .footer-component .footer-header {
         padding-bottom: 35px;
         margin-bottom: 35px;
     }
@@ -1865,18 +1883,18 @@ p {
         padding: 40px 0 0;
     }
 
-    .footer-header {
+    .footer-component .footer-header {
         text-align: center;
         padding-bottom: 30px;
         margin-bottom: 30px;
     }
 
-    .footer-brand {
+    .footer-component .footer-brand {
         justify-content: center;
         margin-bottom: 15px;
     }
 
-    .footer-description {
+    .footer-component .footer-description {
         margin: 0 auto;
         text-align: center;
     }
@@ -1886,7 +1904,7 @@ p {
         padding-bottom: 0%;
     }
 
-    .footer-section {
+    .footer-component .footer-section {
         margin-bottom: 25px;
     }
 }
@@ -1896,38 +1914,38 @@ p {
         padding: 35px 0 0;
     }
 
-    .footer-header {
+    .footer-component .footer-header {
         padding-bottom: 25px;
         margin-bottom: 25px;
     }
 
-    .brand-logo {
+    .footer-component .brand-logo {
         width: 230px;
         height: 40px;
     }
 
-    .cart-icon {
+    .footer-component .cart-icon {
         font-size: 1.3rem;
     }
 
-    .footer-description {
+    .footer-component .footer-description {
         font-size: 0.9rem;
     }
 
-    .footer-section h5 {
+    .footer-component .footer-section h5 {
         font-size: 1rem;
         margin-bottom: 15px;
     }
 
-    .footer-section ul li {
+    .footer-component .footer-section ul li {
         margin-bottom: 8px;
     }
 
-    .footer-section ul li a {
+    .footer-component .footer-section ul li a {
         font-size: 0.85rem;
     }
 
-    .footer-bottom {
+    .footer-component .footer-bottom {
         flex-direction: column;
         text-align: center;
         padding: 20px 0;
@@ -1939,26 +1957,26 @@ p {
         padding: 30px 0 0;
     }
 
-    .footer-header {
+    .footer-component .footer-header {
         padding-bottom: 20px;
         margin-bottom: 20px;
     }
 
-    .brand-logo {
+    .footer-component .brand-logo {
         width: 190px;
         height: 40px;
     }
 
-    .footer-section {
+    .footer-component .footer-section {
         margin-bottom: 20px;
     }
 
-    .footer-bottom {
+    .footer-component .footer-bottom {
         padding: 15px 0;
     }
 
-    .copyright,
-    .built-in-canada {
+    .footer-component .copyright,
+    .footer-component .built-in-canada {
         font-size: 0.8rem;
     }
 }
@@ -1978,16 +1996,16 @@ p {
         border-top: 2px solid #ffffff;
     }
 
-    .footer-header,
-    .footer-bottom {
+    .footer-component .footer-header,
+    .footer-component .footer-bottom {
         border-color: #ffffff;
     }
 
-    .footer-section ul li a {
+    .footer-component .footer-section ul li a {
         color: #ffffff;
     }
 
-    .footer-section ul li a:hover {
+    .footer-component .footer-section ul li a:hover {
         background-color: var(--accent);
         color: #000000;
     }
@@ -2025,13 +2043,13 @@ p {
 
 /* Reduced motion support */
 @media (prefers-reduced-motion: reduce) {
-    .footer-section {
+    .footer-component .footer-section {
         animation: none;
         opacity: 1;
         transform: none;
     }
 
-    .footer-section ul li a {
+    .footer-component .footer-section ul li a {
         transition: none;
     }
 }
