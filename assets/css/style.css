@@ -1626,7 +1626,7 @@ p {
     .region-section .region-text {
         padding-right: 30px;
     }
-    
+
     .region-section .region-title {
         font-size: 2.25rem;
     }
@@ -1636,17 +1636,17 @@ p {
     .region-section .region-content {
         text-align: center;
     }
-    
+
     .region-section .region-text {
         padding-right: 0;
         margin-bottom: 40px;
     }
-    
+
     .region-section .region-title {
         font-size: 2rem;
         margin-bottom: 20px;
     }
-    
+
     .region-section .region-description {
         font-size: 1rem;
     }
@@ -1654,9 +1654,6 @@ p {
     .region-section .flags-image {
         opacity: 0.3;
     }
-
-
-
 }
 
 @media (max-width: 575.98px) {
@@ -1664,18 +1661,180 @@ p {
         font-size: 1.75rem;
         margin-bottom: 16px;
     }
-    
+
     .region-section .region-description {
         font-size: 0.95rem;
         padding: 0 20px;
     }
-    
+
     .region-section .region-text {
         margin-bottom: 30px;
     }
-    
+
     .region-section .flags-image {
         max-height: 200px;
+    }
+}
+
+.invoice-section {
+    padding: 60px 0;
+}
+
+.invoice-section .section-header {
+    margin-bottom: 40px;
+    z-index: 2;
+}
+
+.invoice-section .section-title {
+    font-size: 40px;
+    line-height: 108%;
+    color: var(--secondary-color);
+    max-width: 754px;
+    margin-bottom: 20px;
+}
+
+.invoice-section .section-title .highlight {
+    color: var(--accent);
+}
+
+.invoice-section .section-subtitle {
+    font-size: 16px;
+    line-height: 140%;
+    color: #13131380;
+}
+
+.invoice-section .section-subtitle-2 {
+    font-size: 16px;
+    line-height: 140%;
+    color: var(--primary-color);
+    background-color: #FFEDD2;
+    font-weight: 500;
+    border-radius: 10px;
+}
+
+.invoice-section .product-card {
+    box-shadow: 0px 0px 20px 0px #10101014;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 40px;
+}
+
+.invoice-section .product-title {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.invoice-section .product-title .highlight {
+    color: var(--accent);
+}
+
+.invoice-section .product-description {
+    text-align: center;
+    color: #13131380;
+    margin-bottom: 25px;
+    font-size: 0.95rem;
+}
+
+.invoice-section .pricing-options {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.invoice-section .price-card {
+    flex: 1;
+    min-width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-radius: 16px;
+    background-color: #F6F6F6;
+}
+
+.invoice-section .price-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.invoice-section .sheets-text {
+    font-size: 0.9rem;
+    color: #131313;
+    margin-bottom: 5px;
+}
+
+.invoice-section .price {
+    color: var(--accent);
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+.invoice-section .buy-button {
+    background-color: var(--primary-color);
+    font-size: 16px;
+    padding: 13px 24px;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.invoice-section .buy-button:hover {
+    transform: translateY(-1px);
+}
+
+
+/* Responsive adjustments for both feature sections */
+@media (max-width: 1199.98px) {
+    .invoice-section .section-title {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .invoice-section .section-title {
+        font-size: 2.2rem;
+    }
+
+    .invoice-section .pricing-options {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .invoice-section .price-card {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .invoice-section .section-title {
+        font-size: 1.9rem;
+    }
+}
+
+
+@media (max-width: 575.98px) {
+    .invoice-section {
+        padding: 40px 0;
+    }
+
+    .invoice-section .section-title {
+        font-size: 1.7rem;
+    }
+
+    .invoice-section .product-card {
+        padding: 20px 15px;
+    }
+
+    .invoice-section .price {
+        font-size: 1.3rem;
+    }
+
+    .invoice-section .buy-button {
+        padding: 8px 16px;
+        font-size: 0.9rem;
     }
 }
 
@@ -1686,7 +1845,7 @@ p {
 
 .signup-section .container {
     border-radius: 12px;
-    background: #0C3382;
+    background: var(--primary-color);
     padding: 60px 0;
 }
 
