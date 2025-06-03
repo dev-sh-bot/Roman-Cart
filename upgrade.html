@@ -1,0 +1,1773 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roman Cart</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <!-- Top Bar -->
+        <div class="top-bar py-2 text-white">
+            <div class="container">
+                <div class="row align-items-center gap-1 gap-sm-0 py-2 py-sm-0">
+                    <div class="col-lg-8 col-sm-6 col-12">
+                        <p class="top-bar-text text-center text-md-start fw-normal">Free Shopping Cart For Your Website
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 col-12">
+                        <div
+                            class="social-icons justify-content-md-center justify-content-sm-end justify-content-center">
+                            <a href="#" class="social-icon p-2" aria-label="Twitter">
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </a>
+                            <a href="#" class="social-icon p-2" aria-label="Email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                            <a href="#" class="social-icon p-2" aria-label="Support">
+                                <i class="fas fa-headset"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Navigation -->
+        <nav class="navbar navbar-expand-lg main-navbar bg-white">
+            <div class="container">
+                <!-- Brand Logo -->
+                <a class="d-flex align-items-center" href="./index.html">
+                    <img src="./assets/images/logo.png" alt="RomanCart" class="logo-img">
+                </a>
+
+                <!-- Toggle for offcanvas sidebar (mobile only) -->
+                <button class="navbar-toggler d-block d-lg-none" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#navSidebar" aria-controls="navSidebar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Regular desktop menu -->
+                <div class="collapse navbar-collapse d-none d-lg-block" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item"><a class="nav-link fw-normal py-2 px-0" href="./index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link fw-normal py-2 px-0" href="./how-things-work.html">How
+                                it works?</a></li>
+                        <li class="nav-item"><a class="nav-link fw-normal py-2 px-0  active"
+                                href="./product-demo.html">Product
+                                Demo</a></li>
+                        <li class="nav-item"><a class="nav-link fw-normal py-2 px-0" href="#">Pricing Plans</a></li>
+                        <li class="nav-item"><a class="nav-link fw-normal py-2 px-0" href="#">Resources</a></li>
+                    </ul>
+                    <div class="d-flex align-items-center user-support-section">
+                        <div class="user-icon d-none d-xl-flex align-items-center justify-content-center" role="button"
+                            aria-label="User Profile">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <a href="#" class="support-btn text-white border-0 fw-semibold">Customer Support</a>
+                    </div>
+                </div>
+
+                <!-- Offcanvas sidebar menu (from the RIGHT) -->
+                <div class="offcanvas offcanvas-end d-block d-lg-none" tabindex="-1" id="navSidebar"
+                    aria-labelledby="navSidebarLabel" data-bs-backdrop="true">
+                    <div class="offcanvas-header px-5 py-4 justify-content-end">
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link fw-normal py-2 px-0" href="./index.html">Home</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link fw-normal py-2 px-0"
+                                    href="./how-things-work.html">How it works?</a></li>
+                            <li class="nav-item"><a class="nav-link fw-normal py-2 px-0  active"
+                                    href="./product-demo.html">Product Demo</a></li>
+                            <li class="nav-item"><a class="nav-link fw-normal py-2 px-0" href="#">Pricing Plans</a></li>
+                            <li class="nav-item"><a class="nav-link fw-normal py-2 px-0" href="#">Resources</a></li>
+                        </ul>
+
+                        <div class="d-flex align-items-center justify-content-center">
+                            <a href="#" class="support-btn text-white border-0 fw-semibold">Customer Support</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="banner-2-section">
+            <div class="banner-2 position-absolute top-0 start-0 w-100 h-100">
+                <img src="./assets/images/banner-2.png" />
+            </div>
+            <div class="container position-relative z-1">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="text-center">
+                            <h2 class="demo-title">Store</h2>
+                            <p class="demo-description mx-auto">
+                                E-Commerce Supplies Store. Browse and buy supplies for your ecommerce store below.
+                            </p>
+                            <a href="#"
+                                class="demo-btn fw-bold text-white border-0 d-flex align-items-center justify-content-center mx-auto">
+                                View Demo
+                                <i class="fas fa-arrow-right d-flex align-items-center justify-content-center"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features-section-3 bg-white">
+            <div class="container">
+                <div class="features-header d-flex align-items-start">
+                    <div class="features-title">
+                        <h2 class="fw-bold">Features</h2>
+                        <p>What you can sell with each version</p>
+                    </div>
+                    <div class="plan-headers d-flex justify-content-between justify-content-lg-end">
+                        <div class="plan-header fw-bold text-center">Free</div>
+                        <div class="plan-header fw-bold text-center">Connect</div>
+                        <div class="plan-header fw-bold text-center">Starter</div>
+                        <div class="plan-header fw-bold text-center">Basic</div>
+                        <div class="plan-header fw-bold text-center">Professional</div>
+                    </div>
+                </div>
+
+                <div class="features-list">
+                    <!-- Standard Products -->
+                    <div class="feature-row bg-white">
+                        <details>
+                            <summary>
+                                <div class="feature-name">
+                                    <i class="fas fa-chevron-right chevron-icon"></i>
+                                    <span>
+                                        Standard Products
+                                        <a href="#" class="more-info" onclick="event.preventDefault();">More info...</a>
+                                    </span>
+                                </div>
+                                <div class="feature-values d-flex">
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                </div>
+                            </summary>
+                            <div class="feature-content">
+                                Products can have many variations, for example color and size. You can make products
+                                both tangible
+                                (Products you ship to the customer) and intangible (Products which are not actually
+                                sent).
+                            </div>
+                        </details>
+                    </div>
+
+                    <!-- Maximum Number of Products -->
+                    <div class="feature-row bg-white">
+                        <details>
+                            <summary>
+                                <div class="feature-name">
+                                    <i class="fas fa-chevron-right chevron-icon"></i>
+                                    <span>
+                                        Maximum Number of Products on Product Manager
+                                        <a href="#" class="more-info" onclick="event.preventDefault();">More info...</a>
+                                    </span>
+                                </div>
+                                <div class="feature-values d-flex">
+                                    <div class="feature-value text-center">10</div>
+                                    <div class="feature-value text-center">100</div>
+                                    <div class="feature-value text-center">500</div>
+                                    <div class="feature-value text-center">4000</div>
+                                    <div class="feature-value text-center">10000</div>
+                                </div>
+                            </summary>
+                            <div class="feature-content">
+                                This is the maximum number of unique products you can create and manage in your
+                                store. Each product can
+                                have multiple variations.
+                            </div>
+                        </details>
+                    </div>
+
+                    <!-- Accommodation -->
+                    <div class="feature-row bg-white">
+                        <details>
+                            <summary>
+                                <div class="feature-name">
+                                    <i class="fas fa-chevron-right chevron-icon"></i>
+                                    <span>
+                                        Accommodation
+                                        <a href="#" class="more-info" onclick="event.preventDefault();">More info...</a>
+                                    </span>
+                                </div>
+                                <div class="feature-values d-flex">
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                </div>
+                            </summary>
+                            <div class="feature-content">
+                                Sell accommodation services like hotel rooms, vacation rentals, or other bookable
+                                spaces with our
+                                accommodation management system.
+                            </div>
+                        </details>
+                    </div>
+
+                    <!-- Number of Accommodation Units -->
+                    <div class="feature-row bg-white">
+                        <details>
+                            <summary>
+                                <div class="feature-name">
+                                    <i class="fas fa-chevron-right chevron-icon"></i>
+                                    <span>
+                                        Number of Accommodation Units
+                                        <a href="#" class="more-info" onclick="event.preventDefault();">More info...</a>
+                                    </span>
+                                </div>
+                                <div class="feature-values d-flex">
+                                    <div class="feature-value text-center">01</div>
+                                    <div class="feature-value text-center">02</div>
+                                    <div class="feature-value text-center">10</div>
+                                    <div class="feature-value text-center">20</div>
+                                    <div class="feature-value text-center">100</div>
+                                </div>
+                            </summary>
+                            <div class="feature-content">
+                                This is the maximum number of individual accommodation units (rooms, properties,
+                                etc.) that you can
+                                manage in your account.
+                            </div>
+                        </details>
+                    </div>
+
+                    <!-- Downloadable Products -->
+                    <div class="feature-row bg-white">
+                        <details>
+                            <summary>
+                                <div class="feature-name">
+                                    <i class="fas fa-chevron-right chevron-icon"></i>
+                                    <span>
+                                        Downloadable Products
+                                        <a href="#" class="more-info" onclick="event.preventDefault();">More info...</a>
+                                    </span>
+                                </div>
+                                <div class="feature-values d-flex">
+                                    <div class="feature-value text-center"></div>
+                                    <div class="feature-value text-center"></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                </div>
+                            </summary>
+                            <div class="feature-content">
+                                Sell digital products like e-books, music, videos, software, or any other files that
+                                customers can
+                                download after purchase.
+                            </div>
+                        </details>
+                    </div>
+
+                    <!-- Downloadable Products Storage Space -->
+                    <div class="feature-row bg-white">
+                        <details>
+                            <summary>
+                                <div class="feature-name">
+                                    <i class="fas fa-chevron-right chevron-icon"></i>
+                                    <span>
+                                        Downloadable Products Storage Space
+                                    </span>
+                                </div>
+                                <div class="feature-values d-flex">
+                                    <div class="feature-value text-center"></div>
+                                    <div class="feature-value text-center"></div>
+                                    <div class="feature-value text-center">50mb</div>
+                                    <div class="feature-value text-center">250mb</div>
+                                    <div class="feature-value text-center">1gb</div>
+                                </div>
+                            </summary>
+                            <div class="feature-content">
+                                This is the total storage space available for your downloadable product files.
+                                Larger files like videos
+                                or software may require higher tier plans.
+                            </div>
+                        </details>
+                    </div>
+
+                    <!-- Downloadable Products Bandwidth -->
+                    <div class="feature-row bg-white">
+                        <details>
+                            <summary>
+                                <div class="feature-name">
+                                    <i class="fas fa-chevron-right chevron-icon"></i>
+                                    <span>
+                                        Downloadable Products Bandwidth per Month
+                                    </span>
+                                </div>
+                                <div class="feature-values d-flex">
+                                    <div class="feature-value text-center"></div>
+                                    <div class="feature-value text-center"></div>
+                                    <div class="feature-value text-center">500mb</div>
+                                    <div class="feature-value text-center">10gb</div>
+                                    <div class="feature-value text-center">100gb</div>
+                                </div>
+                            </summary>
+                            <div class="feature-content">
+                                This is the maximum amount of data transfer allowed each month for customers
+                                downloading your digital
+                                products. Higher sales volume requires more bandwidth.
+                            </div>
+                        </details>
+                    </div>
+
+                    <!-- Tickets -->
+                    <div class="feature-row bg-white">
+                        <details>
+                            <summary>
+                                <div class="feature-name">
+                                    <i class="fas fa-chevron-right chevron-icon"></i>
+                                    <span>
+                                        Tickets
+                                        <a href="#" class="more-info" onclick="event.preventDefault();">More info...</a>
+                                    </span>
+                                </div>
+                                <div class="feature-values d-flex">
+                                    <div class="feature-value text-center"></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                </div>
+                            </summary>
+                            <div class="feature-content">
+                                Manage and sell tickets for events, shows, or any other ticketed services.
+                            </div>
+                        </details>
+                    </div>
+
+                    <!-- Bar Code Validation of Tickets -->
+                    <div class="feature-row bg-white">
+                        <details>
+                            <summary>
+                                <div class="feature-name">
+                                    <i class="fas fa-chevron-right chevron-icon"></i>
+                                    <span>
+                                        Bar Code Validation of Tickets at the Door
+                                        <a href="#" class="more-info" onclick="event.preventDefault();">More info...</a>
+                                    </span>
+                                </div>
+                                <div class="feature-values d-flex">
+                                    <div class="feature-value text-center"></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                </div>
+                            </summary>
+                            <div class="feature-content">
+                                Validate tickets using bar code scanning at event entrances to prevent fraud and
+                                streamline entry.
+                            </div>
+                        </details>
+                    </div>
+
+                    <!-- Information Products -->
+                    <div class="feature-row bg-white">
+                        <details>
+                            <summary>
+                                <div class="feature-name">
+                                    <i class="fas fa-chevron-right chevron-icon"></i>
+                                    <span>
+                                        Information Products
+                                        <a href="#" class="more-info" onclick="event.preventDefault();">More info...</a>
+                                    </span>
+                                </div>
+                                <div class="feature-values d-flex">
+                                    <div class="feature-value text-center"></div>
+                                    <div class="feature-value text-center"></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                    <div class="feature-value text-center"></div>
+                                </div>
+                            </summary>
+                            <div class="feature-content">
+                                Sell digital information products like guides, reports, tutorials, and other
+                                knowledge-based content.
+                            </div>
+                        </details>
+                    </div>
+
+                    <!-- Marketing Features Section Header -->
+                    <div class="section-header mt-3">
+                        <h3>Marketing Features that will help you sell more products</h3>
+                    </div>
+
+                    <!-- Promotions -->
+                    <div class="feature-row bg-white">
+                        <details>
+                            <summary>
+                                <div class="feature-name">
+                                    <i class="fas fa-chevron-right chevron-icon"></i>
+                                    <span>
+                                        Promotions
+                                        <a href="#" class="more-info" onclick="event.preventDefault();">More info...</a>
+                                    </span>
+                                </div>
+                                <div class="feature-values d-flex">
+                                    <div class="feature-value text-center">10</div>
+                                    <div class="feature-value text-center">50</div>
+                                    <div class="feature-value text-center">50</div>
+                                    <div class="feature-value text-center">100</div>
+                                    <div class="feature-value text-center">1000</div>
+                                </div>
+                            </summary>
+                            <div class="feature-content">
+                                Create and manage promotional campaigns to attract and retain customers.
+                            </div>
+                        </details>
+                    </div>
+
+                    <!-- Downloadable Products (Marketing) -->
+                    <div class="feature-row bg-white">
+                        <details>
+                            <summary>
+                                <div class="feature-name">
+                                    <i class="fas fa-chevron-right chevron-icon"></i>
+                                    <span>
+                                        Downloadable Products
+                                        <a href="#" class="more-info" onclick="event.preventDefault();">More info...</a>
+                                    </span>
+                                </div>
+                                <div class="feature-values d-flex">
+                                    <div class="feature-value text-center"></div>
+                                    <div class="feature-value text-center"></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                </div>
+                            </summary>
+                            <div class="feature-content">
+                                Utilize downloadable products for marketing and lead generation purposes.
+                            </div>
+                        </details>
+                    </div>
+
+                    <!-- Number of Marketing Emails Permitted Per Month -->
+                    <div class="feature-row bg-white">
+                        <details>
+                            <summary>
+                                <div class="feature-name">
+                                    <i class="fas fa-chevron-right chevron-icon"></i>
+                                    <span>
+                                        Number of Marketing Emails Permitted Per Month
+                                    </span>
+                                </div>
+                                <div class="feature-values d-flex">
+                                    <div class="feature-value text-center"></div>
+                                    <div class="feature-value text-center"></div>
+                                    <div class="feature-value text-center">5000</div>
+                                    <div class="feature-value text-center">40000</div>
+                                    <div class="feature-value text-center">250000</div>
+                                </div>
+                            </summary>
+                            <div class="feature-content">
+                                Send marketing emails to your customers and prospects. Higher tier plans allow for
+                                larger email campaigns.
+                            </div>
+                        </details>
+                    </div>
+
+                    <!-- Number of Contacts on CRM -->
+                    <div class="feature-row bg-white">
+                        <details>
+                            <summary>
+                                <div class="feature-name">
+                                    <i class="fas fa-chevron-right chevron-icon"></i>
+                                    <span>
+                                        Number of Contacts on CRM
+                                        <a href="#" class="more-info" onclick="event.preventDefault();">More info...</a>
+                                    </span>
+                                </div>
+                                <div class="feature-values d-flex">
+                                    <div class="feature-value text-center">2</div>
+                                    <div class="feature-value text-center">5</div>
+                                    <div class="feature-value text-center">1000</div>
+                                    <div class="feature-value text-center">10000</div>
+                                    <div class="feature-value text-center">100000</div>
+                                </div>
+                            </summary>
+                            <div class="feature-content">
+                                Manage customer relationships with our built-in CRM. Track customer interactions,
+                                purchase history, and preferences.
+                            </div>
+                        </details>
+                    </div>
+
+                    <!-- Contact Lists -->
+                    <div class="feature-row bg-white">
+                        <details>
+                            <summary>
+                                <div class="feature-name">
+                                    <i class="fas fa-chevron-right chevron-icon"></i>
+                                    <span>
+                                        Contact Lists
+                                        <a href="#" class="more-info" onclick="event.preventDefault();">More info...</a>
+                                    </span>
+                                </div>
+                                <div class="feature-values d-flex">
+                                    <div class="feature-value text-center"></div>
+                                    <div class="feature-value text-center"></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                </div>
+                            </summary>
+                            <div class="feature-content">
+                                Create and manage targeted contact lists for more effective marketing campaigns.
+                            </div>
+                        </details>
+                    </div>
+
+                    <!-- Export Contacts -->
+                    <div class="feature-row bg-white">
+                        <details>
+                            <summary>
+                                <div class="feature-name">
+                                    <i class="fas fa-chevron-right chevron-icon"></i>
+                                    <span>
+                                        Export Contacts
+                                        <a href="#" class="more-info" onclick="event.preventDefault();">More info...</a>
+                                    </span>
+                                </div>
+                                <div class="feature-values d-flex">
+                                    <div class="feature-value text-center"></div>
+                                    <div class="feature-value text-center"></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                </div>
+                            </summary>
+                            <div class="feature-content">
+                                Export your contact lists in various formats for backup or external marketing tools.
+                            </div>
+                        </details>
+                    </div>
+
+                    <!-- Coupons -->
+                    <div class="feature-row bg-white">
+                        <details>
+                            <summary>
+                                <div class="feature-name">
+                                    <i class="fas fa-chevron-right chevron-icon"></i>
+                                    <span>
+                                        Coupons
+                                        <a href="#" class="more-info" onclick="event.preventDefault();">More info...</a>
+                                    </span>
+                                </div>
+                                <div class="feature-values d-flex">
+                                    <div class="feature-value text-center"></div>
+                                    <div class="feature-value text-center"></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                </div>
+                            </summary>
+                            <div class="feature-content">
+                                Create and manage coupon codes to drive sales and attract customers.
+                            </div>
+                        </details>
+                    </div>
+
+                    <!-- Promotional Algorithms -->
+                    <div class="feature-row bg-white">
+                        <details>
+                            <summary>
+                                <div class="feature-name">
+                                    <i class="fas fa-chevron-right chevron-icon"></i>
+                                    <span>
+                                        Promotional Algorithms
+                                        <a href="#" class="more-info" onclick="event.preventDefault();">More info...</a>
+                                    </span>
+                                </div>
+                                <div class="feature-values d-flex">
+                                    <div class="feature-value text-center"></div>
+                                    <div class="feature-value text-center"></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                </div>
+                            </summary>
+                            <div class="feature-content">
+                                Advanced algorithms to optimize promotional strategies and increase sales.
+                            </div>
+                        </details>
+                    </div>
+
+                    <!-- RomanCart Index Reports -->
+                    <div class="feature-row bg-white">
+                        <details>
+                            <summary>
+                                <div class="feature-name">
+                                    <i class="fas fa-chevron-right chevron-icon"></i>
+                                    <span>
+                                        RomanCart Index Reports
+                                        <a href="#" class="more-info" onclick="event.preventDefault();">More info...</a>
+                                    </span>
+                                </div>
+                                <div class="feature-values d-flex">
+                                    <div class="feature-value text-center"></div>
+                                    <div class="feature-value text-center"></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                </div>
+                            </summary>
+                            <div class="feature-content">
+                                Detailed reports and analytics to track your store's performance and growth.
+                            </div>
+                        </details>
+                    </div>
+
+                    <!-- Dynamic Promotional Codes -->
+                    <div class="feature-row bg-white">
+                        <details>
+                            <summary>
+                                <div class="feature-name">
+                                    <i class="fas fa-chevron-right chevron-icon"></i>
+                                    <span>
+                                        Dynamic Promotional Codes
+                                        <a href="#" class="more-info" onclick="event.preventDefault();">More info...</a>
+                                    </span>
+                                </div>
+                                <div class="feature-values d-flex">
+                                    <div class="feature-value text-center"></div>
+                                    <div class="feature-value text-center"></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                </div>
+                            </summary>
+                            <div class="feature-content">
+                                Generate and manage dynamic promotional codes for targeted marketing campaigns.
+                            </div>
+                        </details>
+                    </div>
+
+                    <!-- Dynamic Coupons -->
+                    <div class="feature-row bg-white">
+                        <details>
+                            <summary>
+                                <div class="feature-name">
+                                    <i class="fas fa-chevron-right chevron-icon"></i>
+                                    <span>
+                                        Dynamic Coupons
+                                        <a href="#" class="more-info" onclick="event.preventDefault();">More info...</a>
+                                    </span>
+                                </div>
+                                <div class="feature-values d-flex">
+                                    <div class="feature-value text-center"></div>
+                                    <div class="feature-value text-center"></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                </div>
+                            </summary>
+                            <div class="feature-content">
+                                Create flexible and adaptive coupon strategies to boost sales and customer
+                                engagement.
+                            </div>
+                        </details>
+                    </div>
+
+                    <!-- Prospect Autoresponder -->
+                    <div class="feature-row bg-white">
+                        <details>
+                            <summary>
+                                <div class="feature-name">
+                                    <i class="fas fa-chevron-right chevron-icon"></i>
+                                    <span>
+                                        Prospect Autoresponder
+                                        <a href="#" class="more-info" onclick="event.preventDefault();">More info...</a>
+                                    </span>
+                                </div>
+                                <div class="feature-values d-flex">
+                                    <div class="feature-value text-center"></div>
+                                    <div class="feature-value text-center"></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                </div>
+                            </summary>
+                            <div class="feature-content">
+                                Automated email responses to engage potential customers and nurture leads.
+                            </div>
+                        </details>
+                    </div>
+
+                    <!-- Customer Autoresponder -->
+                    <div class="feature-row bg-white">
+                        <details>
+                            <summary>
+                                <div class="feature-name">
+                                    <i class="fas fa-chevron-right chevron-icon"></i>
+                                    <span>
+                                        Customer Autoresponder
+                                        <a href="#" class="more-info" onclick="event.preventDefault();">More info...</a>
+                                    </span>
+                                </div>
+                                <div class="feature-values d-flex">
+                                    <div class="feature-value text-center"></div>
+                                    <div class="feature-value text-center"></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                </div>
+                            </summary>
+                            <div class="feature-content">
+                                Automated email responses to keep existing customers engaged and informed.
+                            </div>
+                        </details>
+                    </div>
+
+                    <!-- Follow-Up Emails -->
+                    <div class="feature-row bg-white">
+                        <details>
+                            <summary>
+                                <div class="feature-name">
+                                    <i class="fas fa-chevron-right chevron-icon"></i>
+                                    <span>
+                                        Follow-Up Emails
+                                        <a href="#" class="more-info" onclick="event.preventDefault();">More info...</a>
+                                    </span>
+                                </div>
+                                <div class="feature-values d-flex">
+                                    <div class="feature-value text-center"></div>
+                                    <div class="feature-value text-center"></div>
+                                    <div class="feature-value text-center"></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                </div>
+                            </summary>
+                            <div class="feature-content">
+                                Automated follow-up emails to improve customer retention and encourage repeat
+                                purchases.
+                            </div>
+                        </details>
+                    </div>
+
+                    <!-- Tracking Emails/Tracking Emails -->
+                    <div class="feature-row bg-white">
+                        <details>
+                            <summary>
+                                <div class="feature-name">
+                                    <i class="fas fa-chevron-right chevron-icon"></i>
+                                    <span>
+                                        Tracking Emails
+                                        <a href="#" class="more-info" onclick="event.preventDefault();">More info...</a>
+                                    </span>
+                                </div>
+                                <div class="feature-values d-flex">
+                                    <div class="feature-value text-center"></div>
+                                    <div class="feature-value text-center"></div>
+                                    <div class="feature-value text-center"></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                </div>
+                            </summary>
+                            <div class="feature-content">
+                                Track email performance and engagement to optimize marketing strategies.
+                            </div>
+                        </details>
+                    </div>
+
+                    <!-- Product Autoresponder -->
+                    <div class="feature-row bg-white">
+                        <details>
+                            <summary>
+                                <div class="feature-name">
+                                    <i class="fas fa-chevron-right chevron-icon"></i>
+                                    <span>
+                                        Product Autoresponder
+                                        <a href="#" class="more-info" onclick="event.preventDefault();">More info...</a>
+                                    </span>
+                                </div>
+                                <div class="feature-values d-flex">
+                                    <div class="feature-value text-center"></div>
+                                    <div class="feature-value text-center"></div>
+                                    <div class="feature-value text-center"></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                </div>
+                            </summary>
+                            <div class="feature-content">
+                                Automated email responses related to specific product interactions and purchases.
+                            </div>
+                        </details>
+                    </div>
+
+                    <!-- Welcome Back Autoresponder -->
+                    <div class="feature-row bg-white">
+                        <details>
+                            <summary>
+                                <div class="feature-name">
+                                    <i class="fas fa-chevron-right chevron-icon"></i>
+                                    <span>
+                                        Welcome Back Autoresponder
+                                        <a href="#" class="more-info" onclick="event.preventDefault();">More info...</a>
+                                    </span>
+                                </div>
+                                <div class="feature-values d-flex">
+                                    <div class="feature-value text-center"></div>
+                                    <div class="feature-value text-center"></div>
+                                    <div class="feature-value text-center"></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                </div>
+                            </summary>
+                            <div class="feature-content">
+                                Personalized emails to re-engage customers who haven't visited in a while.
+                            </div>
+                        </details>
+                    </div>
+
+                    <!-- Offer -->
+                    <div class="feature-row bg-white">
+                        <details>
+                            <summary>
+                                <div class="feature-name">
+                                    <i class="fas fa-chevron-right chevron-icon"></i>
+                                    <span>
+                                        Offer
+                                        <a href="#" class="more-info" onclick="event.preventDefault();">More info...</a>
+                                    </span>
+                                </div>
+                                <div class="feature-values d-flex">
+                                    <div class="feature-value text-center"></div>
+                                    <div class="feature-value text-center"></div>
+                                    <div class="feature-value text-center"></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                </div>
+                            </summary>
+                            <div class="feature-content">
+                                Create and manage special offers to attract and retain customers.
+                            </div>
+                        </details>
+                    </div>
+
+                    <!-- Cross-Sell and Up-Sell -->
+                    <div class="feature-row bg-white">
+                        <details>
+                            <summary>
+                                <div class="feature-name">
+                                    <i class="fas fa-chevron-right chevron-icon"></i>
+                                    <span>
+                                        Cross-Sell and Up-Sell
+                                        <a href="#" class="more-info" onclick="event.preventDefault();">More info...</a>
+                                    </span>
+                                </div>
+                                <div class="feature-values d-flex">
+                                    <div class="feature-value text-center"></div>
+                                    <div class="feature-value text-center"></div>
+                                    <div class="feature-value text-center"></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                </div>
+                            </summary>
+                            <div class="feature-content">
+                                Recommend additional or upgraded products to increase average order value.
+                            </div>
+                        </details>
+                    </div>
+
+                    <!-- Import Contacts -->
+                    <div class="feature-row bg-white">
+                        <details>
+                            <summary>
+                                <div class="feature-name">
+                                    <i class="fas fa-chevron-right chevron-icon"></i>
+                                    <span>
+                                        Import Contacts
+                                        <a href="#" class="more-info" onclick="event.preventDefault();">More info...</a>
+                                    </span>
+                                </div>
+                                <div class="feature-values d-flex">
+                                    <div class="feature-value text-center"></div>
+                                    <div class="feature-value text-center"></div>
+                                    <div class="feature-value text-center"></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                </div>
+                            </summary>
+                            <div class="feature-content">
+                                Import contact lists from external sources to expand your marketing reach.
+                            </div>
+                        </details>
+                    </div>
+
+                    <!-- Enhanced Contact History -->
+                    <div class="feature-row bg-white">
+                        <details>
+                            <summary>
+                                <div class="feature-name">
+                                    <i class="fas fa-chevron-right chevron-icon"></i>
+                                    <span>
+                                        Enhanced Contact History
+                                        <a href="#" class="more-info" onclick="event.preventDefault();">More info...</a>
+                                    </span>
+                                </div>
+                                <div class="feature-values d-flex">
+                                    <div class="feature-value text-center"></div>
+                                    <div class="feature-value text-center"></div>
+                                    <div class="feature-value text-center"></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                </div>
+                            </summary>
+                            <div class="feature-content">
+                                Detailed tracking and analysis of customer interaction history.
+                            </div>
+                        </details>
+                    </div>
+
+                    <!-- Not Completed Notification -->
+                    <div class="feature-row bg-white">
+                        <details>
+                            <summary>
+                                <div class="feature-name">
+                                    <i class="fas fa-chevron-right chevron-icon"></i>
+                                    <span>
+                                        Not Completed Notification
+                                        <a href="#" class="more-info" onclick="event.preventDefault();">More info...</a>
+                                    </span>
+                                </div>
+                                <div class="feature-values d-flex">
+                                    <div class="feature-value text-center"></div>
+                                    <div class="feature-value text-center"></div>
+                                    <div class="feature-value text-center"></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                </div>
+                            </summary>
+                            <div class="feature-content">
+                                Automated notifications for incomplete purchases or abandoned carts.
+                            </div>
+                        </details>
+                    </div>
+
+                    <!-- Abandonment Emails -->
+                    <div class="feature-row bg-white">
+                        <details>
+                            <summary>
+                                <div class="feature-name">
+                                    <i class="fas fa-chevron-right chevron-icon"></i>
+                                    <span>
+                                        Abandonment Emails
+                                        <a href="#" class="more-info" onclick="event.preventDefault();">More info...</a>
+                                    </span>
+                                </div>
+                                <div class="feature-values d-flex">
+                                    <div class="feature-value text-center"></div>
+                                    <div class="feature-value text-center"></div>
+                                    <div class="feature-value text-center"></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                </div>
+                            </summary>
+                            <div class="feature-content">
+                                Send targeted emails to recover potentially lost sales from abandoned shopping
+                                carts.
+                            </div>
+                        </details>
+                    </div>
+
+                    <!-- Features that will help you keep track of your sales -->
+                    <div class="section-header mt-3">
+                        <h3>Features that will help you keep track of your sales</h3>
+                    </div>
+
+                    <!-- Sales Manager -->
+                    <div class="feature-row bg-white">
+                        <details>
+                            <summary>
+                                <div class="feature-name">
+                                    <i class="fas fa-chevron-right chevron-icon"></i>
+                                    <span>
+                                        Sales Manager
+                                        <a href="#" class="more-info" onclick="event.preventDefault();">More info...</a>
+                                    </span>
+                                </div>
+                                <div class="feature-values d-flex">
+                                    <div class="feature-value text-center"></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                </div>
+                            </summary>
+                            <div class="feature-content">
+                                Comprehensive tool to manage and track all your sales activities and performance.
+                            </div>
+                        </details>
+                    </div>
+
+                    <!-- Length of Time Sales Data is Stored -->
+                    <div class="feature-row bg-white">
+                        <details>
+                            <summary>
+                                <div class="feature-name">
+                                    <i class="fas fa-chevron-right chevron-icon"></i>
+                                    <span>
+                                        Length of Time (Months) Sales Data is Stored
+                                        <a href="#" class="more-info" onclick="event.preventDefault();">More info...</a>
+                                    </span>
+                                </div>
+                                <div class="feature-values d-flex">
+                                    <div class="feature-value text-center">1</div>
+                                    <div class="feature-value text-center">6</div>
+                                    <div class="feature-value text-center">18</div>
+                                    <div class="feature-value text-center">24</div>
+                                    <div class="feature-value text-center">36</div>
+                                </div>
+                            </summary>
+                            <div class="feature-content">
+                                Duration for which your sales data and historical records are preserved in the
+                                system.
+                            </div>
+                        </details>
+                    </div>
+
+                    <!-- Sales Report -->
+                    <div class="feature-row bg-white">
+                        <details>
+                            <summary>
+                                <div class="feature-name">
+                                    <i class="fas fa-chevron-right chevron-icon"></i>
+                                    <span>
+                                        Sales Report
+                                        <a href="#" class="more-info" onclick="event.preventDefault();">More info...</a>
+                                    </span>
+                                </div>
+                                <div class="feature-values d-flex">
+                                    <div class="feature-value text-center"></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                </div>
+                            </summary>
+                            <div class="feature-content">
+                                Generate detailed reports to analyze your sales performance, trends, and insights.
+                            </div>
+                        </details>
+                    </div>
+
+                    <!-- Confirmation Email -->
+                    <div class="feature-row bg-white">
+                        <details>
+                            <summary>
+                                <div class="feature-name">
+                                    <i class="fas fa-chevron-right chevron-icon"></i>
+                                    <span>
+                                        Confirmation Email
+                                        <a href="#" class="more-info" onclick="event.preventDefault();">More info...</a>
+                                    </span>
+                                </div>
+                                <div class="feature-values d-flex">
+                                    <div class="feature-value text-center"></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                </div>
+                            </summary>
+                            <div class="feature-content">
+                                Automatically send confirmation emails to customers after successful purchases.
+                            </div>
+                        </details>
+                    </div>
+
+                    <!-- Despatch Emails -->
+                    <div class="feature-row bg-white">
+                        <details>
+                            <summary>
+                                <div class="feature-name">
+                                    <i class="fas fa-chevron-right chevron-icon"></i>
+                                    <span>
+                                        Despatch Emails
+                                        <a href="#" class="more-info" onclick="event.preventDefault();">More info...</a>
+                                    </span>
+                                </div>
+                                <div class="feature-values d-flex">
+                                    <div class="feature-value text-center"></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                </div>
+                            </summary>
+                            <div class="feature-content">
+                                Send automated emails to customers when their orders are dispatched.
+                            </div>
+                        </details>
+                    </div>
+
+                    <!-- Text Messages (Optional) -->
+                    <div class="feature-row bg-white">
+                        <details>
+                            <summary>
+                                <div class="feature-name">
+                                    <i class="fas fa-chevron-right chevron-icon"></i>
+                                    <span>
+                                        Text Messages (Optional)
+                                        <a href="#" class="more-info" onclick="event.preventDefault();">More info...</a>
+                                    </span>
+                                </div>
+                                <div class="feature-values d-flex">
+                                    <div class="feature-value text-center"></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                </div>
+                            </summary>
+                            <div class="feature-content">
+                                Send optional SMS notifications to customers about their order status.
+                            </div>
+                        </details>
+                    </div>
+
+                    <!-- Dashboard -->
+                    <div class="feature-row bg-white">
+                        <details>
+                            <summary>
+                                <div class="feature-name">
+                                    <i class="fas fa-chevron-right chevron-icon"></i>
+                                    <span>
+                                        Dashboard
+                                        <a href="#" class="more-info" onclick="event.preventDefault();">More info...</a>
+                                    </span>
+                                </div>
+                                <div class="feature-values d-flex">
+                                    <div class="feature-value text-center"></div>
+                                    <div class="feature-value text-center"></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                </div>
+                            </summary>
+                            <div class="feature-content">
+                                Intuitive dashboard to visualize and analyze your sales performance at a glance.
+                            </div>
+                        </details>
+                    </div>
+
+                    <!-- View Sales from Multiple Carts on one Sales Manager -->
+                    <div class="feature-row bg-white">
+                        <details>
+                            <summary>
+                                <div class="feature-name">
+                                    <i class="fas fa-chevron-right chevron-icon"></i>
+                                    <span>
+                                        View Sales from Multiple Carts on one Sales Manager
+                                        <a href="#" class="more-info" onclick="event.preventDefault();">More info...</a>
+                                    </span>
+                                </div>
+                                <div class="feature-values d-flex">
+                                    <div class="feature-value text-center"></div>
+                                    <div class="feature-value text-center"></div>
+                                    <div class="feature-value text-center"></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                </div>
+                            </summary>
+                            <div class="feature-content">
+                                Consolidate sales data from multiple carts into a single, comprehensive sales
+                                management interface.
+                            </div>
+                        </details>
+                    </div>
+
+                    <!-- Features that let your customers do more on your website -->
+                    <div class="section-header mt-3">
+                        <h3>Features that let your customers do more on your website</h3>
+                    </div>
+
+                    <!-- Product Search Engine -->
+                    <div class="feature-row bg-white">
+                        <details>
+                            <summary>
+                                <div class="feature-name">
+                                    <i class="fas fa-chevron-right chevron-icon"></i>
+                                    <span>
+                                        Product Search Engine
+                                        <a href="#" class="more-info" onclick="event.preventDefault();">More info...</a>
+                                    </span>
+                                </div>
+                                <div class="feature-values d-flex">
+                                    <div class="feature-value text-center"></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                </div>
+                            </summary>
+                            <div class="feature-content">
+                                Advanced search functionality to help customers easily find products on your
+                                website.
+                            </div>
+                        </details>
+                    </div>
+
+                    <!-- Customer Order Tracking -->
+                    <div class="feature-row bg-white">
+                        <details>
+                            <summary>
+                                <div class="feature-name">
+                                    <i class="fas fa-chevron-right chevron-icon"></i>
+                                    <span>
+                                        Customer Order Tracking
+                                        <a href="#" class="more-info" onclick="event.preventDefault();">More info...</a>
+                                    </span>
+                                </div>
+                                <div class="feature-values d-flex">
+                                    <div class="feature-value text-center"></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                </div>
+                            </summary>
+                            <div class="feature-content">
+                                Allow customers to track their orders in real-time directly from your website.
+                            </div>
+                        </details>
+                    </div>
+
+                    <!-- Location Based Pages -->
+                    <div class="feature-row bg-white">
+                        <details>
+                            <summary>
+                                <div class="feature-name">
+                                    <i class="fas fa-chevron-right chevron-icon"></i>
+                                    <span>
+                                        Location Based Pages
+                                        <a href="#" class="more-info" onclick="event.preventDefault();">More info...</a>
+                                    </span>
+                                </div>
+                                <div class="feature-values d-flex">
+                                    <div class="feature-value text-center"></div>
+                                    <div class="feature-value text-center"></div>
+                                    <div class="feature-value text-center"></div>
+                                    <div class="feature-value text-center"></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                </div>
+                            </summary>
+                            <div class="feature-content">
+                                Create location-specific landing pages to target customers in different regions or
+                                cities,
+                                enhancing local marketing and personalization.
+                            </div>
+                        </details>
+                    </div>
+
+                    <!-- Custom Tracking Scripts -->
+                    <div class="feature-row bg-white">
+                        <details>
+                            <summary>
+                                <div class="feature-name">
+                                    <i class="fas fa-chevron-right chevron-icon"></i>
+                                    <span>
+                                        Custom Tracking Scripts
+                                        <a href="#" class="more-info" onclick="event.preventDefault();">More info...</a>
+                                    </span>
+                                </div>
+                                <div class="feature-values d-flex">
+                                    <div class="feature-value text-center"></div>
+                                    <div class="feature-value text-center"></div>
+                                    <div class="feature-value text-center"></div>
+                                    <div class="feature-value text-center"></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                </div>
+                            </summary>
+                            <div class="feature-content">
+                                Add custom tracking scripts from Google Analytics, Facebook Pixel, or other analytics
+                                platforms to gain deeper insights into your website's performance and customer behavior.
+                            </div>
+                        </details>
+                    </div>
+
+                    <!-- Automatic 'Email Me When Back in Stock' Button -->
+                    <div class="feature-row bg-white">
+                        <details>
+                            <summary>
+                                <div class="feature-name">
+                                    <i class="fas fa-chevron-right chevron-icon"></i>
+                                    <span>
+                                        Automatic 'Email Me When Back in Stock' Button
+                                        <a href="#" class="more-info" onclick="event.preventDefault();">More info...</a>
+                                    </span>
+                                </div>
+                                <div class="feature-values d-flex">
+                                    <div class="feature-value text-center"></div>
+                                    <div class="feature-value text-center"></div>
+                                    <div class="feature-value text-center"></div>
+                                    <div class="feature-value text-center"></div>
+                                    <div class="feature-value text-center"><span class="check-icon"><i
+                                                class="fas fa-check"></i></span></div>
+                                </div>
+                            </summary>
+                            <div class="feature-content">
+                                Automatically add a 'Notify Me When Back in Stock' button for out-of-stock products,
+                                helping to capture potential sales and keep customers engaged.
+                            </div>
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features-section-3 bg-accent mb-5">
+            <div class="container">
+                <div class="features-header d-flex align-items-start bg-white">
+                    <div class="features-title">
+                        <h2 class="fw-bold">Price (Excluding TAX)</h2>
+                        <p>Upgrade Plans</p>
+                    </div>
+                    <div class="plan-headers d-flex justify-content-between justify-content-lg-end">
+                        <div class="plan-header fw-bold text-center">Free</div>
+                        <div class="plan-header fw-bold text-center">Connect</div>
+                        <div class="plan-header fw-bold text-center">Starter</div>
+                        <div class="plan-header fw-bold text-center">Basic</div>
+                        <div class="plan-header fw-bold text-center">Professional</div>
+                    </div>
+                </div>
+
+                <div class="features-list">
+                    <!-- Standard Products -->
+                    <div class="feature-row bg-white">
+                        <details>
+                            <summary>
+                                <div class="feature-name">
+                                    <i class="fas fa-chevron-right chevron-icon"></i>
+                                    <span>
+                                        Per Transaction Charge
+                                    </span>
+                                </div>
+                                <div class="feature-values d-flex">
+                                    <div class="feature-value text-center">free</div>
+                                    <div class="feature-value text-center">free</div>
+                                    <div class="feature-value text-center">free</div>
+                                    <div class="feature-value text-center">free</div>
+                                    <div class="feature-value text-center">free</div>
+                                </div>
+                            </summary>
+                            <div class="feature-content">
+                                Products can have many variations, for example color and size. You can make products
+                                both tangible
+                                (Products you ship to the customer) and intangible (Products which are not actually
+                                sent).
+                            </div>
+                        </details>
+                    </div>
+
+                    <!-- Maximum Number of Products -->
+                    <div class="feature-row bg-white">
+                        <details>
+                            <summary>
+                                <div class="feature-name">
+                                    <i class="fas fa-chevron-right chevron-icon"></i>
+                                    <span>
+                                        Maximum Cart Turnover (£/$/€)
+                                    </span>
+                                </div>
+                                <div class="feature-values d-flex">
+                                    <div class="feature-value text-center"></div>
+                                    <div class="feature-value text-center">10000</div>
+                                    <div class="feature-value text-center">35000</div>
+                                    <div class="feature-value text-center">75000</div>
+                                    <div class="feature-value text-center"></div>
+                                </div>
+                            </summary>
+                            <div class="feature-content">
+                                This is the maximum number of unique products you can create and manage in your
+                                store. Each product can
+                                have multiple variations.
+                            </div>
+                        </details>
+                    </div>
+
+                    <!-- Accommodation -->
+                    <div class="feature-row bg-white">
+                        <details>
+                            <summary>
+                                <div class="feature-name">
+                                    <i class="fas fa-chevron-right chevron-icon"></i>
+                                    <span>
+                                        UK £ Price Per Year
+                                    </span>
+                                </div>
+                                <div class="feature-values d-flex">
+                                    <div class="feature-value text-center">free</div>
+                                    <div class="feature-value text-center">£ 120</div>
+                                    <div class="feature-value text-center">£ 350</div>
+                                    <div class="feature-value text-center">£ 750</div>
+                                    <div class="feature-value text-center">£ 1850</div>
+                                </div>
+                            </summary>
+                            <div class="feature-content">
+                                Sell accommodation services like hotel rooms, vacation rentals, or other bookable
+                                spaces with our
+                                accommodation management system.
+                            </div>
+                        </details>
+                    </div>
+
+                    <!-- Number of Accommodation Units -->
+                    <div class="feature-row bg-white">
+                        <details>
+                            <summary>
+                                <div class="feature-name">
+                                    <i class="fas fa-chevron-right chevron-icon"></i>
+                                    <span>
+                                        USA $ Price Per Year
+                                    </span>
+                                </div>
+                                <div class="feature-values d-flex">
+                                    <div class="feature-value text-center">free</div>
+                                    <div class="feature-value text-center">$ 150</div>
+                                    <div class="feature-value text-center">$ 450</div>
+                                    <div class="feature-value text-center">$ 850</div>
+                                    <div class="feature-value text-center">$ 1850</div>
+                                </div>
+                            </summary>
+                            <div class="feature-content">
+                                This is the maximum number of individual accommodation units (rooms, properties,
+                                etc.) that you can
+                                manage in your account.
+                            </div>
+                        </details>
+                    </div>
+                    <div class="feature-row bg-white">
+                        <details>
+                            <summary>
+                                <div class="feature-name">
+                                    <i class="fas fa-chevron-right chevron-icon"></i>
+                                    <span>
+                                        EUR € Price Per Year
+                                    </span>
+                                </div>
+                                <div class="feature-values d-flex">
+                                    <div class="feature-value text-center">free</div>
+                                    <div class="feature-value text-center">€ 140</div>
+                                    <div class="feature-value text-center">€ 400</div>
+                                    <div class="feature-value text-center">€ 850</div>
+                                    <div class="feature-value text-center">€ 1750</div>
+                                </div>
+                            </summary>
+                            <div class="feature-content">
+                                This is the maximum number of individual accommodation units (rooms, properties,
+                                etc.) that you can
+                                manage in your account.
+                            </div>
+                        </details>
+                    </div>
+                    <div class="feature-row bg-white">
+                        <details>
+                            <summary>
+                                <div class="feature-name">
+                                    <i class="fas fa-chevron-right chevron-icon"></i>
+                                    <span>
+                                        Number of Accommodation Units
+                                        <a href="#" class="more-info" onclick="event.preventDefault();">More info...</a>
+                                    </span>
+                                </div>
+                                <div class="feature-values d-flex">
+                                    <button class="feature-button text-white border-0">Sign up Now!</button>
+                                </div>
+                            </summary>
+                            <div class="feature-content">
+                                This is the maximum number of individual accommodation units (rooms, properties,
+                                etc.) that you can
+                                manage in your account.
+                            </div>
+                        </details>
+                    </div>
+
+                    <!-- You can let me know if you'd like the rest updated similarly, and I’ll continue with accurate replacements from the screenshot. -->
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="signup-section position-relative overflow-hidden" aria-label="Sign up for free account">
+            <div class="container position-relative overflow-hidden">
+                <div class="bg-image position-absolute top-0 start-0 w-100 h-100">
+                    <img src="./assets/images/footer-sign-up-bg.png" class="w-100 h-100" alt="background image">
+                </div>
+                <div class="signup-content position-relative text-center">
+                    <h1 class="signup-title fw-bold text-white">
+                        <span class="highlight fw-bold">Sign Up</span> For Free
+                    </h1>
+                    <form class="signup-form d-flex justify-content-center" role="form"
+                        aria-label="Account registration form">
+                        <input type="text" class="form-input flex-grow-1 bg-white fw-normal border-0 p-3"
+                            placeholder="Name" required aria-label="Enter your full name" autocomplete="name">
+                        <input type="email" class="form-input flex-grow-1 bg-white fw-normal border-0 p-3"
+                            placeholder="Email" required aria-label="Enter your email address" autocomplete="email">
+                        <button type="submit"
+                            class="signup-btn text-white border-0 fw-normal d-flex align-items-center justify-content-center gap-2"
+                            aria-label="Start selling with RomanCart">
+                            Start Selling
+                            <i class="fas fa-arrow-right d-flex align-items-center justify-content-center text-white"
+                                aria-hidden="true"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Component -->
+    <footer class="footer-component text-white" role="contentinfo">
+        <div class="container">
+            <!-- Footer Header -->
+            <div class="footer-header">
+                <div class="row align-items-center gap-4 gap-md-0">
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="d-flex align-items-center justify-content-center justify-content-md-start">
+                            <a href="#" class="brand-logo" aria-label="RomanCart Home">
+                                <img src="assets/images/logo.png" class="brand-logo" alt="RomanCart Logo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-6 col-12">
+                        <p class="footer-description text-white fw-normal">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dignissim,
+                            ante elementum molestie rutrum, neque lacus rutrum lacus, ut efficitur
+                            turpis libero at erat. Proin nec sollicitudin felis, ac volutpat ipsum.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Links -->
+            <div class="footer-links">
+                <div class="row">
+                    <!-- Internet Marketing Tools -->
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="footer-section">
+                            <h5>Internet Marketing Tools</h5>
+                            <ul class="list-unstyled d-flex flex-column gap-3">
+                                <li><a href="#" class="text-white fw-normal" aria-label="Email Marketing services">Email
+                                        Marketing</a></li>
+                                <li><a href="#" class="text-white fw-normal"
+                                        aria-label="Cross-Sell and Up-Sell tools">Cross-Sell and Up-Sell</a>
+                                </li>
+                                <li><a href="#" class="text-white fw-normal"
+                                        aria-label="Coupons and Promotions management">Coupons and
+                                        Promotions</a></li>
+                                <li><a href="#" class="text-white fw-normal" aria-label="Auto Responders system">Auto
+                                        Responders</a></li>
+                                <li><a href="#" class="text-white fw-normal"
+                                        aria-label="Follow-Up Emails automation">Follow-Up Emails</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Services -->
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="footer-section">
+                            <h5>Services</h5>
+                            <ul class="list-unstyled d-flex flex-column gap-3">
+                                <li><a href="#" class="text-white fw-normal" aria-label="Website Builder tool">Website
+                                        Builder</a></li>
+                                <li><a href="#" class="text-white fw-normal"
+                                        aria-label="Ecommerce Software platform">Ecommerce Software</a></li>
+                                <li><a href="#" class="text-white fw-normal"
+                                        aria-label="Internet Shopping Cart solution">Internet Shopping
+                                        Cart</a></li>
+                                <li><a href="#" class="text-white fw-normal"
+                                        aria-label="Internet Marketing services">Internet Marketing</a></li>
+                                <li><a href="#" class="text-white fw-normal"
+                                        aria-label="PayPal Commerce Platform integration">PayPal Commerce
+                                        Platform</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Partnering with RomanCart -->
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="footer-section">
+                            <h5>Partnering with RomanCart</h5>
+                            <ul class="list-unstyled d-flex flex-column gap-3">
+                                <li><a href="#" class="text-white fw-normal" class="text-white fw-normal"
+                                        aria-label="Partnership overview">Overview</a></li>
+                                <li><a href="#" class="text-white fw-normal" class="text-white fw-normal"
+                                        aria-label="Affiliate Program details">Affiliate Program</a></li>
+                                <li><a href="#" class="text-white fw-normal" class="text-white fw-normal"
+                                        aria-label="Web Design Partners program">Web Design Partners</a>
+                                </li>
+                                <li><a href="#" class="text-white fw-normal" class="text-white fw-normal"
+                                        aria-label="Internet Marketing partnerships">Internet Marketing</a>
+                                </li>
+                                <li><a href="#" class="text-white fw-normal" class="text-white fw-normal"
+                                        aria-label="Payment Gateway Partners">Payment Gateway Partners</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Other Information -->
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="footer-section">
+                            <h5>Other Information</h5>
+                            <ul class="list-unstyled d-flex flex-column gap-3">
+                                <li><a href="#" class="text-white fw-normal" aria-label="RomanCart Blog">RomanCart
+                                        Blog</a></li>
+                                <li><a href="#" class="text-white fw-normal" aria-label="User Forums community">User
+                                        Forums</a></li>
+                                <li><a href="#" class="text-white fw-normal" aria-label="Contact Us page">Contact Us</a>
+                                </li>
+                                <li><a href="#" class="text-white fw-normal" aria-label="Case Studies examples">Case
+                                        Studies</a></li>
+                                <li><a href="#" class="text-white fw-normal" aria-label="Site Map navigation">Site
+                                        Map</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom d-flex flex-wrap align-items-center justify-content-between gap-3">
+                <p class="copyright fw-normal text-white">© All rights reserved, Romancart. 2025</p>
+                <div class="built-in-canada fw-normal text-white d-flex align-items-center gap-2">
+                    <i class="fa-brands fa-canadian-maple-leaf"></i>
+                    <span>Built in canada</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+    </script>
+</body>
+
+</html>

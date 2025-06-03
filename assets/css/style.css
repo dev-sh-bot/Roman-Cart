@@ -1784,7 +1784,6 @@ p {
     transform: translateY(-1px);
 }
 
-
 /* Responsive adjustments for both feature sections */
 @media (max-width: 1199.98px) {
     .invoice-section .section-title {
@@ -1836,6 +1835,289 @@ p {
         padding: 8px 16px;
         font-size: 0.9rem;
     }
+}
+
+.features-section-3 {
+    padding: 80px 0;
+}
+
+.features-section-3 .features-header {
+    border-radius: 8px;
+    box-shadow: 0 0 12px 0px rgba(0, 0, 0, 0.1);
+    padding: 20px 30px;
+    margin-bottom: 10px;
+}
+
+.features-section-3 .features-title {
+    flex: 1;
+}
+
+.features-section-3 .features-title h2 {
+    font-size: 24px;
+    margin: 0;
+    color: #000;
+}
+
+.features-section-3 .features-title p {
+    font-size: 18px;
+    color: var(--primary-color);
+    margin-top: 10px;
+}
+
+.features-section-3 .plan-header {
+    font-size: 24px;
+    width: 145px;
+    color: var(--accent);
+}
+
+
+/* Section Headers */
+.features-section-3 .section-header {
+    padding: 20px 30px;
+}
+
+.features-section-3 .section-header h3 {
+    font-size: 20px;
+    margin: 0;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+/* Accordion Styles */
+.features-section-3 .feature-row {
+    border-radius: 8px;
+    box-shadow: 0 0 12px 0px rgba(0, 0, 0, 0.1);
+    padding: 10px 0px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.features-section-3 .feature-row:last-child {
+    border-bottom: none;
+}
+
+.features-section-3 details {
+    width: 100%;
+}
+
+.features-section-3 summary {
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    cursor: pointer;
+    position: relative;
+    list-style: none;
+}
+
+.features-section-3 summary:focus {
+    outline: none !important;
+    outline-offset: 0px !important;
+}
+
+.features-section-3 summary::-webkit-details-marker {
+    display: none;
+}
+
+.features-section-3 .feature-name {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: var(--secondary-color)
+}
+
+.features-section-3 .chevron-icon {
+    display: block;
+    margin-right: 10px;
+    color: var(--primary-color);
+    font-size: 14px;
+    transition: transform 0.2s ease;
+}
+
+.features-section-3 details[open] .chevron-icon {
+    transform: rotate(90deg);
+}
+
+.features-section-3 .more-info {
+    display: inline;
+    color: var(--primary-color);
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+.features-section-3 .more-info:hover,
+.features-section-3 .more-info:focus {
+    text-decoration: underline;
+}
+
+.features-section-3 .feature-button {
+    background-color: var(--primary-color);
+    font-size: 16px;
+    padding: 13px 24px;
+    width: 700px;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.features-section-3 .feature-button:hover {
+    transform: translateY(-1px);
+}
+
+.features-section-3 .feature-value {
+    width: 145px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.features-section-3 .check-icon {
+    width: 18px;
+    height: 18px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 10px;
+}
+
+.features-section-3 .feature-content {
+    padding: 20px 30px 15px 50px;
+    color: var(--secondary-color);
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Focus styles for accessibility */
+.features-section-3 summary:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: -2px;
+}
+
+.features-section-3 .more-info:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+@media (max-width: 1199.98px) {
+
+    .features-section-3 .features-title h2,
+    .features-section-3 .section-header h3 {
+        font-size: 18px;
+    }
+
+    .features-section-3 .plan-header {
+        font-size: 18px;
+        width: 110px;
+    }
+
+    .features-section-3 .features-title p {
+        font-size: 16px;
+    }
+
+    .features-section-3 .feature-value {
+        width: 110px;
+    }
+
+    .features-section-3 .feature-button {
+        width: 500px;
+    }
+
+    .features-section-3 .feature-name,
+    .features-section-3 .feature-content {
+        font-size: 14px;
+    }
+
+    .features-section-3 .feature-content {
+        padding: 15px 30px;
+    }
+
+    .features-section-3 .chevron-icon {
+        font-size: 12px;
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 991.98px) {
+    .features-section-3 .features-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .features-section-3 .plan-headers {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .features-section-3 .plan-header {
+        font-size: 0.9rem;
+        width: 20%;
+    }
+
+    .features-section-3 summary {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .features-section-3 .feature-values {
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+
+    .features-section-3 .feature-value {
+        width: 20%;
+    }
+
+    .features-section-3 .feature-button {
+        width: 100%;
+    }
+
+    .features-section-3 .feature-content {
+        padding: 0 20px 15px 25px;
+    }
+
+    .features-section-3 .section-header {
+        padding: 15px 20px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .features-section-3 .features-header {
+        padding: 15px 20px;
+    }
+
+    .features-section-3 .features-title h2 {
+        font-size: 1.1rem;
+    }
+
+    .features-section-3 .plan-headers {
+        gap: 10px;
+    }
+
+    .features-section-3 .plan-header {
+        font-size: 0.8rem;
+    }
+
+    .features-section-3 .feature-name {
+        font-size: 0.85rem;
+    }
+
+    .features-section-3 .feature-content {
+        font-size: 0.85rem;
+    }
+
+
+    .features-section-3 summary {
+        padding: 10px 20px;
+    }
+}
+
+
+.features-section-3.bg-accent {
+    margin-bottom: 100px !important;
+    background-color: var(--accent);
 }
 
 /* Custom CSS for exact design match */
