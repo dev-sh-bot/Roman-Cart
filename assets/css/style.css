@@ -1467,29 +1467,16 @@ p {
 
 /* Demo Section  */
 .banner-2-section {
-    background-color: #f8f9fa;
-    padding: 80px 0;
-    min-height: 400px;
+    background-color: var(--primary-color);
     display: flex;
     align-items: center;
     position: relative;
     overflow: hidden;
 }
 
-.banner-2-section .banner-2 {
-    object-fit: cover;
-    z-index: 1;
-}
-
-.banner-2-section .banner-2 img {
-    width: 120%;
-    height: 120%;
-}
-
 .banner-2-section .demo-title {
     font-size: 52px;
-    color: #2c2c2c;
-    margin-bottom: 24px;
+    margin-bottom: 15px;
     line-height: 1.1;
 }
 
@@ -1499,90 +1486,35 @@ p {
 
 .banner-2-section .demo-description {
     font-size: 16px;
-    color: #6c757d;
-    margin-bottom: 40px;
     line-height: 1.6;
-    max-width: 600px;
+    max-width: 750px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.banner-2-section .demo-btn {
-    font-family: "Switzer Variable";
-    font-size: 16px;
-    line-height: 120%;
-    background-color: var(--primary-color);
-    padding: 15px 30px;
-    border-radius: 12px;
-    text-decoration: none;
-    width: fit-content;
-    gap: 8px;
-    transition: all 0.3s ease;
-}
-
-.banner-2-section .demo-btn:hover {
-    background-color: var(--primary-color);
-    transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(30, 58, 138, 0.3);
-}
-
-.banner-2-section .demo-btn i {
-    background-color: var(--accent);
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    font-size: 12px;
-}
-
-
 /* Responsive adjustments */
 @media (max-width: 991.98px) {
-    .banner-2-section {
-        padding: 60px 0;
-    }
-
     .banner-2-section .demo-title {
         font-size: 3rem;
-    }
-
-    .banner-2-section .demo-description {
-        margin-bottom: 32px;
     }
 }
 
 @media (max-width: 767.98px) {
-    .banner-2-section {
-        padding: 50px 0;
-    }
-
     .banner-2-section .demo-title {
         font-size: 2rem;
-        margin-bottom: 20px;
     }
 
     .banner-2-section .demo-description {
-        margin-bottom: 30px;
         padding: 0 20px;
-    }
-
-    .banner-2-section .demo-btn {
-        padding: 14px 28px;
-        font-size: 1rem;
     }
 }
 
 @media (max-width: 575.98px) {
-    .banner-2-section {
-        padding: 40px 0;
-    }
-
     .banner-2-section .demo-title {
         font-size: 1.8rem;
-        margin-bottom: 20px;
     }
 
     .banner-2-section .demo-description {
-        margin-bottom: 28px;
         padding: 0 20px;
     }
 
