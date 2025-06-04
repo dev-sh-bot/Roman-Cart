@@ -2585,3 +2585,115 @@ p {
         font-size: 14px !important;
     }
 }
+
+/* --- Support Section Custom Styles (Refined for Theme Consistency) --- */
+.support-section {
+    padding: 80px 0;
+}
+
+.support-section .section-header {
+    margin-bottom: 60px;
+}
+
+.support-section .section-title {
+    max-width: 754px;
+    font-size: 40px;
+    line-height: 108%;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+
+.support-section .section-title .highlight {
+    color: var(--accent);
+}
+
+.support-section .section-subtitle {
+    max-width: 754px;
+    font-size: 16px;
+    line-height: 140%;
+    color: #13131380;
+    margin-bottom: 0;
+}
+
+.support-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 16px 0px #10101014;
+    padding: 32px 24px;
+    margin-bottom: 32px;
+    transition: box-shadow 0.2s, transform 0.2s;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s ease forwards;
+    border-left: 5px solid var(--accent);
+}
+
+.support-card:nth-child(1) { animation-delay: 0.1s; }
+.support-card:nth-child(2) { animation-delay: 0.2s; }
+.support-card:nth-child(3) { animation-delay: 0.3s; }
+.support-card:nth-child(4) { animation-delay: 0.4s; }
+.support-card:nth-child(5) { animation-delay: 0.5s; }
+
+.support-card:hover {
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+    transform: translateY(-8px);
+}
+
+.support-card h4 a,
+.support-card h5 {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 1.3rem;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.support-card h4 a:hover {
+    color: var(--accent);
+    text-decoration: underline;
+}
+
+.support-card p,
+.support-card address {
+    color: #131313b3;
+    font-size: 1.05rem;
+    margin-top: 0.5rem;
+}
+
+.support-card a {
+    color: var(--accent);
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.support-card a:hover {
+    color: var(--primary-color);
+}
+
+@media (max-width: 991.98px) {
+    .support-section {
+        padding: 50px 0;
+    }
+    .support-card {
+        padding: 24px 12px;
+    }
+    .support-section .section-title {
+        font-size: 2.2rem;
+    }
+}
+@media (max-width: 575.98px) {
+    .support-section {
+        padding: 30px 0;
+    }
+    .support-card {
+        padding: 16px 8px;
+        border-radius: 8px;
+        border-right-width: 4px;
+    }
+    .support-section .section-title {
+        font-size: 1.7rem;
+    }
+    .support-section .section-subtitle {
+        font-size: 0.95rem;
+    }
+}
