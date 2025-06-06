@@ -1,8 +1,16 @@
+/* ============================================================================
+   GLOBAL STYLES & VARIABLES
+   ============================================================================ */
+
 :root {
   --primary-color: #0c3382;
   --secondary-color: #131313;
   --accent: #ee950a;
 }
+
+/* ============================================================================
+   FONT DECLARATIONS
+   ============================================================================ */
 
 @font-face {
   font-family: "Switzer";
@@ -75,6 +83,10 @@
   src: url("fonts/sf-pro-display-black.woff2") format("woff2");
 }
 
+/* ============================================================================
+   BASE STYLES & RESET
+   ============================================================================ */
+
 * {
   margin: 0px;
   padding: 0px;
@@ -98,7 +110,10 @@ p {
   margin-bottom: 0%;
 }
 
-/* Custom CSS for exact design match */
+/* ============================================================================
+   HEADER & NAVIGATION SECTION
+   ============================================================================ */
+
 .top-bar {
   background-color: var(--primary-color);
   font-size: 14px;
@@ -205,12 +220,14 @@ p {
     margin: 0px 7px;
     font-weight: bold !important;
     transition: color 0.3s ease;
+
     .social-icons {
       justify-content: center;
       margin-top: 10px;
     }
   }
 }
+
 @media (max-width: 1199px) {
   .navbar-nav .nav-link {
     font-size: 12px;
@@ -218,12 +235,14 @@ p {
     margin: 0px 5px;
     font-weight: bold !important;
     transition: color 0.3s ease;
+
     .social-icons {
       justify-content: center;
       margin-top: 10px;
     }
   }
 }
+
 @media (max-width: 991.98px) {
   .navbar-nav {
     text-align: center;
@@ -265,7 +284,10 @@ p {
   }
 }
 
-/* Custom CSS for exact design match */
+/* ============================================================================
+   HERO BANNER SECTION
+   ============================================================================ */
+
 .hero-banner {
   overflow: hidden;
   padding: 60px 0px;
@@ -469,6 +491,10 @@ p {
   }
 }
 
+/* ============================================================================
+   MAIN CONTENT SECTIONS
+   ============================================================================ */
+
 /* Features Section 1 */
 .features-section-1 {
   padding: 120px 0;
@@ -529,6 +555,10 @@ p {
 .features-section-2 {
   background-color: #f6f6f6;
   padding: 80px 0;
+}
+
+.features-section-2.business-operations {
+  background-color: #f6f6f6;
 }
 
 .features-section-2 .section-header {
@@ -613,6 +643,7 @@ p {
 
 /* Responsive adjustments for both feature sections */
 @media (max-width: 1199.98px) {
+
   .features-section-1 .section-title,
   .features-section-2 .section-title {
     font-size: 2.5rem;
@@ -620,6 +651,7 @@ p {
 }
 
 @media (max-width: 991.98px) {
+
   .features-section-1,
   .features-section-2 {
     padding: 60px 0;
@@ -632,6 +664,7 @@ p {
 }
 
 @media (max-width: 767.98px) {
+
   .features-section-1 .section-title,
   .features-section-2 .section-title {
     font-size: 1.9rem;
@@ -644,6 +677,7 @@ p {
 }
 
 @media (max-width: 575.98px) {
+
   .features-section-1,
   .features-section-2 {
     padding: 50px 0;
@@ -1470,13 +1504,17 @@ p {
   }
 }
 
+/* ============================================================================
+   UTILITY CLASSES & ANIMATIONS
+   ============================================================================ */
+
 /* Common row-equal-height class for all sections */
 .row-equal-height {
   display: flex;
   flex-wrap: wrap;
 }
 
-.row-equal-height > [class*="col-"] {
+.row-equal-height>[class*="col-"] {
   display: flex;
 }
 
@@ -1948,6 +1986,7 @@ p {
 }
 
 @media (max-width: 1199.98px) {
+
   .features-section-3 .features-title h2,
   .features-section-3 .section-header h3 {
     font-size: 18px;
@@ -2064,7 +2103,10 @@ p {
   background-color: var(--accent);
 }
 
-/* Custom CSS for exact design match */
+/* ============================================================================
+   SIGNUP SECTION
+   ============================================================================ */
+
 .signup-section {
   margin-bottom: -150px;
 }
@@ -2291,6 +2333,7 @@ p {
 
 /* Reduced motion support */
 @media (prefers-reduced-motion: reduce) {
+
   .signup-section .signup-content,
   .signup-section .form-input,
   .signup-section .signup-btn {
@@ -2305,7 +2348,10 @@ p {
   }
 }
 
-/* Custom CSS for exact design match */
+/* ============================================================================
+   FOOTER SECTION
+   ============================================================================ */
+
 .footer-component {
   background-color: var(--secondary-color);
   padding: 220px 0 0;
@@ -2591,7 +2637,11 @@ p {
   }
 }
 
-/* --- Support Section Custom Styles (Refined for Theme Consistency) --- */
+/* ============================================================================
+   SUPPORT & PAGE-SPECIFIC SECTIONS
+   ============================================================================ */
+
+/* Support Section Custom Styles (Refined for Theme Consistency) */
 .support-section {
   padding: 80px 0;
 }
@@ -2636,15 +2686,19 @@ p {
 .support-card:nth-child(1) {
   animation-delay: 0.1s;
 }
+
 .support-card:nth-child(2) {
   animation-delay: 0.2s;
 }
+
 .support-card:nth-child(3) {
   animation-delay: 0.3s;
 }
+
 .support-card:nth-child(4) {
   animation-delay: 0.4s;
 }
+
 .support-card:nth-child(5) {
   animation-delay: 0.5s;
 }
@@ -2689,26 +2743,1363 @@ p {
   .support-section {
     padding: 50px 0;
   }
+
   .support-card {
     padding: 24px 12px;
   }
+
   .support-section .section-title {
     font-size: 2.2rem;
   }
 }
+
 @media (max-width: 575.98px) {
   .support-section {
     padding: 30px 0;
   }
+
   .support-card {
     padding: 16px 8px;
     border-radius: 8px;
     border-right-width: 4px;
   }
+
   .support-section .section-title {
     font-size: 1.7rem;
   }
+
   .support-section .section-subtitle {
     font-size: 0.95rem;
   }
+}
+
+/* ============================================================================
+   PAYPAL COMMERCE PLATFORM PAGE STYLES
+   ============================================================================ */
+
+/* Global Benefits Section (PayPal Page) */
+.global-benefits-section {
+  padding: 80px 0;
+  background-color: #f6f6f6;
+}
+
+.global-benefits-section .section-header {
+  margin-bottom: 60px;
+}
+
+.global-benefits-section .section-title {
+  max-width: 754px;
+  margin-bottom: 25px;
+  font-size: 40px;
+  line-height: 108%;
+  color: var(--secondary-color);
+}
+
+.global-benefits-section .section-title .highlight {
+  color: var(--accent);
+}
+
+.global-benefits-section .section-subtitle {
+  max-width: 754px;
+  font-size: 16px;
+  line-height: 140%;
+  color: #13131380;
+  margin-bottom: 25px;
+}
+
+.global-benefits-section .benefit-item {
+  text-align: left;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0px 0px 16px 0px #10101014;
+  background: #ffffff;
+  width: 100%;
+  height: 100%;
+}
+
+.global-benefits-section .benefit-icon {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  font-size: 24px;
+  line-height: 120%;
+}
+
+.global-benefits-section .benefit-icon.primary {
+  background-color: var(--primary-color);
+}
+
+.global-benefits-section .benefit-title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 120%;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+  color: #000000;
+}
+
+.global-benefits-section .benefit-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #13131380;
+  margin-bottom: 20px;
+}
+
+/* Security Benefits Section (PayPal Page) */
+.security-benefits-section {
+  padding: 80px 0;
+}
+
+.security-benefits-section .section-header {
+  margin-bottom: 60px;
+}
+
+.security-benefits-section .section-title {
+  max-width: 754px;
+  margin-bottom: 25px;
+  font-size: 40px;
+  line-height: 108%;
+  color: var(--secondary-color);
+}
+
+.security-benefits-section .section-title .highlight {
+  color: var(--accent);
+}
+
+.security-benefits-section .section-subtitle {
+  max-width: 754px;
+  font-size: 16px;
+  line-height: 140%;
+  color: #13131380;
+  margin-bottom: 25px;
+}
+
+.security-benefits-section .benefit-item {
+  text-align: left;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0px 0px 16px 0px #10101014;
+  background: #ffffff;
+  width: 100%;
+  height: 100%;
+}
+
+.security-benefits-section .benefit-icon {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  font-size: 24px;
+  line-height: 120%;
+}
+
+.security-benefits-section .benefit-icon.primary {
+  background-color: var(--primary-color);
+}
+
+.security-benefits-section .benefit-title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 120%;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+  color: #000000;
+}
+
+.security-benefits-section .benefit-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #13131380;
+  margin-bottom: 20px;
+}
+
+.security-benefits-section .disclaimer {
+  font-size: 14px;
+  color: #666;
+  font-style: italic;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 140%;
+}
+
+/* Responsive adjustments for PayPal benefit sections */
+@media (max-width: 1199.98px) {
+
+  .global-benefits-section .section-title,
+  .security-benefits-section .section-title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+
+  .global-benefits-section,
+  .security-benefits-section {
+    padding: 60px 0;
+  }
+
+  .global-benefits-section .section-title,
+  .security-benefits-section .section-title {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+
+  .global-benefits-section .section-title,
+  .security-benefits-section .section-title {
+    font-size: 1.9rem;
+  }
+
+  .global-benefits-section .section-subtitle,
+  .security-benefits-section .section-subtitle {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+
+  .global-benefits-section,
+  .security-benefits-section {
+    padding: 50px 0;
+  }
+
+  .global-benefits-section .section-title,
+  .security-benefits-section .section-title {
+    font-size: 1.7rem;
+  }
+
+  .global-benefits-section .benefit-icon,
+  .security-benefits-section .benefit-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 1.1rem;
+  }
+
+  .global-benefits-section .benefit-title,
+  .security-benefits-section .benefit-title {
+    font-size: 1.2rem;
+  }
+
+  .global-benefits-section .benefit-description,
+  .security-benefits-section .benefit-description {
+    font-size: 0.95rem;
+  }
+}
+
+.paypal-hero {
+  padding: 80px 0;
+  background-color: #f6f6f6;
+}
+
+.paypal-hero .hero-title {
+  font-size: 52px;
+  line-height: 100%;
+  color: var(--secondary-color);
+}
+
+.paypal-hero .hero-description {
+  font-size: 18px;
+  line-height: 140%;
+  color: #13131380;
+}
+
+.paypal-hero .highlight {
+  color: var(--accent);
+}
+
+.paypal-hero .brand-partnership {
+  margin-bottom: 30px;
+}
+
+.trust-section {
+  padding: 80px 0;
+  background-color: #f6f6f6;
+}
+
+.trust-section .section-title {
+  font-size: 40px;
+  line-height: 108%;
+  color: var(--secondary-color);
+}
+
+.trust-section .section-title .highlight {
+  color: var(--accent);
+}
+
+.trust-section .section-subtitle {
+  font-size: 16px;
+  line-height: 140%;
+  color: #13131380;
+}
+
+.video-preview .video-thumbnail {
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.video-preview .video-thumbnail:hover {
+  transform: translateY(-5px);
+}
+
+.video-preview .play-button {
+  width: 60px;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.video-preview .play-button:hover {
+  background-color: var(--primary-color);
+  transform: scale(1.1);
+}
+
+.video-preview .video-caption {
+  font-size: 14px;
+  color: #666;
+}
+
+.sales-growth-section {
+  padding: 80px 0;
+}
+
+.sales-growth-section .feature-stat {
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--secondary-color);
+  margin-bottom: 20px;
+  line-height: 120%;
+}
+
+.sales-growth-section .feature-description {
+  color: #13131380;
+  font-size: 16px;
+  line-height: 140%;
+  margin-bottom: 15px;
+}
+
+.sales-growth-section .feature-note {
+  font-size: 14px;
+  color: var(--primary-color);
+  font-weight: 500;
+  line-height: 120%;
+}
+
+.sales-growth-section .payment-methods i {
+  transition: transform 0.3s ease;
+}
+
+.sales-growth-section .payment-methods i:hover {
+  transform: scale(1.2);
+}
+
+.statistics-section {
+  padding: 80px 0;
+}
+
+.statistics-section .stat-card {
+  padding: 20px;
+}
+
+.statistics-section .stat-number {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  line-height: 100%;
+}
+
+.statistics-section .stat-label {
+  font-size: 16px;
+  line-height: 140%;
+  opacity: 0.9;
+}
+
+.security-section {
+  padding: 80px 0;
+}
+
+.security-section .security-feature {
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.security-section .security-feature:hover {
+  transform: translateY(-5px);
+}
+
+.security-section .security-icon {
+  margin-bottom: 20px;
+}
+
+.security-section .security-icon i {
+  transition: color 0.3s ease;
+}
+
+.security-section .security-feature:hover .security-icon i {
+  color: var(--accent) !important;
+}
+
+.security-section .feature-title {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--secondary-color);
+  margin-bottom: 15px;
+  line-height: 120%;
+}
+
+.security-section .feature-description {
+  color: #13131380;
+  font-size: 16px;
+  line-height: 140%;
+}
+
+.security-section .disclaimer {
+  font-size: 14px;
+  color: #666;
+  font-style: italic;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 140%;
+}
+
+.business-operations-section {
+  padding: 80px 0;
+}
+
+.business-operations-section .business-card,
+.business-operations-section .pricing-card {
+  transition: transform 0.3s ease;
+}
+
+.business-operations-section .business-card:hover,
+.business-operations-section .pricing-card:hover {
+  transform: translateY(-8px);
+}
+
+.business-operations-section .card-title {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 120%;
+  margin-bottom: 20px;
+}
+
+.business-operations-section .card-description {
+  font-size: 16px;
+  line-height: 140%;
+  margin-bottom: 30px;
+}
+
+.business-operations-section .feature-item {
+  margin-bottom: 20px;
+}
+
+.business-operations-section .feature-item strong {
+  font-size: 16px;
+  line-height: 120%;
+}
+
+.business-operations-section .feature-item p {
+  font-size: 14px;
+  line-height: 140%;
+  margin-top: 5px;
+}
+
+.business-operations-section .pricing-text {
+  font-size: 18px;
+  color: var(--secondary-color);
+}
+
+.business-operations-section .pricing-link {
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.business-operations-section .pricing-link:hover {
+  color: var(--accent) !important;
+}
+
+.business-operations-section .pricing-note {
+  font-size: 14px;
+  line-height: 140%;
+}
+
+.getting-started-section {
+  padding: 80px 0;
+}
+
+.getting-started-section .section-title {
+  font-size: 40px;
+  line-height: 108%;
+  color: var(--secondary-color);
+  margin-bottom: 20px;
+}
+
+.getting-started-section .section-title .highlight {
+  color: var(--accent);
+}
+
+.getting-started-section .section-subtitle {
+  font-size: 16px;
+  line-height: 140%;
+  color: #13131380;
+}
+
+.getting-started-section .steps-list {
+  margin-bottom: 40px;
+}
+
+.getting-started-section .step-item {
+  align-items: flex-start;
+}
+
+.getting-started-section .step-number-circle {
+  background-color: var(--accent);
+  color: white;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.getting-started-section .step-item span:last-child {
+  font-size: 16px;
+}
+
+.getting-started-section .btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  padding: 16px 32px;
+  font-size: 16px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.getting-started-section .btn-primary:hover {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(30, 58, 138, 0.3);
+}
+
+.pay-later-section {
+  padding: 80px 0;
+}
+
+.pay-later-section .section-title {
+  font-size: 40px;
+  line-height: 108%;
+  margin-bottom: 20px;
+}
+
+.pay-later-section .section-title .highlight {
+  color: var(--accent);
+}
+
+.pay-later-section .section-subtitle {
+  font-size: 16px;
+  line-height: 140%;
+  margin-bottom: 30px;
+}
+
+.pay-later-section .btn-light {
+  background-color: white;
+  border-color: white;
+  padding: 16px 32px;
+  font-size: 16px;
+  border-radius: 12px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.pay-later-section .btn-light:hover {
+  background-color: #f8f9fa;
+  border-color: #f8f9fa;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.pay-later-section .phone-mockups {
+  gap: 20px;
+}
+
+.pay-later-section .phone-frame {
+  max-width: 200px;
+}
+
+/* Responsive adjustments for PayPal page */
+@media (max-width: 1199.98px) {
+  .paypal-hero .hero-title {
+    font-size: 44px;
+  }
+
+  .trust-section .section-title,
+  .getting-started-section .section-title,
+  .pay-later-section .section-title {
+    font-size: 36px;
+  }
+
+  .sales-growth-section .feature-stat {
+    font-size: 20px;
+  }
+
+  .statistics-section .stat-number {
+    font-size: 40px;
+  }
+
+  .business-operations-section .card-title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 991.98px) {
+
+  .paypal-hero,
+  .trust-section,
+  .sales-growth-section,
+  .statistics-section,
+  .security-section,
+  .business-operations-section,
+  .getting-started-section,
+  .pay-later-section {
+    padding: 60px 0;
+  }
+
+  .paypal-hero .hero-title {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .paypal-hero .hero-description {
+    text-align: center;
+  }
+
+  .paypal-hero .brand-partnership {
+    justify-content: center;
+  }
+
+  .trust-section .section-title,
+  .getting-started-section .section-title,
+  .pay-later-section .section-title {
+    font-size: 32px;
+  }
+
+  .sales-growth-section .feature-stat {
+    font-size: 18px;
+  }
+
+  .statistics-section .stat-number {
+    font-size: 36px;
+  }
+
+  .business-operations-section .business-card,
+  .business-operations-section .pricing-card {
+    margin-bottom: 30px;
+  }
+
+  .pay-later-section .phone-mockups {
+    justify-content: center;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .paypal-hero .hero-title {
+    font-size: 28px;
+  }
+
+  .trust-section .section-title,
+  .getting-started-section .section-title,
+  .pay-later-section .section-title {
+    font-size: 28px;
+  }
+
+  .sales-growth-section .feature-stat {
+    font-size: 16px;
+  }
+
+  .statistics-section .stat-number {
+    font-size: 32px;
+  }
+
+  .security-section .security-feature {
+    margin-bottom: 30px;
+  }
+
+  .business-operations-section .card-title {
+    font-size: 20px;
+  }
+
+  .getting-started-section .step-item {
+    margin-bottom: 20px;
+  }
+
+  .pay-later-section .phone-frame {
+    max-width: 150px;
+  }
+}
+
+@media (max-width: 575.98px) {
+
+  .paypal-hero,
+  .trust-section,
+  .sales-growth-section,
+  .statistics-section,
+  .security-section,
+  .business-operations-section,
+  .getting-started-section,
+  .pay-later-section {
+    padding: 40px 0;
+  }
+
+  .paypal-hero .hero-title {
+    font-size: 24px;
+  }
+
+  .trust-section .section-title,
+  .getting-started-section .section-title,
+  .pay-later-section .section-title {
+    font-size: 24px;
+  }
+
+  .statistics-section .stat-number {
+    font-size: 28px;
+  }
+
+  .business-operations-section .business-card,
+  .business-operations-section .pricing-card {
+    padding: 30px 20px;
+  }
+
+  .getting-started-section .btn-primary,
+  .pay-later-section .btn-light {
+    padding: 14px 24px;
+    font-size: 14px;
+  }
+
+  .pay-later-section .phone-frame {
+    max-width: 120px;
+  }
+}
+
+/* Additional PayPal Commerce Platform Specific Styles */
+
+/* Hero Section Brand Partnership */
+.paypal-hero .paypal-icon {
+  font-size: 3rem;
+  margin-right: 1rem;
+  color: var(--primary-color);
+}
+
+.paypal-hero .partnership-plus {
+  font-weight: bold;
+  color: #6c757d;
+  font-size: 1.2rem;
+  margin-right: 1rem;
+}
+
+.paypal-hero .partnership-logo {
+  height: 40px;
+}
+
+/* Payment Method Icons */
+.sales-growth-section .visa-icon {
+  font-size: 2rem;
+  color: #1a1f71;
+}
+
+.sales-growth-section .mastercard-icon {
+  font-size: 2rem;
+  color: #eb001b;
+}
+
+.sales-growth-section .amex-icon {
+  font-size: 2rem;
+  color: #006fcf;
+}
+
+.sales-growth-section .paypal-payment-icon {
+  font-size: 2rem;
+  color: #003087;
+}
+
+.sales-growth-section .discover-icon {
+  font-size: 2rem;
+  color: #ff6000;
+}
+
+/* Statistics Section - now uses white background */
+.statistics-section .stat-number {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.statistics-section .stat-label {
+  color: var(--secondary-color);
+}
+
+/* Security Icons */
+.security-section .security-icon-item {
+  font-size: 3rem;
+  color: var(--primary-color);
+}
+
+/* Business Operations Cards */
+.business-operations-section .business-card {
+  background-color: var(--primary-color);
+  border-radius: 16px;
+}
+
+.business-operations-section .pricing-card {
+  border-radius: 16px;
+  box-shadow: 0px 0px 20px 0px #10101014;
+}
+
+.business-operations-section .pricing-card-title {
+  color: var(--primary-color);
+}
+
+.business-operations-section .pricing-card-description {
+  color: var(--secondary-color);
+}
+
+.business-operations-section .pricing-link {
+  color: var(--primary-color);
+}
+
+.business-operations-section .pricing-note {
+  color: #666;
+}
+
+.business-operations-section .check-icon-accent {
+  color: var(--accent);
+}
+
+/* Pay Later Section - now uses white background */
+.pay-later-section .paypal-logo-icon {
+  color: var(--primary-color);
+}
+
+.pay-later-section .paypal-logo-icon {
+  font-size: 3rem;
+}
+
+.pay-later-section .pay-later-btn {
+  color: var(--primary-color);
+}
+
+/* Phone Frame Styles */
+.phone-frame {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.phone-frame img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Video Preview Styles */
+.video-preview .video-thumbnail {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.video-preview .video-thumbnail:hover {
+  transform: translateY(-5px);
+}
+
+.video-preview .play-button {
+  width: 60px;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.video-preview .play-button:hover {
+  background-color: var(--primary-color);
+  transform: scale(1.1);
+}
+
+.video-preview .video-caption {
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+  margin-top: 8px;
+}
+
+/* PayPal Page Responsive Overrides */
+@media (max-width: 991.98px) {
+  .paypal-hero .paypal-icon {
+    font-size: 2.5rem;
+  }
+
+  .paypal-hero .partnership-plus {
+    font-size: 1rem;
+  }
+
+  .paypal-hero .partnership-logo {
+    height: 35px;
+  }
+
+  .sales-growth-section .visa-icon,
+  .sales-growth-section .mastercard-icon,
+  .sales-growth-section .amex-icon,
+  .sales-growth-section .paypal-payment-icon,
+  .sales-growth-section .discover-icon {
+    font-size: 1.8rem;
+  }
+
+  .security-section .security-icon-item {
+    font-size: 2.5rem;
+  }
+
+  .pay-later-section .paypal-logo-icon {
+    font-size: 2.5rem;
+  }
+
+  .phone-frame {
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .paypal-hero .paypal-icon {
+    font-size: 2rem;
+  }
+
+  .paypal-hero .partnership-logo {
+    height: 30px;
+  }
+
+  .sales-growth-section .visa-icon,
+  .sales-growth-section .mastercard-icon,
+  .sales-growth-section .amex-icon,
+  .sales-growth-section .paypal-payment-icon,
+  .sales-growth-section .discover-icon {
+    font-size: 1.5rem;
+  }
+
+  .security-section .security-icon-item {
+    font-size: 2rem;
+  }
+
+  .pay-later-section .paypal-logo-icon {
+    font-size: 2rem;
+  }
+
+  .phone-frame {
+    max-width: 200px;
+  }
+
+  .business-operations-section .business-card,
+  .business-operations-section .pricing-card {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .paypal-hero .paypal-icon {
+    font-size: 1.8rem;
+    margin-right: 0.5rem;
+  }
+
+  .paypal-hero .partnership-plus {
+    font-size: 0.9rem;
+    margin-right: 0.5rem;
+  }
+
+  .paypal-hero .partnership-logo {
+    height: 25px;
+  }
+
+  .sales-growth-section .visa-icon,
+  .sales-growth-section .mastercard-icon,
+  .sales-growth-section .amex-icon,
+  .sales-growth-section .paypal-payment-icon,
+  .sales-growth-section .discover-icon {
+    font-size: 1.3rem;
+  }
+
+  .security-section .security-icon-item {
+    font-size: 1.8rem;
+  }
+
+  .pay-later-section .paypal-logo-icon {
+    font-size: 1.8rem;
+  }
+
+  .phone-frame {
+    max-width: 150px;
+  }
+
+  .video-preview .play-button {
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+  }
+
+  .business-operations-section .business-card,
+  .business-operations-section .pricing-card {
+    padding: 30px 20px;
+  }
+}
+
+/* YouTube Video Styles */
+.video-preview .youtube-video {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.video-preview .youtube-video:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.video-preview .youtube-video iframe {
+  border-radius: 12px;
+  width: 100%;
+  height: 250px;
+}
+
+/* Feature Icons Styles */
+.sales-growth-section .feature-icon-container,
+.features-section-2 .feature-icon-container {
+  width: 120px;
+  height: 120px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(12, 51, 130, 0.2);
+}
+
+.sales-growth-section .feature-icon-container:hover,
+.features-section-2 .feature-icon-container:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 8px 30px rgba(12, 51, 130, 0.3);
+  background-color: var(--accent);
+}
+
+.sales-growth-section .feature-main-icon,
+.features-section-2 .feature-main-icon {
+  font-size: 3rem;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.sales-growth-section .feature-icon-container:hover .feature-main-icon,
+.features-section-2 .feature-icon-container:hover .feature-main-icon {
+  transform: scale(1.1);
+}
+
+/* Rotated Banner Image */
+.paypal-hero .phone-frame img {
+  transform: rotate(40deg);
+  transition: transform 0.3s ease;
+}
+
+.paypal-hero .phone-frame:hover img {
+  transform: rotate(20deg) scale(1.02);
+}
+
+/* Enhanced Phone Mockups */
+.pay-later-section .phone-frame img {
+  transition: transform 0.3s ease;
+}
+
+.pay-later-section .phone-frame:hover img {
+  transform: translateY(-5px) scale(1.02);
+}
+
+/* Getting Started Image Enhancement */
+.getting-started-section img {
+  transition: transform 0.3s ease;
+}
+
+.getting-started-section img:hover {
+  transform: translateY(-5px);
+}
+
+/* Responsive adjustments for new elements */
+@media (max-width: 991.98px) {
+  .video-preview .youtube-video iframe {
+    height: 200px;
+  }
+
+  .sales-growth-section .feature-icon-container,
+  .features-section-2 .feature-icon-container {
+    width: 100px;
+    height: 100px;
+  }
+
+  .sales-growth-section .feature-main-icon,
+  .features-section-2 .feature-main-icon {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .video-preview .youtube-video iframe {
+    height: 180px;
+  }
+
+  .sales-growth-section .feature-icon-container,
+  .features-section-2 .feature-icon-container {
+    width: 90px;
+    height: 90px;
+  }
+
+  .sales-growth-section .feature-main-icon,
+  .features-section-2 .feature-main-icon {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .video-preview .youtube-video iframe {
+    height: 160px;
+  }
+
+  .sales-growth-section .feature-icon-container,
+  .features-section-2 .feature-icon-container {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+  }
+
+  .sales-growth-section .feature-main-icon,
+  .features-section-2 .feature-main-icon {
+    font-size: 2rem;
+  }
+
+  .paypal-hero .phone-frame img {
+    transform: rotate(-1deg);
+  }
+
+  .paypal-hero .phone-frame:hover img {
+    transform: rotate(0deg);
+  }
+}
+
+/* Getting Started Section Image Full Width */
+.benefits-section img.w-100 {
+  width: 100% !important;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+/* Business Operations Section Enhancement */
+.features-section-2 .features-list {
+  text-align: left;
+}
+
+.features-section-2 .features-list .feature-item {
+  margin-bottom: 1rem;
+}
+
+/* PayPal Pay Later Section Enhancement */
+.features-section-2 .phone-mockups {
+  padding: 2rem 1rem;
+}
+
+.features-section-2 .phone-frame {
+  max-width: 180px;
+  margin: 0 auto;
+}
+
+/* Ensure consistent button width on PayPal page */
+.features-section-2 .feature-btn {
+  width: 100%;
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+/* PayPal Commerce Platform Specific Styles */
+.getting-started-section .step-item h5 {
+  color: var(--secondary-color);
+}
+
+.getting-started-section .step-item p {
+  color: #666;
+}
+
+.getting-started-section .getting-started-content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.getting-started-section .getting-started-image {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.getting-started-section .getting-started-image img {
+  max-width: 400px;
+  height: 100%;
+}
+
+.pay-later-section .paypal-logo-icon {
+  color: var(--primary-color);
+  font-size: 5rem;
+}
+
+.pay-later-section .pay-later-content h3 {
+  color: var(--secondary-color);
+  font-size: 2rem;
+}
+
+.pay-later-section .pay-later-content p {
+  color: #666;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.features-section-2 .feature-card.bg-primary {
+  background-color: var(--primary-color) !important;
+}
+
+.features-section-2 .pricing-details .pricing-link {
+  color: var(--primary-color);
+}
+
+.features-section-2 .pricing-details .pricing-note {
+  color: #666;
+}
+
+.features-section-2 .check-icon-accent,
+.pay-later-section .check-icon-accent {
+  color: var(--accent);
+}
+
+/* Getting Started Section Feature Button */
+.getting-started-section .feature-btn {
+  background-color: var(--primary-color);
+  /* max-width: 280px; */
+  width: 100%;
+  padding: 16px 24px;
+  border-radius: 12px;
+  font-family: "Switzer Variable", sans-serif;
+  font-size: 16px;
+  line-height: 120%;
+  text-decoration: none;
+  gap: 10px;
+  transition: all 0.3s ease;
+}
+
+.getting-started-section .feature-btn:hover {
+  background-color: var(--primary-color);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(30, 58, 138, 0.3);
+}
+
+.getting-started-section .feature-btn i {
+  background-color: var(--accent);
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  font-size: 12px;
+}
+
+/* Pay Later Section Feature Button */
+.pay-later-section .feature-btn {
+  background-color: var(--primary-color);
+  max-width: 280px;
+  width: 100%;
+  padding: 16px 24px;
+  border-radius: 12px;
+  font-family: "Switzer Variable", sans-serif;
+  font-size: 16px;
+  line-height: 120%;
+  text-decoration: none;
+  gap: 10px;
+  transition: all 0.3s ease;
+}
+
+.pay-later-section .feature-btn:hover {
+  background-color: var(--primary-color);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(30, 58, 138, 0.3);
+}
+
+.pay-later-section .feature-btn i {
+  background-color: var(--accent);
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  font-size: 12px;
+}
+
+/* Pay Later Section Feature Button */
+.pay-later-section .feature-btn {
+  background-color: var(--primary-color);
+  max-width: 280px;
+  width: 100%;
+  padding: 16px 24px;
+  border-radius: 12px;
+  font-family: "Switzer Variable", sans-serif;
+  font-size: 16px;
+  line-height: 120%;
+  text-decoration: none;
+  gap: 10px;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.pay-later-section .feature-btn:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(30, 58, 138, 0.3);
+}
+
+.pay-later-section .feature-btn i {
+  background-color: var(--accent);
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

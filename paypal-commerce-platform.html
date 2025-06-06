@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PayPal Commerce Platform - Roman Cart</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <!-- Top Bar -->
+        <div class="top-bar py-2 text-white">
+            <div class="container">
+                <div class="row align-items-center gap-1 gap-sm-0 py-2 py-sm-0">
+                    <div class="col-lg-8 col-sm-6 col-12">
+                        <p class="top-bar-text text-center text-md-start fw-normal">Free Shopping Cart For Your Website
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 col-12">
+                        <div
+                            class="social-icons justify-content-md-center justify-content-sm-end justify-content-center">
+                            <a href="#" class="social-icon p-2" aria-label="Twitter">
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </a>
+                            <a href="#" class="social-icon p-2" aria-label="Email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                            <a href="#" class="social-icon p-2" aria-label="Support">
+                                <i class="fas fa-headset"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Navigation -->
+        <nav class="navbar navbar-expand-lg main-navbar bg-white">
+            <div class="container">
+                <!-- Brand Logo -->
+                <a class="d-flex align-items-center" href="./index.html">
+                    <img src="./assets/images/logo.png" alt="RomanCart" class="logo-img">
+                </a>
+
+                <!-- Toggle for offcanvas sidebar (mobile only) -->
+                <button class="navbar-toggler d-block d-lg-none" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#navSidebar" aria-controls="navSidebar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Regular desktop menu -->
+                <div class="collapse navbar-collapse d-none d-lg-block" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item"><a class="nav-link fw-normal py-2 px-0" href="./index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link fw-normal py-2 px-0" href="./how-things-work.html">How
+                                it works?</a></li>
+                        <li class="nav-item"><a class="nav-link fw-normal py-2 px-0" href="./product-demo.html">Product
+                                Demo</a></li>
+                        <li class="nav-item"><a class="nav-link fw-normal py-2 px-0" href="./pricing-plans.html">Pricing
+                                Plans</a></li>
+                        <li class="nav-item"><a class="nav-link fw-normal py-2 px-0" href="./mall.html">Mall</a></li>
+                        <li class="nav-item"><a class="nav-link fw-normal py-2 px-0" href="./store.html">Our Store</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex align-items-center user-support-section">
+                        <div class="user-icon d-none d-xl-flex align-items-center justify-content-center" role="button"
+                            aria-label="User Profile">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <a href="./customer-support.html" class="support-btn text-white border-0 fw-semibold">Customer
+                            Support</a>
+                    </div>
+                </div>
+
+                <!-- Offcanvas sidebar menu (from the RIGHT) -->
+                <div class="offcanvas offcanvas-end d-block d-lg-none" tabindex="-1" id="navSidebar"
+                    aria-labelledby="navSidebarLabel" data-bs-backdrop="true">
+                    <div class="offcanvas-header px-5 py-4 justify-content-end">
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link fw-normal py-2 px-0" href="./index.html">Home</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link fw-normal py-2 px-0"
+                                    href="./how-things-work.html">How it works?</a></li>
+                            <li class="nav-item"><a class="nav-link fw-normal py-2 px-0"
+                                    href="./product-demo.html">Product Demo</a></li>
+                            <li class="nav-item"><a class="nav-link fw-normal py-2 px-0"
+                                    href="./pricing-plans.html">Pricing Plans</a></li>
+                            <li class="nav-item"><a class="nav-link fw-normal py-2 px-0" href="./mall.html">Mall</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link fw-normal py-2 px-0" href="./store.html">Our
+                                    Store</a></li>
+                        </ul>
+
+                        <div class="d-flex align-items-center justify-content-center">
+                            <a href="./customer-support.html"
+                                class="support-btn text-white border-0 fw-semibold">Customer Support</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="paypal-hero py-5">
+            <div class="container">
+                <div class="row align-items-center flex-column-reverse flex-lg-row gap-5 gap-lg-0">
+                    <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
+                        <div class="hero-content">
+                            <div class="brand-partnership d-flex align-items-center mb-4">
+                                <i class="fab fa-paypal paypal-icon"></i>
+                                <span class="partnership-plus">+</span>
+                                <img src="./assets/images/logo.png" alt="RomanCart" class="partnership-logo">
+                            </div>
+                            <h1 class="hero-title fw-normal mb-4">
+                                Power up your business with <span class="highlight fw-bold">PayPal</span>
+                            </h1>
+                            <p class="hero-description fw-normal mb-4">
+                                Drive sales and growth in a single solution. Accept more payment methods than ever,
+                                including credit and debit cards.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <div class="phone-mockup text-center">
+                            <div class="phone-frame">
+                                <img src="./assets/images/banner-checkout-image.png" alt="PayPal Mobile Interface"
+                                    class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trust Section -->
+        <section class="trust-section py-5">
+            <div class="container">
+                <!-- Section Header -->
+                <div class="section-header text-center mb-5">
+                    <h2 class="section-title fw-normal mx-auto mb-4">
+                        Choose the name trusted by <span class="highlight fw-bold">320M+ global shoppers</span>
+                    </h2>
+                    <p class="section-subtitle fw-normal mx-auto">
+                        PayPal is one of the most popular payment platforms in the world, and our integration makes it
+                        simple to get started in ecommerce.
+                    </p>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-md-10 col-12">
+                        <div class="video-preview">
+                            <div class="youtube-video position-relative">
+                                <iframe width="100%" height="350"
+                                    src="https://www.youtube.com/embed/WNHo3UogLqo?si=NN7KjJ2iUNA1PZMq"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
+                                    class="rounded"></iframe>
+                            </div>
+                            <p class="video-caption text-center mt-3 fw-normal">
+                                Welcome to the RomanCart Shop Wizard of Wix!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sales Growth Section -->
+        <section class="features-section-2 bg-white">
+            <div class="container">
+                <!-- Section Header -->
+                <div class="section-header text-center">
+                    <h2 class="section-title fw-normal mx-auto">
+                        Drive new levels of <span class="highlight fw-bold">sales and growth</span>
+                    </h2>
+                    <p class="section-subtitle fw-normal mx-auto">
+                        Shoppers are up to 80% more willing to complete when PayPal is accepted. Offer the peace of mind
+                        and convenience your shoppers demand.
+                    </p>
+                </div>
+
+                <!-- Features Grid -->
+                <div class="row row-equal-height">
+                    <!-- Payment Methods -->
+                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                        <div
+                            class="feature-card w-100 h-100 text-center border-0 d-flex flex-column align-items-center justify-content-between bg-white">
+                            <div class="feature-content">
+                                <div class="feature-icon-container mb-4">
+                                    <i class="fas fa-credit-card feature-main-icon"></i>
+                                </div>
+                                <h3 class="feature-title">Give your customers their preferred way to pay</h3>
+                                <div
+                                    class="payment-methods d-flex justify-content-center align-items-center flex-wrap gap-3 mt-3">
+                                    <i class="fab fa-cc-visa visa-icon"></i>
+                                    <i class="fab fa-cc-mastercard mastercard-icon"></i>
+                                    <i class="fab fa-cc-amex amex-icon"></i>
+                                    <i class="fab fa-paypal paypal-payment-icon"></i>
+                                    <i class="fab fa-cc-discover discover-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Global Currencies -->
+                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                        <div
+                            class="feature-card w-100 h-100 text-center border-0 d-flex flex-column align-items-center justify-content-between bg-white">
+                            <div class="feature-content">
+                                <div class="feature-icon-container mb-4">
+                                    <i class="fas fa-globe-americas feature-main-icon"></i>
+                                </div>
+                                <h3 class="feature-title">Accept card payments in 25 currencies</h3>
+                                <p class="feature-description fw-normal">with no monthly fees, and accept card payments
+                                    around the world</p>
+                                <p class="feature-note fw-normal">NO MONTHLY FEES<br>INSTANT ACCESS TO CARD PAYMENTS IN
+                                    YOUR ROMAN ACCOUNT</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Seamless Checkout -->
+                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                        <div
+                            class="feature-card w-100 h-100 text-center border-0 d-flex flex-column align-items-center justify-content-between bg-white">
+                            <div class="feature-content">
+                                <div class="feature-icon-container mb-4">
+                                    <i class="fas fa-shopping-cart feature-main-icon"></i>
+                                </div>
+                                <h3 class="feature-title">Offer a seamless checkout experience</h3>
+                                <p class="feature-description fw-normal">PayPal's one-touch technology that lets mobile,
+                                    let customers checkout directly from product pages, and make checkout ultra-fast
+                                    with no need to create an account</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Statistics Section -->
+        <section class="global-benefits-section py-5">
+            <div class="container">
+                <!-- Section Header -->
+                <div class="section-header text-center">
+                    <h2 class="section-title fw-normal mx-auto">
+                        Grow globally with the name <span class="highlight fw-bold">shoppers trust</span>
+                    </h2>
+                    <p class="section-subtitle fw-normal mx-auto">
+                        PayPal helps you reach new customers around the world. In fact, 59% of PayPal shoppers say they
+                        abandoned a shopping cart because PayPal wasn't accepted.
+                    </p>
+                </div>
+
+                <!-- Benefits Grid -->
+                <div class="row align-items-stretch">
+                    <!-- Global Reach -->
+                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                        <div
+                            class="benefit-item d-flex flex-column justify-content-between text-center align-items-center">
+                            <div
+                                class="benefit-icon text-white d-flex align-items-center justify-content-center fw-bold primary">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <h3 class="benefit-title">100+ Markets</h3>
+                            <p class="benefit-description fw-normal">
+                                Reach customers in over 100 markets worldwide with PayPal's global payment network and
+                                local currency support.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Trust Factor -->
+                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                        <div
+                            class="benefit-item d-flex flex-column justify-content-between text-center align-items-center">
+                            <div
+                                class="benefit-icon text-white d-flex align-items-center justify-content-center fw-bold primary">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h3 class="benefit-title">53% User Preference</h3>
+                            <p class="benefit-description fw-normal">
+                                Over half of all online shoppers have used PayPal to pay online in the past year, making
+                                it their preferred choice.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Market Coverage -->
+                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                        <div
+                            class="benefit-item d-flex flex-column justify-content-between text-center align-items-center">
+                            <div
+                                class="benefit-icon text-white d-flex align-items-center justify-content-center fw-bold primary">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h3 class="benefit-title">200+ Markets</h3>
+                            <p class="benefit-description fw-normal">
+                                Expand your business reach to over 200 markets with PayPal's comprehensive global
+                                payment infrastructure.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Security Section -->
+        <section class="security-benefits-section bg-white">
+            <div class="container">
+                <!-- Section Header -->
+                <div class="section-header text-center">
+                    <h2 class="section-title fw-normal mx-auto">
+                        Your <span class="highlight fw-bold">security</span> is our priority
+                    </h2>
+                    <p class="section-subtitle fw-normal mx-auto">
+                        PayPal provides enterprise-level security features to protect your business and customers with
+                        industry-leading fraud protection and compliance standards.
+                    </p>
+                </div>
+
+                <!-- Benefits Grid -->
+                <div class="row align-items-stretch">
+                    <!-- Security Feature 01 -->
+                    <div class="col-lg-3 col-md-6 col-12 mb-4">
+                        <div
+                            class="benefit-item d-flex flex-column justify-content-between text-center align-items-center">
+                            <div
+                                class="benefit-icon text-white d-flex align-items-center justify-content-center fw-bold primary">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h3 class="benefit-title">Advanced 3D Secure 2.0</h3>
+                            <p class="benefit-description fw-normal">
+                                Enhanced protection for all card transactions with advanced authentication technology.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Security Feature 02 -->
+                    <div class="col-lg-3 col-md-6 col-12 mb-4">
+                        <div
+                            class="benefit-item d-flex flex-column justify-content-between text-center align-items-center">
+                            <div
+                                class="benefit-icon text-white d-flex align-items-center justify-content-center fw-bold primary">
+                                <i class="fas fa-lock"></i>
+                            </div>
+                            <h3 class="benefit-title">PCI Compliance</h3>
+                            <p class="benefit-description fw-normal">
+                                PCI and PSD2 Strong Customer Authentication (SCA) compliance for maximum security
+                                standards.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Security Feature 03 -->
+                    <div class="col-lg-3 col-md-6 col-12 mb-4">
+                        <div
+                            class="benefit-item d-flex flex-column justify-content-between text-center align-items-center">
+                            <div
+                                class="benefit-icon text-white d-flex align-items-center justify-content-center fw-bold primary">
+                                <i class="fas fa-pen-fancy"></i>
+                            </div>
+                            <h3 class="benefit-title">Purchase Protection</h3>
+                            <p class="benefit-description fw-normal">
+                                PayPal's signature Purchase and Seller Protection on all eligible purchases and
+                                transactions.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Security Feature 04 -->
+                    <div class="col-lg-3 col-md-6 col-12 mb-4">
+                        <div
+                            class="benefit-item d-flex flex-column justify-content-between text-center align-items-center">
+                            <div
+                                class="benefit-icon text-white d-flex align-items-center justify-content-center fw-bold primary">
+                                <i class="fas fa-eye"></i>
+                            </div>
+                            <h3 class="benefit-title">Fraud Detection</h3>
+                            <p class="benefit-description fw-normal">
+                                24/7 fraud detection and monitoring on every transaction with real-time protection.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-4">
+                    <p class="disclaimer">
+                        As a global company, PayPal operates in regulatory and legal environments around the world. Our
+                        data practices and privacy policies are designed to be compliant with applicable laws and
+                        regulatory requirements from country to country – and that matches banking-level tools and
+                        technologies with every transaction.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Business Operations Section -->
+        <section class="features-section-2 business-operations py-5">
+            <div class="container">
+                <!-- Section Header -->
+                <div class="section-header text-center">
+                    <h2 class="section-title fw-normal mx-auto">
+                        <span class="highlight fw-bold">Business Operations</span> Made Simple
+                    </h2>
+                    <p class="section-subtitle fw-normal mx-auto">
+                        Streamline your business processes with PayPal's comprehensive suite of tools designed to help
+                        you operate efficiently and grow sustainably.
+                    </p>
+                </div>
+                <!-- Features Grid -->
+                <div class="row row-equal-height">
+                    <!-- Keep Business Running -->
+                    <div class="col-lg-6 col-md-12 mb-4">
+                        <div class="feature-card w-100 h-100 text-center border-0 d-flex flex-column align-items-center justify-content-between bg-primary">
+                            <div class="feature-content text-white p-4">
+                                <h3 class="feature-title text-white mb-4">Keep your business running smoothly</h3>
+                                <p class="feature-description fw-normal text-white mb-4">
+                                    Built-in checkout. PayPal keeps your business day running smoothly by automating
+                                    business processes.
+                                </p>
+                                <div class="features-list text-start">
+                                    <div class="feature-item d-flex align-items-start mb-3">
+                                        <i class="fas fa-check-circle me-3 mt-1 check-icon-accent"></i>
+                                        <div class="text-white">
+                                            <strong>Access funds instantly.</strong>
+                                            <p class="mb-0 fw-normal">Simplify payments with the unified PayPal and
+                                                RomanCart experience.</p>
+                                        </div>
+                                    </div>
+                                    <div class="feature-item d-flex align-items-start">
+                                        <i class="fas fa-check-circle me-3 mt-1 check-icon-accent"></i>
+                                        <div class="text-white">
+                                            <strong>Simplify payments.</strong>
+                                            <p class="mb-0 fw-normal">Help increase efficiency with automated payment
+                                                processes and integrated tools in our best in business toolkit that
+                                                customers can efficiently.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Transparent Pricing -->
+                    <div class="col-lg-6 col-md-12 mb-4">
+                        <div
+                            class="feature-card w-100 h-100 text-center border-0 d-flex flex-column align-items-center justify-content-between bg-white">
+                            <div class="feature-content p-4">
+                                <h3 class="feature-title mb-4">Get simple, transparent pricing</h3>
+                                <p class="feature-description fw-normal mb-4">
+                                    No integration costs. No monthly fees. Clear pricing.
+                                </p>
+                                <div class="pricing-details text-start">
+                                    <p class="pricing-text mb-3 fw-normal"><strong>Rates as low as 1.2% + fixed
+                                            fee</strong></p>
+                                    <a href="#" class="pricing-link fw-semibold">Click here to see full list of rates</a>
+                                    <p class="pricing-note mt-3 fw-normal">
+                                        All payment methods include fraud detection for buyers and simple card
+                                        acceptance for merchants.
+                                    </p>
+                                </div>
+                            </div>
+                            <a href="#"
+                                class="feature-btn fw-normal text-white border-0 d-flex align-items-center justify-content-center mt-auto">
+                                View Pricing Details
+                                <i class="fas fa-arrow-right d-flex align-items-center justify-content-center"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Getting Started Section -->
+        <section class="getting-started-section bg-white">
+            <div class="container">
+                <!-- Section Header -->
+                <div class="section-header text-center">
+                    <h2 class="section-title fw-normal mx-auto">
+                        Getting <span class="highlight fw-bold">started</span> is easy
+                    </h2>
+                    <p class="section-subtitle fw-normal mx-auto">
+                        It's easier than you think to get started and open your business to over 300 million PayPal
+                        customers. Set up your checkout in just a few steps.
+                    </p>
+                </div>
+
+                <div class="row align-items-stretch mt-5 flex-column flex-lg-row gap-5 gap-lg-0">
+                    <div class="col-md-6 col-12 mb-4 mb-lg-0">
+                        <div class="getting-started-image text-center">
+                            <img src="./assets/images/business-setup-workspace.jpg"
+                                alt="Business professional setting up PayPal integration" class="img-fluid rounded">
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="getting-started-content">
+                            <div class="steps-list mb-4">
+                                <div class="step-item d-flex align-items-start mb-3">
+                                    <div class="step-number-circle me-3">
+                                        <span class="fw-bold">1</span>
+                                    </div>
+                                    <div>
+                                        <h5 class="fw-bold mb-1">Login to your
+                                            Romancart Control Panel</h5>
+                                        <p class="fw-normal mb-0">Access your dashboard to manage
+                                            payment methods</p>
+                                    </div>
+                                </div>
+                                <div class="step-item d-flex align-items-start mb-3">
+                                    <div class="step-number-circle me-3">
+                                        <span class="fw-bold">2</span>
+                                    </div>
+                                    <div>
+                                        <h5 class="fw-bold mb-1">Go to Configure
+                                            > Payment Methods</h5>
+                                        <p class="fw-normal mb-0">Navigate to the payment
+                                            configuration section</p>
+                                    </div>
+                                </div>
+                                <div class="step-item d-flex align-items-start mb-3">
+                                    <div class="step-number-circle me-3">
+                                        <span class="fw-bold">3</span>
+                                    </div>
+                                    <div>
+                                        <h5 class="fw-bold mb-1">Add PayPal
+                                            Commerce Platform</h5>
+                                        <p class="fw-normal mb-0">Select and add the PayPal
+                                            Commerce Platform integration</p>
+                                    </div>
+                                </div>
+                                <div class="step-item d-flex align-items-start mb-3">
+                                    <div class="step-number-circle me-3">
+                                        <span class="fw-bold">4</span>
+                                    </div>
+                                    <div>
+                                        <h5 class="fw-bold mb-1">Configure Your
+                                            Settings</h5>
+                                        <p class="fw-normal mb-0">Follow the setup wizard to
+                                            complete configuration</p>
+                                    </div>
+                                </div>
+                                <div class="step-item d-flex align-items-start mb-4">
+                                    <div class="step-number-circle me-3">
+                                        <span class="fw-bold">5</span>
+                                    </div>
+                                    <div>
+                                        <h5 class="fw-bold mb-1">Start Accepting
+                                            Payments!</h5>
+                                        <p class="fw-normal mb-0">Your PayPal integration is ready
+                                            to process payments</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="text-center text-lg-start">
+                                <a href="#"
+                                    class="feature-btn fw-normal text-white border-0 d-flex align-items-center justify-content-center">
+                                    Watch screencast on how it all works
+                                    <i class="fas fa-arrow-right d-flex align-items-center justify-content-center"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pay Later Section -->
+        <section class="pay-later-section bg-white">
+            <div class="container">
+                <!-- Section Header -->
+                <div class="section-header text-center">
+                    <h2 class="section-title fw-normal mx-auto">
+                        <span class="highlight fw-bold">PayPal Pay Later</span> - Flexible Payment Options
+                    </h2>
+                    <p class="section-subtitle fw-normal mx-auto">
+                        Everyone has better sales and more repeat business with 'pay after delivery' pay. Our team's
+                        checkout flows are fast, our fees are easy to find, and your customers can buy now and pay
+                        later.
+                    </p>
+                </div>
+
+                <div class="row align-items-center flex-column-reverse flex-lg-row gap-5 gap-lg-0">
+                    <!-- Content and Button (Left Side) -->
+                    <div class="col-lg-6 col-md-6 col-12 mb-4 mb-lg-0">
+                        <div class="pay-later-content">
+                            <div class="paypal-logo mb-4">
+                                <i class="fab fa-paypal paypal-logo-icon"></i>
+                            </div>
+                            <h3 class="fw-bold mb-4">Flexible
+                                Payment Solutions</h3>
+                            <p class="fw-normal mb-4">
+                                Help your customers grow with transparent payment options that win. Your customers can
+                                buy now and pay later with our secure platform. Increase conversion rates and customer
+                                satisfaction.
+                            </p>
+                            <div class="feature-benefits mb-4">
+                                <div class="benefit-point d-flex align-items-center mb-2">
+                                    <i class="fas fa-check-circle me-3 check-icon-accent"></i>
+                                    <span class="fw-normal">No upfront costs for merchants</span>
+                                </div>
+                                <div class="benefit-point d-flex align-items-center mb-2">
+                                    <i class="fas fa-check-circle me-3 check-icon-accent"></i>
+                                    <span class="fw-normal">Increase average order value</span>
+                                </div>
+                                <div class="benefit-point d-flex align-items-center mb-2">
+                                    <i class="fas fa-check-circle me-3 check-icon-accent"></i>
+                                    <span class="fw-normal">Flexible payment terms for customers</span>
+                                </div>
+                            </div>
+                            <div class="text-start">
+                                <a href="#"
+                                    class="feature-btn fw-normal text-white border-0 d-flex align-items-center justify-content-center">
+                                    More Information
+                                    <i class="fas fa-arrow-right d-flex align-items-center justify-content-center"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Phone Mockups (Right Side) -->
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <div class="phone-mockups d-flex justify-content-center gap-3">
+                            <div class="phone-frame">
+                                <img src="./assets/images/mobile-payment-app.png"
+                                    alt="PayPal Pay Later Mobile Interface" class="img-fluid">
+                            </div>
+                            <div class="phone-frame">
+                                <img src="./assets/images/mobile-checkout-flow.png" alt="Mobile Checkout Experience"
+                                    class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sign Up Section -->
+        <section class="signup-section position-relative overflow-hidden" aria-label="Sign up for free account">
+            <div class="container position-relative overflow-hidden">
+                <div class="bg-image position-absolute top-0 start-0 w-100 h-100">
+                    <img src="./assets/images/footer-sign-up-bg.png" class="w-100 h-100" alt="background image">
+                </div>
+                <div class="signup-content position-relative text-center">
+                    <h1 class="signup-title fw-bold text-white">
+                        <span class="highlight fw-bold">Sign Up</span> For Free
+                    </h1>
+                    <form class="signup-form d-flex justify-content-center" role="form"
+                        aria-label="Account registration form">
+                        <input type="text" class="form-input flex-grow-1 bg-white fw-normal border-0 p-3"
+                            placeholder="Name" required aria-label="Enter your full name" autocomplete="name">
+                        <input type="email" class="form-input flex-grow-1 bg-white fw-normal border-0 p-3"
+                            placeholder="Email" required aria-label="Enter your email address" autocomplete="email">
+                        <button type="submit"
+                            class="signup-btn text-white border-0 fw-normal d-flex align-items-center justify-content-center gap-2"
+                            aria-label="Start selling with RomanCart">
+                            Start Selling
+                            <i class="fas fa-arrow-right d-flex align-items-center justify-content-center text-white"
+                                aria-hidden="true"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Component -->
+    <footer class="footer-component text-white" role="contentinfo">
+        <div class="container">
+            <!-- Footer Header -->
+            <div class="footer-header">
+                <div class="row align-items-center gap-4 gap-md-0">
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="d-flex align-items-center justify-content-center justify-content-md-start">
+                            <a href="#" class="brand-logo" aria-label="RomanCart Home">
+                                <img src="assets/images/logo.png" class="brand-logo" alt="RomanCart Logo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-6 col-12">
+                        <p class="footer-description text-white fw-normal">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dignissim,
+                            ante elementum molestie rutrum, neque lacus rutrum lacus, ut efficitur
+                            turpis libero at erat. Proin nec sollicitudin felis, ac volutpat ipsum.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Links -->
+            <div class="footer-links">
+                <div class="row">
+                    <!-- Internet Marketing Tools -->
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="footer-section">
+                            <h5>Internet Marketing Tools</h5>
+                            <ul class="list-unstyled d-flex flex-column gap-3">
+                                <li><a href="#" class="text-white fw-normal" aria-label="Email Marketing services">Email
+                                        Marketing</a></li>
+                                <li><a href="#" class="text-white fw-normal"
+                                        aria-label="Cross-Sell and Up-Sell tools">Cross-Sell and Up-Sell</a>
+                                </li>
+                                <li><a href="#" class="text-white fw-normal"
+                                        aria-label="Coupons and Promotions management">Coupons and
+                                        Promotions</a></li>
+                                <li><a href="#" class="text-white fw-normal" aria-label="Auto Responders system">Auto
+                                        Responders</a></li>
+                                <li><a href="#" class="text-white fw-normal"
+                                        aria-label="Follow-Up Emails automation">Follow-Up Emails</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Services -->
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="footer-section">
+                            <h5>Services</h5>
+                            <ul class="list-unstyled d-flex flex-column gap-3">
+                                <li><a href="#" class="text-white fw-normal" aria-label="Website Builder tool">Website
+                                        Builder</a></li>
+                                <li><a href="#" class="text-white fw-normal"
+                                        aria-label="Ecommerce Software platform">Ecommerce Software</a></li>
+                                <li><a href="#" class="text-white fw-normal"
+                                        aria-label="Internet Shopping Cart solution">Internet Shopping
+                                        Cart</a></li>
+                                <li><a href="#" class="text-white fw-normal"
+                                        aria-label="Internet Marketing services">Internet Marketing</a></li>
+                                <li><a href="#" class="text-white fw-normal"
+                                        aria-label="PayPal Commerce Platform integration">PayPal Commerce
+                                        Platform</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Partnering with RomanCart -->
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="footer-section">
+                            <h5>Partnering with RomanCart</h5>
+                            <ul class="list-unstyled d-flex flex-column gap-3">
+                                <li><a href="#" class="text-white fw-normal" class="text-white fw-normal"
+                                        aria-label="Partnership overview">Overview</a></li>
+                                <li><a href="#" class="text-white fw-normal" class="text-white fw-normal"
+                                        aria-label="Affiliate Program details">Affiliate Program</a></li>
+                                <li><a href="#" class="text-white fw-normal" class="text-white fw-normal"
+                                        aria-label="Web Design Partners program">Web Design Partners</a>
+                                </li>
+                                <li><a href="#" class="text-white fw-normal" class="text-white fw-normal"
+                                        aria-label="Internet Marketing partnerships">Internet Marketing</a>
+                                </li>
+                                <li><a href="#" class="text-white fw-normal" class="text-white fw-normal"
+                                        aria-label="Payment Gateway Partners">Payment Gateway Partners</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Other Information -->
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="footer-section">
+                            <h5>Other Information</h5>
+                            <ul class="list-unstyled d-flex flex-column gap-3">
+                                <li><a href="#" class="text-white fw-normal" aria-label="RomanCart Blog">RomanCart
+                                        Blog</a></li>
+                                <li><a href="#" class="text-white fw-normal" aria-label="User Forums community">User
+                                        Forums</a></li>
+                                <li><a href="#" class="text-white fw-normal" aria-label="Contact Us page">Contact Us</a>
+                                </li>
+                                <li><a href="#" class="text-white fw-normal" aria-label="Case Studies examples">Case
+                                        Studies</a></li>
+                                <li><a href="#" class="text-white fw-normal" aria-label="Site Map navigation">Site
+                                        Map</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom d-flex flex-wrap align-items-center justify-content-between gap-3">
+                <p class="copyright fw-normal text-white">© All rights reserved, Romancart. 2025</p>
+                <div class="built-in-canada fw-normal text-white d-flex align-items-center gap-2">
+                    <i class="fa-brands fa-canadian-maple-leaf"></i>
+                    <span>Built in canada</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
