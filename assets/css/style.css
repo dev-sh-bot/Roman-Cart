@@ -294,6 +294,10 @@ p {
   background-color: #f6f6f6;
 }
 
+.head-coloring{
+  color: #EE950A;
+}
+
 .hero-banner .banner-1 {
   left: 65%;
   /* object-fit: cover; */
