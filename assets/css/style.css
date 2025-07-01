@@ -1010,40 +1010,8 @@ p {
   }
 }
 
-/* Animation effects */
-.benefits-section .benefit-item {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInUp 0.6s ease forwards;
-}
-
-.benefits-section .benefit-item:nth-child(1) {
-  animation-delay: 0.1s;
-}
-
-.benefits-section .benefit-item:nth-child(2) {
-  animation-delay: 0.2s;
-}
-
-.benefits-section .benefit-item:nth-child(3) {
-  animation-delay: 0.3s;
-}
-
-.benefits-section .benefit-item:nth-child(4) {
-  animation-delay: 0.4s;
-}
-
-.benefits-section .benefit-item:nth-child(5) {
-  animation-delay: 0.5s;
-}
-
-.benefits-section .benefit-item:nth-child(6) {
-  animation-delay: 0.6s;
-}
-
-.benefits-section .benefit-item:nth-child(7) {
-  animation-delay: 0.7s;
-}
+/* Animation effects - Removed in favor of GSAP */
+/* Benefits animations are now handled by GSAP */
 
 .benefits-section .benefit-icon {
   transition: all 0.3s ease;
@@ -1446,71 +1414,37 @@ p {
   }
 }
 
-/* Animation effects */
-.business-section .use-case-item {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInUp 0.6s ease forwards;
-}
-
-.business-section .use-case-item:nth-child(1) {
-  animation-delay: 0.1s;
-}
-
-.business-section .use-case-item:nth-child(2) {
-  animation-delay: 0.2s;
-}
-
-.business-section .use-case-item:nth-child(3) {
-  animation-delay: 0.3s;
-}
-
-.business-section .use-case-item:nth-child(4) {
-  animation-delay: 0.4s;
-}
-
-.business-section .use-case-item:nth-child(5) {
-  animation-delay: 0.5s;
-}
-
-.business-section .use-case-item:nth-child(6) {
-  animation-delay: 0.6s;
-}
-
-.business-section .use-case-item:nth-child(7) {
-  animation-delay: 0.7s;
-}
-
-.business-section .use-case-item:nth-child(8) {
-  animation-delay: 0.8s;
-}
-
-.business-section .use-case-item:nth-child(9) {
-  animation-delay: 0.9s;
-}
-
-.business-section .use-case-item:nth-child(10) {
-  animation-delay: 1s;
-}
-
-.business-section .use-case-item:nth-child(11) {
-  animation-delay: 1.1s;
-}
-
-.business-section .use-case-item:nth-child(12) {
-  animation-delay: 1.2s;
-}
-
-@keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
+/* Animation effects - Removed in favor of GSAP */
+/* Business section animations are now handled by GSAP */
 
 /* ============================================================================
    UTILITY CLASSES & ANIMATIONS
    ============================================================================ */
+
+/* GSAP Enhancement Styles */
+/* Removed problematic styles that were hiding content */
+
+/* Enhanced hover states for GSAP */
+.feature-card,
+.benefit-item,
+.platform-card,
+.use-case-item {
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* ============================================================================
+   SIDEBAR/OFFCANVAS MINIMAL FIXES
+   ============================================================================ */
+
+/* Minimal fixes for offcanvas to work with conservative GSAP */
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+
+.offcanvas .nav-link:hover {
+  color: var(--accent) !important;
+}
 
 /* Common row-equal-height class for all sections */
 .row-equal-height {
@@ -2280,37 +2214,8 @@ p {
   }
 }
 
-/* Animation effects */
-.signup-section .signup-content {
-  opacity: 0;
-  transform: translateY(30px);
-  animation: fadeInUp 0.8s ease forwards;
-}
-
-@keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.signup-section .form-input {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInUp 0.6s ease forwards;
-}
-
-.signup-section .form-input:nth-child(1) {
-  animation-delay: 0.2s;
-}
-
-.signup-section .form-input:nth-child(2) {
-  animation-delay: 0.3s;
-}
-
-.signup-section .signup-btn {
-  animation-delay: 0.4s;
-}
+/* Animation effects - Removed in favor of GSAP */
+/* Signup section animations are now handled by GSAP */
 
 /* Focus states for accessibility */
 .signup-section .form-input:focus,
@@ -2570,35 +2475,8 @@ p {
   }
 }
 
-/* Animation effects */
-.footer-component .footer-section {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInUp 0.6s ease forwards;
-}
-
-.footer-component .footer-section:nth-child(1) {
-  animation-delay: 0.1s;
-}
-
-.footer-component .footer-section:nth-child(2) {
-  animation-delay: 0.2s;
-}
-
-.footer-component .footer-section:nth-child(3) {
-  animation-delay: 0.3s;
-}
-
-.footer-component .footer-section:nth-child(4) {
-  animation-delay: 0.4s;
-}
-
-@keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
+/* Animation effects - Removed in favor of GSAP */
+/* Footer animations are now handled by GSAP */
 
 /* Reduced motion support */
 @media (prefers-reduced-motion: reduce) {
@@ -3761,8 +3639,6 @@ p {
 .video-preview .video-caption {
   font-size: 14px;
   color: #666;
-  text-align: center;
-  margin-top: 8px;
 }
 
 /* PayPal Page Responsive Overrides */
